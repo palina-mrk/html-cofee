@@ -10,6 +10,11 @@
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
+          <button class="header__burger" type="button">
+            <svg class="header__burger-icon" width="59" height="30" aria-hidden="true">
+              <use xlink:href="./images/header/header-sprite.svg#icon-burger" ></use>
+            </svg>
+          </button>
           <a class="header__logo-link" href="#" alt="Ссылка на главную страницу">
             <picture>
               <source media="(max-width: 767px)" srcset="./images/header/logo/image-logo-mobile.png">
@@ -67,6 +72,11 @@
     <main>
       <section class="home-page__heading-section">
         <div class="container">
+          <ul class="home-page__points-list">
+            <li class="home-page__points-item home-page__points-item--brown"></li>
+            <li class="home-page__points-item"></li>
+            <li class="home-page__points-item"></li>
+          </ul>
           <h1 class="home-page__title">Свежеобжаренный кофе</h1>
           <div class="home-page__hero-block">
             <div class="home-page__text-wrapper">
@@ -589,6 +599,9 @@
               </svg>
             </button>
           </div>
+          <a class="home-page__link home-page__link--right btn-linked btn-linked--black" href="#">
+            <span class="btn-linked__text">Смотреть все</span>
+          </a>
         </div>
       </section>
       <section class="home-page__advantages-section">
@@ -650,7 +663,13 @@
       
       <section class="home-page__news-section">
         <div class="container">
-          <h2 class="home-page__block-title">Новости компании</h2>
+          <div class="home-page__news-heading">
+            <h2 class="home-page__block-title">Новости компании</h2>
+
+            <a class="home-page__link btn-linked btn-linked--black" href="#">
+              <span class="btn-linked__text">Читать все</span>
+            </a>
+          </div>
           <ul class="home-page__news-list">
             <li class="home-page__news-item home-page__news-item--flat">
               <div class="home-page__new-card">

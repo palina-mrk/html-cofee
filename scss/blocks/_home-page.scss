@@ -1,8 +1,45 @@
-.home-page__heading-section {
-  flex-grow: 1;
-  background: 
-    url('../../images/background/bg-puddle-right.svg') top 0 right 0 no-repeat,
-    url('../../images/background/bg-puddle-left.svg') top 1076px left 0 no-repeat;
-  margin: 0;
-  padding: 160px 0 0;
+.home-page {
+
+  &__heading-section {
+    flex-grow: 1;
+    background: 
+      url('../../images/heading-section/bg-puddle-right-desktop.svg') top 0 right 0 no-repeat,
+      url('../../images/heading-section/bg-puddle-left-desktop.svg') top 1076px left 0 no-repeat,
+      url('../../images/heading-section/bg-heading-corns-desktop.png') top 192 right 211 no-repeat,
+      url('../../images/heading-section/bg-corns-left-desktop.png') top 1547px left 0 no-repeat,
+      url('../../images/heading-section/bg-heading-cup-desktop.png') top 267px right 254px no-repeat;
+    margin: 0;
+    padding: 160px 0 0;
+
+    @include vp-laptop {
+      padding: 113px 0 0; 
+      background: 
+        url('../../images/heading-section/bg-puddle-right-laptop.svg') top 0 right 0 no-repeat,
+        url('../../images/heading-section/bg-puddle-left-laptop.svg') top 762px left 0 no-repeat,
+        url('../../images/heading-section/bg-heading-corns-laptop.png') top 135 right 150 no-repeat,
+        url('../../images/heading-section/bg-corns-left-laptop.png') top 1096px left 0 no-repeat,
+        url('../../images/heading-section/bg-heading-cup-laptop.png') top 189px right 183px no-repeat;
+    }
+    
+
+    @include vp-tablet {
+      padding: 143px 0 0; 
+      background: 
+        url('../../images/heading-section/bg-puddle-right-tablet.svg') top 15 right 0 no-repeat,
+        url('../../images/heading-section/bg-puddle-left-tablet.svg') top 1562px left 0 no-repeat,
+        url('../../images/heading-section/bg-heading-corns-tablet.png') top 238 right 0 no-repeat,
+        url('../../images/heading-section/bg-corns-left-tablet.png') top 1672px left 0 no-repeat,
+        url('../../images/heading-section/bg-heading-cup-tablet.png') top 446px right 0 no-repeat;
+    }
+
+
+    @include vp-mobile {
+      padding: 113px 0 0; 
+      background: 
+        url('../../images/heading-section/bg-puddle-right-desktop.svg') top 0 right 0 no-repeat,
+        url('../../images/heading-section/bg-puddle-left-desktop.svg') top 1017px left 0 no-repeat,
+        url('../../images/heading-section/bg-heading-corns-desktop.png') top 0 right 0 no-repeat,
+        url('../../images/heading-section/bg-corns-left-desktop.png') top 1017px left 0 no-repeat,
+        url('../../images/heading-section/bg-heading-cup-desktop.png') top 267px right 254px no-repeat;
+    }
 }
