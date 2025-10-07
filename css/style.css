@@ -471,9 +471,9 @@ body {
 main {
   flex-grow: 1;
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: start;
 }
 
 img {
@@ -496,17 +496,17 @@ a {
   margin: 0 auto;
   padding: 0 20px;
 }
-@media (max-width: 1349px) {
+@media (max-width: 1903px) {
   .container {
     max-width: 1180px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1348px) {
   .container {
     max-width: 700px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .container {
     max-width: 340px;
   }
@@ -535,17 +535,17 @@ a {
   justify-content: center;
   gap: 100px;
 }
-@media (max-width: 1349px) {
+@media (max-width: 1903px) {
   .main-nav__list {
     gap: 66px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1348px) {
   .main-nav__list {
     gap: 60px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .main-nav__list {
     gap: 30px;
   }
@@ -558,17 +558,17 @@ a {
   color: #000000;
   flex-shrink: 0;
 }
-@media (max-width: 1349px) {
+@media (max-width: 1903px) {
   .main-nav__link {
     font-size: 18px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1348px) {
   .main-nav__link {
     font-size: 25px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .main-nav__link {
     font-size: 12px;
   }
@@ -578,43 +578,41 @@ a {
 }
 
 .home-page__heading-section {
+  width: 100%;
   flex-grow: 1;
-  background: url("../../images/heading-section/bg-puddle-right-desktop.svg") top 0 right 0 no-repeat, url("../../images/heading-section/bg-puddle-left-desktop.svg") top 1017px left 0 no-repeat;
-  margin: 0;
   padding: 160px 0 0;
-  position: relative;
-  z-index: -2;
+  margin: 0;
+  background-image: url("../../images/heading-section/bg-heading-cup-desktop.png"), url("../../images/heading-section/bg-cup-shadow.svg"), url("../../images/heading-section/bg-heading-corns-desktop.png"), url("../../images/heading-section/bg-puddle-right-desktop.svg"), url("../../images/heading-section/bg-corns-left-desktop.png"), url("../../images/heading-section/bg-puddle-left-desktop.svg");
+  background-position: right 254px top 266px, right 294px top 311px, right 211px top 192px, right 0 top 0, left 0 top 1537px, left 0 top 1018px;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 744px 496px, 666px 494px, 900px 773px, 711px 1466px, 360px 694px, 454px 1380px;
 }
-@media (max-width: 1349px) {
+@media (max-width: 1903px) {
   .home-page__heading-section {
-    background: url("../../images/heading-section/bg-puddle-right-laptop.svg") top 0 right 0 no-repeat, url("../../images/heading-section/bg-puddle-left-laptop.svg") top 1017px left 0 no-repeat;
     padding: 113px 0 0;
+    background-image: url("../../images/heading-section/bg-heading-cup-desktop.png"), url("../../images/heading-section/bg-cup-shadow.svg"), url("../../images/heading-section/bg-heading-corns-desktop.png"), url("../../images/heading-section/bg-puddle-right-desktop.svg"), url("../../images/heading-section/bg-corns-left-desktop.png"), url("../../images/heading-section/bg-puddle-left-desktop.svg");
+    background-position: right calc(50% - 328px) top 266px, right calc(50% - 294px) top 311px, right calc(50% - 293px) top 192px, right calc(50% - 597px) top 0, left calc(50% - 952px) top 1547px, left calc(50% - 952px) top 1076px;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 744px 496px, 666px 494px, 900px 773px, 711px 1466px, 360px 694px, 454px 1380px;
   }
 }
-.home-page__heading-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("../../images/heading-section/bg-heading-corns-desktop.png") top 192px right 211px no-repeat, url("../../images/heading-section/bg-corns-left-desktop.png") top 1547px left 0 no-repeat;
-  z-index: -1;
-}
-@media (max-width: 1349px) {
-  .home-page__heading-section::before {
-    background: url("../../images/heading-section/bg-heading-corns-desktop.png") top 189px right 183px no-repeat, url("../../images/heading-section/bg-corns-left-desktop.png") top 1547px left 0 no-repeat;
+@media (max-width: 1348px) {
+  .home-page__heading-section {
+    padding: 143px 0 0;
+    background-image: url("../../images/heading-section/bg-heading-cup-desktop.png"), url("../../images/heading-section/bg-cup-shadow.svg"), url("../../images/heading-section/bg-heading-corns-desktop.png"), url("../../images/heading-section/bg-puddle-right-desktop.svg"), url("../../images/heading-section/bg-corns-left-desktop.png"), url("../../images/heading-section/bg-puddle-left-desktop.svg");
+    background-position: right calc(50% - 328px) top 266px, right calc(50% - 294px) top 311px, right calc(50% - 293px) top 192px, right calc(50% - 597px) top 0, left calc(50% - 952px) top 1547px, left calc(50% - 952px) top 1076px;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 744px 496px, 666px 494px, 900px 773px, 711px 1466px, 360px 694px, 454px 1380px;
   }
 }
-.home-page__heading-section::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("../../images/heading-section/bg-heading-cup-desktop.png") top 267px right 254px no-repeat;
-  z-index: 0;
+@media (max-width: 767px) {
+  .home-page__heading-section {
+    padding: 113px 0 0;
+    background-image: url("../../images/heading-section/bg-heading-cup-desktop.png"), url("../../images/heading-section/bg-cup-shadow.svg"), url("../../images/heading-section/bg-heading-corns-desktop.png"), url("../../images/heading-section/bg-puddle-right-desktop.svg"), url("../../images/heading-section/bg-corns-left-desktop.png"), url("../../images/heading-section/bg-puddle-left-desktop.svg");
+    background-position: right calc(50% - 328px) top 266px, right calc(50% - 294px) top 311px, right calc(50% - 293px) top 192px, right calc(50% - 597px) top 0, left calc(50% - 952px) top 1547px, left calc(50% - 952px) top 1076px;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 744px 496px, 666px 494px, 900px 773px, 711px 1466px, 360px 694px, 454px 1380px;
+  }
 }
 
 .header {
@@ -623,6 +621,7 @@ a {
   position: fixed;
   z-index: 3;
   background: transparent;
+  width: 100%;
 }
 .header__wrapper {
   display: grid;
@@ -641,19 +640,19 @@ a {
   width: 260px;
   height: 116px;
 }
-@media (max-width: 1349px) {
+@media (max-width: 1903px) {
   .header__logo-img {
     width: 179px;
     height: 80px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1348px) {
   .header__logo-img {
     width: 225px;
     height: 102px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .header__logo-img {
     width: 110px;
     height: 50px;
@@ -683,19 +682,19 @@ a {
   width: 32px;
   height: 31px;
 }
-@media (max-width: 1349px) {
+@media (max-width: 1903px) {
   .header__search-icon {
     width: 22px;
     height: 22px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1348px) {
   .header__search-icon {
     width: 34px;
     height: 34px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .header__search-icon {
     width: 17px;
     height: 17px;
@@ -705,19 +704,19 @@ a {
   width: 33px;
   height: 31px;
 }
-@media (max-width: 1349px) {
+@media (max-width: 1903px) {
   .header__basket-icon {
     width: 22px;
     height: 22px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1348px) {
   .header__basket-icon {
     width: 38px;
     height: 34px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .header__basket-icon {
     width: 19px;
     height: 17px;
@@ -727,19 +726,19 @@ a {
   width: 29px;
   height: 32px;
 }
-@media (max-width: 1349px) {
+@media (max-width: 1903px) {
   .header__user-icon {
     width: 22px;
     height: 22px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1348px) {
   .header__user-icon {
     width: 34px;
     height: 40px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .header__user-icon {
     width: 17px;
     height: 20px;
