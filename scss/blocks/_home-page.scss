@@ -1,111 +1,75 @@
 .home-page {
 
   &__heading-section {
+    position: relative;
+    overflow: hidden;
     width: 100%;
     flex-grow: 1;
     padding: 160px 0 0;
     margin: 0;
-    background-image: 
-      url('../../images/heading-section/bg-heading-cup-desktop.png'),
-      url('../../images/heading-section/bg-cup-shadow.svg'),
-      url('../../images/heading-section/bg-heading-corns-desktop.png'),
-      url('../../images/heading-section/bg-puddle-right-desktop.svg'),
-      url('../../images/heading-section/bg-corns-left-desktop.png'),
-      url('../../images/heading-section/bg-puddle-left-desktop.svg');
-    background-position: 
-      right 254px top 266px,
-      right 294px top 311px,
-      right 211px top 192px,
-      right 0 top 0,
-      left 0 top 1537px,
-      left 0 top 1018px;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-    background-size:
-      744px 496px, 
-      666px 494px,
-      900px 773px,
-      711px 1466px,
-      360px 694px,
-      454px 1380px;
+  }
+
+  &__svg-puddle {
+    color: $color-ucla-gold;
+    position: absolute;
+    z-index: -3;
+  }
+
+
+  &__svg-puddle--right {
+    width: 1366px; 
+    height: 1690px; 
+    left: calc(50% + 265px);
+    top: -155px;
+    transform: rotate(10.63deg);
+  }
+
+  &__svg-puddle--left {
+    width: 1191px; 
+    height: 1349px; 
+    left: calc(50% - 1698px);
+    top: 1022px;
+    transform: rotate(-173.67deg);
+  }
+
+  &__bg-img {
+    z-index: -2;
+    position: absolute;
+  }
+
+  &__bg-img--heading-corns {
+    width: 900px;
+    height: 773px;
+    top: 192px;
+    left: calc(50% - 158px)
+  }
+
+  &__bg-img--left-corns {
+    width: 674px;
+    height: 674px;
+    top: 1547px;
+    left: calc(50% - 1276px);
+    filter: blur(5px);
+  }
+
+  &__bg-img--cup {
+    width: 744px;
+    height: 496px;
+    z-index: 0;
+    left: calc(50% - 46px);
+    top: 267px;
+  }
+
+  &__bg-shadow {
+    content: "";
+    position: absolute;
+    width: 666px;
+    height: 494px;
+    left: calc(50% + 8px);
+    top: 311px;
+    z-index: -1;
     
-    @include vp-laptop {
-      padding: 113px 0 0; 
-      background-image: 
-        url('../../images/heading-section/bg-heading-cup-desktop.png'),
-        url('../../images/heading-section/bg-cup-shadow.svg'),
-        url('../../images/heading-section/bg-heading-corns-desktop.png'),
-        url('../../images/heading-section/bg-puddle-right-desktop.svg'),
-        url('../../images/heading-section/bg-corns-left-desktop.png'),
-        url('../../images/heading-section/bg-puddle-left-desktop.svg');
-      background-position: 
-        right calc(50% - 328px) top 266px,
-        right calc(50% - 294px) top 311px,
-        right calc(50% - 293px) top 192px,
-        right calc(50% - 597px) top 0,
-        left calc(50% - 952px) top 1547px,
-        left calc(50% - 952px) top 1076px;
-      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-      background-size:
-        744px 496px, 
-        666px 494px,
-        900px 773px,
-        711px 1466px,
-        360px 694px,
-        454px 1380px;
-    }
-    
-
-    @include vp-tablet {
-      padding: 143px 0 0; 
-      background-image: 
-        url('../../images/heading-section/bg-heading-cup-desktop.png'),
-        url('../../images/heading-section/bg-cup-shadow.svg'),
-        url('../../images/heading-section/bg-heading-corns-desktop.png'),
-        url('../../images/heading-section/bg-puddle-right-desktop.svg'),
-        url('../../images/heading-section/bg-corns-left-desktop.png'),
-        url('../../images/heading-section/bg-puddle-left-desktop.svg');
-      background-position: 
-        right calc(50% - 328px) top 266px,
-        right calc(50% - 294px) top 311px,
-        right calc(50% - 293px) top 192px,
-        right calc(50% - 597px) top 0,
-        left calc(50% - 952px) top 1547px,
-        left calc(50% - 952px) top 1076px;
-      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-      background-size:
-        744px 496px, 
-        666px 494px,
-        900px 773px,
-        711px 1466px,
-        360px 694px,
-        454px 1380px;
-    }
-
-
-    @include vp-mobile {
-      padding: 113px 0 0; 
-      background-image: 
-        url('../../images/heading-section/bg-heading-cup-desktop.png'),
-        url('../../images/heading-section/bg-cup-shadow.svg'),
-        url('../../images/heading-section/bg-heading-corns-desktop.png'),
-        url('../../images/heading-section/bg-puddle-right-desktop.svg'),
-        url('../../images/heading-section/bg-corns-left-desktop.png'),
-        url('../../images/heading-section/bg-puddle-left-desktop.svg');
-      background-position: 
-        right calc(50% - 328px) top 266px,
-        right calc(50% - 294px) top 311px,
-        right calc(50% - 293px) top 192px,
-        right calc(50% - 597px) top 0,
-        left calc(50% - 952px) top 1547px,
-        left calc(50% - 952px) top 1076px;
-      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-      background-size:
-        744px 496px, 
-        666px 494px,
-        900px 773px,
-        711px 1466px,
-        360px 694px,
-        454px 1380px;
-    }
+    background: $color-onyx-15;
+    filter: blur(50px);  
   }
 }
