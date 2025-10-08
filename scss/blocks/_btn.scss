@@ -36,6 +36,16 @@
   }
 }
 
+.btn-icon--close {
+  width: 44px;
+  height: 44px;
+
+  @include vp-mobile {
+    width: 22px;
+    height: 22px;
+  }
+}
+
 .btn-linked {
   display: flex;
   align-items: center;
