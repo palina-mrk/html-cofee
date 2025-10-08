@@ -114,17 +114,17 @@
 
         <div class="container">
           <div class="overview__hero-wrapper">
-            <ul class="slider-list">
-              <li class="slider-point slider-point--brown"></li>
-              <li class="slider-point-item"></li>
-              <li class="slider-point-item"></li>
+            <ul class="overview__slider slider-large">
+              <li class="slider-large__point slider-large__point--brown "></li>
+              <li class="slider-large__point"></li>
+              <li class="slider-large__point"></li>
             </ul>
             <h1 class="overview__hero-title font__main-title">Свежеобжаренный кофе</h1>
               <div class="overview__hero-content">
                 <p class="overview__hero-paragraph font__paragraph">Кофе Калининградской обжарки из&nbsp;разных стран произрастания с&nbsp;доставкой на&nbsp;дом.</p>
                 <p class="overview__hero-paragraph font__paragraph">Мы&nbsp;обжариваем кофе <span class="font__accented--bold">каждые выходные.</span></p>
               </div>
-              <a class="overview__hero-button btn btn--gold" href="#">Посмотреть каталог</a>
+              <a class="overview__hero-button btn" href="#">Посмотреть каталог</a>
           </div>
         </div>
         <div class="container">
@@ -133,46 +133,54 @@
               <ul class="overview__catalogs-list">
                 <li class="overview__catalogs-item">
                   <div class="catalog-card">
-                    <picture>
-                      <source media="(max-width: 767px)" srcset="./images/catalog-card/catalog-coffee-mobile.png">
-                      <source media="(max-width: 1348px)" srcset="../images/catalog-card/catalog-coffee-tablet.png">
-                      <source media="(max-width: 1903px)" srcset="./images/catalog-card/catalog-coffee-laptop.png">
-                      <img class="catalog-card__image" src="./images/catalog-card/catalog-coffee-desktop.png" width="295" height="212" alt="Карточка каталога кофе">
-                    </picture>
+                    <div class="catalog-card__image-wrapper">
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="./images/catalog-card/catalog-coffee-mobile.png">
+                        <source media="(max-width: 1348px)" srcset="../images/catalog-card/catalog-coffee-tablet.png">
+                        <source media="(max-width: 1903px)" srcset="./images/catalog-card/catalog-coffee-laptop.png">
+                        <img class="catalog-card__image" src="./images/catalog-card/catalog-coffee-desktop.png" width="295" height="212" alt="Карточка каталога кофе">
+                      </picture>
+                    </div>
                     <h3 class="catalog-card__title">Свежеобжаренный кофе</h3>
-                    <a class="catalog-card__button btn btn--gold" href="#">Купить</a>
+                    <a class="catalog-card__button btn btn--size-m" href="#">Купить</a>
                   </div>
                 </li>
                 <li>
                   <div class="catalog-card">
-                    <picture>
-                      <source media="(max-width: 767px)" srcset="./images/catalog-card/catalog-tea-mobile.png">
-                      <source media="(max-width: 1348px)" srcset="../images/catalog-card/catalog-tea-tablet.png">
-                      <source media="(max-width: 1903px)" srcset="./images/catalog-card/catalog-tea-laptop.png">
-                      <img class="catalog-card__image" src="./images/catalog-card/catalog-tea-desktop.png" width="260" height="116" alt="Карточка каталога чая">
-                    </picture>
+                    <div class="catalog-card__image-wrapper">
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="./images/catalog-card/catalog-tea-mobile.png">
+                        <source media="(max-width: 1348px)" srcset="../images/catalog-card/catalog-tea-tablet.png">
+                        <source media="(max-width: 1903px)" srcset="./images/catalog-card/catalog-tea-laptop.png">
+                        <img class="catalog-card__image" src="./images/catalog-card/catalog-tea-desktop.png" width="260" height="116" alt="Карточка каталога чая">
+                      </picture>
+                    </div>
                     <h3 class="catalog-card__title">Чай и&nbsp;кофейные напитки</h3>
-                    <a class="catalog-card__button btn btn--gold" href="#">Купить</a>
+                    <a class="catalog-card__button btn btn--size-m" href="#">Купить</a>
                   </div>
                 </li>
                 <li>
                   <div class="catalog-card">
-                    <picture>
-                      <source media="(max-width: 1903px)" srcset="./images/catalog-card/catalog-vending-laptop.png">
-                      <img class="home-page__catalog-image" src="./images/catalog-card/catalog-vending-desktop.png" width="276" height="253" alt="Карточка каталога кофе">
-                    </picture>
+                    <div class="catalog-card__image-wrapper">
+                      <picture>
+                        <source media="(max-width: 1903px)" srcset="./images/catalog-card/catalog-vending-laptop.png">
+                        <img class="home-page__catalog-image" src="./images/catalog-card/catalog-vending-desktop.png" width="276" height="253" alt="Карточка каталога кофе">
+                      </picture>
+                    </div>
                     <h3 class="catalog-card__title">Продукция для вендинга</h3>
-                    <a class="catalog-card__button btn btn--gold" href="#">Купить</a>
+                    <a class="catalog-card__button btn btn--size-m" href="#">Купить</a>
                   </div>
                 </li>
                 <li>
                   <div class="catalog-card">
-                    <picture>
-                      <source media="(max-width: 1903px)" srcset="./images/catalog-card/catalog-healthy-laptop.png">
-                      <img class="catalog-card__image" src="./images/catalog-card/catalog-healthy-desktop.png" width="266" height="186" alt="Карточка каталога кофе">
-                    </picture>
+                    <div class="catalog-card__image-wrapper">
+                      <picture>
+                        <source media="(max-width: 1903px)" srcset="./images/catalog-card/catalog-healthy-laptop.png">
+                        <img class="catalog-card__image" src="./images/catalog-card/catalog-healthy-desktop.png" width="266" height="186" alt="Карточка каталога кофе">
+                      </picture>
+                    </div>
                     <h3 class="catalog-card__title">Здоровое питание</h3>
-                    <a class="catalog-card__button btn btn--gold" href="#">Купить</a>
+                    <a class="catalog-card__button btn btn--size-m" href="#">Купить</a>
                   </div>
                 </li>
               </ul>

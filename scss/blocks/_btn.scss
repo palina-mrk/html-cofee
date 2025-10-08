@@ -68,3 +68,29 @@
     background-color: $color-bright-gray;
   }
 }
+
+.btn {
+  padding: 26px 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-white;
+  background-color: $color-ucla-gold;
+  font-weight: 700;
+  line-height: 1;
+  font-size: 30px;
+  font-family: $ff-gilroy;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $color-mustard-yellow;
+  }
+}
+
+.btn--size-m {
+  padding: 15px;
+}
+
+.btn--size-s {
+  padding: 13px;
+}
