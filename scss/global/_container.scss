@@ -1,6 +1,5 @@
 .container {
   width: 100%;
-  box-sizing: border-box;
   max-width: $max-width-desktop;
   margin: 0 auto;
   padding: 0 20px;
@@ -11,10 +10,12 @@
 
   @include vp-tablet {
     max-width: $max-width-tablet;
+    padding: 0 14px;
   }
 
   @include vp-mobile {
     max-width: $max-width-mobile;
+    padding: 0 7px;
   }
 }
 

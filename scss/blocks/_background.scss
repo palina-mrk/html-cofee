@@ -1,25 +1,4 @@
-.home-page {
-
-  &__heading-section {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    flex-grow: 1;
-    padding: 160px 0 0;
-    margin: 0;
-
-    @include vp-laptop {
-      padding: 113px 0 0;
-    }
-
-    @include vp-tablet {
-      padding: 143px 0 0;
-    }
-
-    @include vp-mobile {
-      padding: 70px 0 0;
-    }
-  }
+.background {
 
   &__svg-puddle {
     color: $color-ucla-gold;
@@ -28,17 +7,18 @@
   }
 
   &__svg-puddle--right {
-    width: 1366px; 
-    height: 1690px; 
-    left: calc(50% + 250px);
-    top: -160px;
-    rotate: 11deg;
+    width: 1550px; 
+    height: 1950px; 
+    left: calc(50% + 260px);
+    top: -370px;
+    rotate: 8deg;
 
     @include vp-laptop {
-      width: 968px; 
-      height: 1197px; 
-      left: calc(50% + 187px);
-      top: -112px;
+      width: 1168px; 
+      height: 1250px; 
+      left: calc(50% + 155px);
+      top: -202px;
+      rotate: 9deg;
     }
 
     @include vp-tablet {
@@ -88,12 +68,12 @@
     }
   }
 
-  &__bg-img {
+  &__img {
     z-index: -2;
     position: absolute;
   }
 
-  &__bg-img--heading-corns {
+  &__img--heading-corns {
     width: 900px;
     height: 773px;
     top: 192px;
@@ -121,7 +101,7 @@
     }
   }
 
-  &__bg-img--left-corns {
+  &__img--left-corns {
     width: 674px;
     height: 674px;
     top: 1547px;
@@ -153,7 +133,7 @@
     }
   }
 
-  &__bg-img--cup {
+  &__img--cup {
     width: 744px;
     height: 496px;
     z-index: 0;
@@ -182,7 +162,7 @@
     }
   }
 
-  &__bg-shadow {
+  &__cup-shadow {
     content: "";
     position: absolute;
     width: 666px;

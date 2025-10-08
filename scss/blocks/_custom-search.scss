@@ -1,29 +1,46 @@
 .custom-search {
+  display: flex;
+  width: 100%;
   position: relative;
-  max-width: 1240px;
-
-  @include vp-laptop {
-    max-width: 880px;
-  }
+  align-items: center;
+  justify-content: space-between;
 
   @include vp-tablet {
-    max-width: 580px;
+    padding-right: 120px;
   }
 
   @include vp-mobile {
-    max-width: 270px;
+    padding-right: 70px;
   }
 
   &__field {
-    font-family: inherit;
-    padding: 16px 16px 16px 82px;
-    box-shadow: 0px 0px 20px 0px rgba(157, 157, 157, 0.25);
+    margin: 0;
+    padding: 17px 22px 17px 82px;
+    box-shadow: 0px 0px 20px 0px $color-spanish-gray-25;
     width: 100%;
-    color: $color-verdun-green;
+    border: none;
+    border-radius: 30px;
+    font-family: $ff-gilroy;
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.3;
-    font-weight: 500;
-    font-family: $ff-gilroy;
+    color: $color-chinese-black;
+
+    @include vp-laptop {
+      padding: 11px 15px 11px 72px;
+      font-size: 16px;
+    }
+
+    @include vp-tablet {
+      padding: 22px 22px 22px 84px;
+      font-size: 20px;
+      border-radius: 20px;
+    }
+
+    @include vp-mobile {
+      padding: 8px 7px 7px 47px;
+      font-size: 12px;
+    }
   }
 
   &__field::placeholder {
@@ -31,10 +48,38 @@
   }
 
   &__icon {
+    width: 34px;
+    height: 34px;
     position: absolute;
-    left: 30px;
+    left: 28px;
     top: 50%;
     transform: translateY(-50%);
     color: $color-silver-sand;
+
+    @include vp-laptop {
+      width: 25px;
+      height: 25px;
+    }
+
+    @include vp-mobile {
+      width: 12px;
+      height: 12px;
+      left: 19px;
+    }
+  }
+
+  &__btn {
+    display: none;
+    position: absolute;
+
+    @include vp-tablet {
+      display: flex;
+      right: -24px;
+    }
+
+    @include vp-mobile {
+      right: -10px;
+      top: 3px;
+    }
   }
 }

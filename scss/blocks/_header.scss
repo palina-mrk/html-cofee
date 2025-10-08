@@ -1,19 +1,41 @@
 .header {
-  padding: 0;
+  padding: 22px 0;
   margin: 0;
   position: fixed;
   z-index: 3;
   background: transparent;
   width: 100%;
 
+  @include vp-laptop {
+    padding: 20px 0 13px;
+  }
+
+  @include vp-tablet {
+    padding: 20px 0 21px; 
+    box-shadow: 0px 5px 20px 0px rgba(157, 157, 157, 0.25);
+    background-color: $color-white;
+  }
+
+  @include vp-mobile {
+    padding: 9px 0 11px;
+  }
+
   &__wrapper{
-    display: grid;
-    grid-template-columns: 300px 1fr 300px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    position: relative;
   }
 
   &__burger {
     display: none;
+    color: $color-black;
+
+    @include vp-tablet {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+    }
   }
 
   &__logo-link {
@@ -42,14 +64,68 @@
     }
   }
 
+  &__nav {
+    display: flex;
+    align-items: center;
+    padding-top: 4px;
+    color: $color-black;
+
+    @include vp-tablet {
+      display: none;
+    }
+  }
+
+  &__search {
+    position: absolute;
+    left: 280px;
+    right: 140px;
+    top: calc(50% - 5px);
+    transform: translateY(-50%);
+    display: none;
+
+    @include vp-laptop {
+      left: 201px;
+      right: 99px;
+      top: 50%;
+    }
+
+    @include vp-tablet {
+      left: 0;
+      right: 0;
+      top: 40px;
+      transform: unset;
+    }
+
+    @include vp-mobile {
+      top: 20px;
+    }
+  }
+
   &__users-list {
-    margin: 0;
+    margin: 0 0 10px 58px;
     padding: 0;
     list-style-type: none;
     display: flex;
-    gap: 5px 53px;
+    gap: 5px 49px;
     justify-content: end;
     align-items: center;
+    color: $color-black;
+
+    @include vp-laptop {
+      margin: 0 0 0 35px;
+      gap: 5px 37px;   
+    }
+
+    @include vp-tablet {
+      margin: 0 0 10px 6px;
+      gap: 5px 54px;   
+      color: $color-raising-black;
+    }
+
+    @include vp-mobile {
+      margin: 0 0 3px 46px;
+      gap: 5px 25px;
+    }
   }
 
   &__users-link {
@@ -58,77 +134,111 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    z-index: 1;
 
     &:hover {
-      color: $color-ucla-gold;
+      color: $color-white;
+
+      @include vp-tablet {
+        color: $color-ucla-gold;
+      }
     }
   }
 
   &__search-icon {
-    width: 32px;
-    height: 31px;
+    width: 36px;
+    height: 36px;
 
     @include vp-laptop {
-      width: 22px;
-      height: 22px;
+      width: 24px;
+      height: 24px;
     }
 
     @include vp-tablet {
-      width: 34px;
-      height: 34px;
-    }
-
-    @include vp-mobile {
-      width: 17px;
-      height: 17px;
-    }
-  }
-
-  &__basket-icon {
-    width: 33px;
-    height: 31px;
-    
-    @include vp-laptop {
-      width: 22px;
-      height: 22px;
-    }
-
-    @include vp-tablet {
-      width: 38px;
-      height: 34px;
-    }
-
-    @include vp-mobile {
-      width: 19px;
-      height: 17px;
-    }
-  }
-
-  &__user-icon {
-    width: 29px;
-    height: 32px;
-    
-    @include vp-laptop {
-      width: 22px;
-      height: 22px;
-    }
-
-    @include vp-tablet {
-      width: 34px;
+      width: 40px;
       height: 40px;
     }
 
     @include vp-mobile {
-      width: 17px;
-      height: 20px;
+      width: 21px;
+      height: 22px;
+    }
+  }
+
+  &__basket-icon {
+    width: 37px;
+    height: 36px;
+    
+    @include vp-laptop {
+      width: 26px;
+      height: 24px;
+    }
+
+    @include vp-tablet {
+      width: 44px;
+      height: 40px;
+    }
+
+    @include vp-mobile {
+      width: 24px;
+      height: 19px;
+    }
+  }
+
+  &__user-icon {
+    width: 32px;
+    height: 37px;
+    
+    @include vp-laptop {
+      width: 24px;
+      height: 32px;
+    }
+
+    @include vp-tablet {
+      width: 38px;
+      height: 46px;
+    }
+
+    @include vp-mobile {
+      width: 18px;
+      height: 23px;
     }
   }
 }
 
 .header--search {
   box-shadow: 0px 5px 20px 0px rgba(157, 157, 157, 0.25);
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 5px 20px;
+  background-color: $color-white;
+
+  @include vp-tablet {
+    height: 100%;
+  }
+
+  .header__burger {
+    display: none;
+  }
+
+  .header__logo-link {
+    @include vp-tablet {
+      display: none;
+    }
+  }
+
+  .header__users-link:hover {
+    color: $color-ucla-gold;
+  }
+
+  .header__search-icon,
+  .header__nav {
+    display: none;
+  }
+
+  .header__users-list {
+    @include vp-tablet {
+      display: none;
+    }
+  }
+
+  .header__search {
+    display: flex;
+  }
 }

@@ -1,0 +1,20 @@
+.overview {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  flex-grow: 1;
+  padding: 160px 0 0;
+  margin: 0;
+
+  @include vp-laptop {
+    padding: 113px 0 0;
+  }
+
+  @include vp-tablet {
+    padding: 143px 0 0;
+  }
+
+  @include vp-mobile {
+    padding: 70px 0 0;
+  }
+}
