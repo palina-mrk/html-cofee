@@ -1,0 +1,17 @@
+.slider-corns {
+  display: flex;
+  gap: 8px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    color: $color-dark-liver;
+    display: flex;
+  } 
+
+  &__svg {
+    width: 19px;
+    height: 19px;
+  }
+}

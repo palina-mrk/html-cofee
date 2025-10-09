@@ -5,6 +5,9 @@
   flex-grow: 1;
   padding: 160px 0 0;
   margin: 0;
+  color: $color-black;
+  font-family: $ff-gilroy sans-serif;
+  font-weight: 500;
 
   @include vp-laptop {
     padding: 113px 0 0;
@@ -19,7 +22,7 @@
   }
 
   &__hero-wrapper {
-    padding: 70px 0 218px;
+    padding: 70px 0 212px;
     width: 100%;
     display: flex;
     align-items: start;
@@ -29,30 +32,43 @@
 
   &__slider {
     align-self: end;
-    margin: 0 0 45px;
+    margin: 0 0 36px;
   }
 
   &__hero-title {
-    margin: 0 0 68px;
+    margin: 0 0 58px;
     padding: 0;
     max-width: 960px;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 100px;
   }
 
   &__hero-content {
-    margin: 0 0 84px;
+    margin: 0 0 86px;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 31px;
     max-width: 650px;
   }
 
   &__hero-paragraph {
     margin: 0;
     padding: 0;
+    font-size: 25px;
+    line-height: 1.3;
+
+    &--accented-word {
+      font-weight: 600;
+    }
+  }
+
+  &__hero-button {
+    width: 400px;
   }
 
   &__catalogs-wrapper {
-    padding: 70px 0 20px;
+    padding: 70px 0 24px;
     width: 100%;
     display: flex;
     align-items: start;
@@ -61,8 +77,12 @@
   }
 
   &__catalogs-title {
-    margin: 0 0 83px;
+    margin: 0 0 78px;
     padding: 0;
+    font-family: $ff-gilroy;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 62px;
   }
 
   &__catalogs-list {
@@ -77,20 +97,64 @@
   &__catalogs-item {
     padding: 0;
     margin: 0;
-    width: calc(25% - 15px);
+    max-width: calc(25% - 15px);
+    display: flex;
   }
 
   &__products-wrapper {
     padding: 70px 0 20px;
     width: 100%;
     display: flex;
-    align-items: end;
-    justify-content: end;
+    align-items: flex-end;
     flex-direction: column;
+  }
+
+  &__products-title {
+    text-align: right;
+    margin: 0 0 47px;
+    padding: 0;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 62px;
   }
 
   &__products-paragraph {
     text-align: right;
-    max-width: 1100px;
+    max-width: 1120px;
+    margin: 0 0 75px;
+    padding: 0;
+    font-size: 25px;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__products-cards {
+    display: flex;
+    margin: 0 0 0 auto;
+    align-items: center;
+  }
+
+  &__products-prev,
+  &__products-next {
+    margin: 0 0 52px;
+    padding: 0;
+  }
+
+  &__products-list {
+    display: flex;
+    margin: 0 70px;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__products-item {
+    padding: 0;
+    margin: 0;
+    max-width: calc(33.33% - 13.33px);
+    display: flex;
   }
 }

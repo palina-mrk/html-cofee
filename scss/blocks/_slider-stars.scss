@@ -1,0 +1,21 @@
+.slider-stars {
+  display: flex;
+  gap: 2px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    color: $color-antiflash-white;
+    display: flex;
+  } 
+
+  &__svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  &__item--selected {
+    color: $color-ucla-gold;
+  }
+}

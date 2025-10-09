@@ -15,7 +15,7 @@
 
   &__field {
     margin: 0;
-    padding: 17px 22px 17px 82px;
+    padding: 19px 22px 15px 82px;
     box-shadow: 0px 0px 20px 0px $color-spanish-gray-25;
     width: 100%;
     border: none;
@@ -27,7 +27,7 @@
     color: $color-chinese-black;
 
     @include vp-laptop {
-      padding: 11px 15px 11px 72px;
+      padding: 13px 15px 7px 72px;
       font-size: 16px;
     }
 
@@ -38,13 +38,13 @@
     }
 
     @include vp-mobile {
-      padding: 8px 7px 7px 47px;
+      padding: 9px 7px 5px 47px;
       font-size: 12px;
     }
   }
 
   &__field::placeholder {
-    color: $color-silver-sand;
+    color: $color-silver-sand-c4;
   }
 
   &__icon {
@@ -54,7 +54,7 @@
     left: 28px;
     top: 50%;
     transform: translateY(-50%);
-    color: $color-silver-sand;
+    color: $color-silver-sand-c4;
 
     @include vp-laptop {
       width: 25px;
@@ -75,11 +75,12 @@
     @include vp-tablet {
       display: flex;
       right: -24px;
+      top: 14px;
     }
 
     @include vp-mobile {
       right: -10px;
-      top: 3px;
+      top: 5px;
     }
   }
 }

@@ -79,7 +79,7 @@
     position: absolute;
     left: 280px;
     right: 140px;
-    top: calc(50% - 5px);
+    top: calc(50% - 4px);
     transform: translateY(-50%);
     display: none;
 
@@ -97,7 +97,7 @@
     }
 
     @include vp-mobile {
-      top: 20px;
+      top: 21px;
     }
   }
 
@@ -305,16 +305,16 @@
   }
 
   .header__logo-link {
-    margin-bottom: 173px;
+    margin-bottom: 171px;
 
     @include vp-mobile {
-      margin-bottom: 82px;
+      margin-bottom: 80px;
     }
   }
 
   .header__nav {
     display: flex;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
 
     @include vp-mobile {
       margin-bottom: 36px;
@@ -343,8 +343,13 @@
   .header__icon {
     display: flex;
     position: absolute;
-    top: 13px;
-    right: 12px;
+    top: 28px;
+    right: 24px;
+
+    @include vp-mobile {
+      top: 13px;
+      right: 12px;
+    }
   }
 
   .header__contacts {

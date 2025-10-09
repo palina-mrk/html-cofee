@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -46,6 +47,28 @@
   }
 }
 
+.btn-icon--arrow {
+  color: $color-white;
+  background-color: $color-ucla-gold;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+
+  &:hover {
+    background-color: $color-mustard-yellow;
+  }
+
+  .btn-icon__svg {
+    width: 34px;
+    height: 17px;
+
+    @include vp-mobile {
+      width: 29px;
+      height: 17px;
+    }
+  }
+}
+
 .btn-linked {
   display: flex;
   align-items: center;
@@ -70,27 +93,36 @@
 }
 
 .btn {
-  padding: 26px 57px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: $color-white;
   background-color: $color-ucla-gold;
   font-weight: 700;
-  line-height: 1;
+  line-height: 36px;
   font-size: 30px;
   font-family: $ff-gilroy;
   border-radius: 5px;
+  border: none;
+  margin: 0;
+
+  &--size-xl {
+    padding: 24px 24px 20px;
+  }
+
+  &--size-m {
+    font-size: 25px;
+    line-height: 30px;
+    padding: 18px 17px 12px;
+  }
+
+  &--size-s {
+    padding: 13px;
+    font-size: 18px;
+    line-height: 22px;
+  }
 
   &:hover {
     background-color: $color-mustard-yellow;
   }
-}
-
-.btn--size-m {
-  padding: 15px;
-}
-
-.btn--size-s {
-  padding: 13px;
 }
