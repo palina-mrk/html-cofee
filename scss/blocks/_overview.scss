@@ -1,13 +1,12 @@
 .overview {
   position: relative;
-  overflow: hidden;
   width: 100%;
-  flex-grow: 1;
-  padding: 160px 0 0;
+  padding: 160px 0 17px;
   margin: 0;
   color: $color-black;
   font-family: $ff-gilroy sans-serif;
   font-weight: 500;
+  overflow: hidden;
 
   @include vp-laptop {
     padding: 113px 0 0;
@@ -102,7 +101,7 @@
   }
 
   &__products-wrapper {
-    padding: 70px 0 20px;
+    padding: 70px 0 0;
     width: 100%;
     display: flex;
     align-items: flex-end;
@@ -132,7 +131,7 @@
 
   &__products-cards {
     display: flex;
-    margin: 0 0 0 auto;
+    margin: 0 0 52px auto;
     align-items: center;
   }
 
@@ -156,5 +155,9 @@
     margin: 0;
     max-width: calc(33.33% - 13.33px);
     display: flex;
+  }
+
+  &__products-link {
+    margin: 0 112px 0 auto;
   }
 }

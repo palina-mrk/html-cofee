@@ -22,41 +22,43 @@
   &::hover {
     color: $color-ucla-gold;
   }
-}
 
-.btn-icon--burger {
+
+  &--burger {
   
-  .btn-icon__svg {
-    width: 59px;
-    height: 36px;
+    .btn-icon__svg {
+      width: 59px;
+      height: 36px;
 
-    @include vp-mobile {
-      width: 29px;
-      height: 17px;
+      @include vp-mobile {
+        width: 29px;
+        height: 17px;
+      }
     }
   }
-}
 
-.btn-icon--close {
-  width: 44px;
-  height: 44px;
+  &--close {
+    width: 44px;
+    height: 44px;
 
-  @include vp-mobile {
-    width: 22px;
-    height: 22px;
+    @include vp-mobile {
+      width: 22px;
+      height: 22px;
+    }
   }
-}
 
-.btn-icon--arrow {
-  color: $color-white;
-  background-color: $color-ucla-gold;
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  &--arrow {
+    color: $color-white;
+    background-color: $color-ucla-gold;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
 
-  &:hover {
-    background-color: $color-mustard-yellow;
+    &:hover {
+      background-color: $color-mustard-yellow;
+    }
   }
+
 
   .btn-icon__svg {
     width: 34px;
@@ -89,6 +91,18 @@
   
   &:hover {
     background-color: $color-bright-gray;
+  }
+
+  &--black {
+    line-height: 24px;
+    color: $color-black;
+    text-decoration: underline;
+    padding: 10px 30px 11px;
+
+    &:hover {
+      background-color: $color-ghost-white;
+      color: $color-ucla-gold;
+    }
   }
 }
 
