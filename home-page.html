@@ -978,17 +978,41 @@
     </main>
 
     <footer class="footer">
+
+      <div class="background__div background__div--footer-wall"></div>
+
+      <svg class="background__svg-vawe background__svg-vawe--footer" width="2627" height="288" aria-hidden="true">
+        <use xlink:href="../../images/background/bg-sprite.svg#bg-footer-vawe"></use>
+      </svg>
+
+      <picture>
+        <source media="(max-width: 767px)" srcset="../../images/background/bg-heading-corns-mobile.png">
+        <source media="(max-width: 1348px)" srcset="../../images/background/bg-heading-corns-tablet.png">
+        <source media="(max-width: 1903px)" srcset="../../images/background/bg-heading-corns-laptop.png">
+        <img class="background__img background__img--footer-corns" src="../../images/background/bg-footer-corns-desktop.png" width="769" height="659" alt="Зёрна кофе под чашкой">
+      </picture>
+
+      <picture>
+        <source media="(max-width: 767px)" srcset="../../images/background/bg-heading-cup-mobile.png">
+        <source media="(max-width: 1348px)" srcset="../../images/background/bg-heading-cup-tablet.png">
+        <source media="(max-width: 1903px)" srcset="../../images/background/bg-heading-cup-laptop.png">
+        <img class="background__img background__img--footer-cup" src="../../images/background/bg-heading-cup-desktop.png" width="682" height="455" alt="Чашка кофе">
+      </picture>
+
+
       <div class="container">
-        <div class="footer__subscribe-wrapper">
+        <div class="footer__subscribe">
           <h2 class="footer__subscribe-title">Подписка на&nbsp;новости и&nbsp;рассылку</h2>
           <p class="footer__subscribe-paragraph">Подпишитесь на&nbsp;нашу рассылку прямо сейчас и&nbsp;будьте в&nbsp;курсе новых поставок, скидок и&nbsp;эксклюзивных предложений.</p>
-          <div class="footer__subscribe-input">
-            <input class="footer__subscribe-field" type="email" name="email-subscribe">
-            <button class="footer__subscribe-button" type="button">Подписаться</button>
-          </div>
-          <p class="footer__subscribe-agree">Нажимая на&nbsp;кнопку &laquo;Подписаться&raquo;, вы&nbsp;принимаете правила <span class="footer__subscribe-link">пользовательского соглашения</span></p>
+          <form class="footer__subscribe-form" method="POST" action="#">
+            <div class="custom-subscribe">
+              <input class="custom-subscribe__field" type="email" name="subscribe-email">
+              <button class="custom-subscribe__button" type="button">Подписаться</button>
+            </div>
+            <p class="custom-subscribe__agree">Нажимая на&nbsp;кнопку &laquo;Подписаться&raquo;, вы&nbsp;принимаете правила <span class="custom-subscribe__link">пользовательского соглашения</span></p>
+          </form>
         </div>
-        <div class="footer__bottom">
+        <div class="footer__nav-wrapper">
           <a class="footer__logo-link" href="#" aria-label="Ссылка на главную страницу">
             <picture>
               <source media="(max-width: 767px)" srcset="./images/header/logo/image-logo-mobile.png">

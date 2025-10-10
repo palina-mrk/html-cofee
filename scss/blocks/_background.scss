@@ -3,7 +3,7 @@
   &__svg-puddle {
     color: $color-ucla-gold;
     position: absolute;
-    z-index: -5;
+    z-index: -6;
   }
 
   &__svg-puddle--right {
@@ -69,7 +69,7 @@
   }
 
   &__img {
-    z-index: -4;
+    z-index: -6;
     position: absolute;
   }
 
@@ -166,10 +166,11 @@
     position: absolute;
     left: 0;
     right: 0;
-    z-index: -2;
+    z-index: -6;
   }
 
   &__div--cup-shadow {
+    z-index: -1;
     width: 666px;
     height: 494px;
     left: calc(50% + 8px);
@@ -192,7 +193,7 @@
 
   &__svg-vawe {
     position: absolute;
-    z-index: -1;
+    z-index: -4;
     left: 0;
     right: 0;
     width: 100%;
@@ -224,9 +225,8 @@
   }
 
   &__div--technology-shadow {
-    left: 0;
+    z-index: -4;
     top: 10px;
-    right: 0;
     bottom: 0;
     background: $color-black-302;
   }
@@ -265,7 +265,78 @@
 
   &__div--instagram-bottom-wall {
     top: 685px;
-    bottom: 0;
+    bottom: -1px;
     background-color: $color-ucla-gold;
   }
+
+  &__div--footer-wall {
+    top: -1px;
+    height: 125px;
+    background-color: $color-ucla-gold;
+  }
+
+  &__svg-vawe--footer {
+    z-index: -6;
+    height: 288px;
+    top: 118px;
+    color: $color-ucla-gold;
+  }
+
+  &__img--footer-corns {
+    width: 769;
+    height: 659px;
+    top: -25px;
+    left: calc(50% + 253px);
+
+    @include vp-laptop {
+      width: 477px;
+      height: 477px;
+      left: calc(50% - 904px);
+      top: 1096px;
+    }
+
+    @include vp-tablet {
+      width: 509px;
+      height: 509px;
+      left: calc(50% - 625px);
+      top: 1672px;
+    }
+
+    @include vp-mobile {
+      width: 249px;
+      height: 249px;
+      left: calc(50% - 306px);
+      top: 1056px;
+    }
+  }
+
+  &__img--footer-cup {
+    width: 682px;
+    height: 455px;
+    left: calc(50% + 311px);
+    top: 68px;
+    z-index: -2;
+
+    @include vp-laptop {
+      width: 525px;
+      height: 350px;
+      left: calc(50% - 34px);
+      top: 9px;      
+    }
+
+    @include vp-tablet {
+      width: 524px;
+      height: 393px;
+      left: calc(50% - 140px);
+      top: 446px;
+    }
+
+    @include vp-mobile {
+      width: 363px;
+      height: 243px;
+      left: calc(50% - 59px);
+      top: 267px;
+    }
+  }
+
 }
