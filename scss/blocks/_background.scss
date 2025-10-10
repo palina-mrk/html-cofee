@@ -3,7 +3,7 @@
   &__svg-puddle {
     color: $color-ucla-gold;
     position: absolute;
-    z-index: -3;
+    z-index: -5;
   }
 
   &__svg-puddle--right {
@@ -69,7 +69,7 @@
   }
 
   &__img {
-    z-index: -2;
+    z-index: -4;
     position: absolute;
   }
 
@@ -136,7 +136,7 @@
   &__img--cup {
     width: 744px;
     height: 496px;
-    z-index: 0;
+    z-index: -3;
     left: calc(50% - 46px);
     top: 267px;
 
@@ -162,14 +162,16 @@
     }
   }
 
-  &__cup-shadow {
-    content: "";
+  &__div {
     position: absolute;
+    z-index: -2;
+  }
+
+  &__div--cup-shadow {
     width: 666px;
     height: 494px;
     left: calc(50% + 8px);
     top: 311px;
-    z-index: -1;    
     background: $color-onyx-15;
     filter: blur(50px);  
 
@@ -186,33 +188,67 @@
     }
   }
 
-  &__svg-advantages-vawe {
+  &__svg-vawe {
     position: absolute;
-    z-index: -3;
-    width: 2627px;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  &__svg-vawe--advantages {
     height: 288px;
     top: -42px;
-    left: calc(50% - 1310px);
     color: $color-cornsilk;
   }
 
-  &__advantages-wall {
-    position: absolute;
-    z-index: -3;
+  &__div--advantages-wall {
     left: 0;
     right: 0;
     top: 240px;
-    bottom: 0;
+    bottom: 0px;
     background-color: $color-cornsilk;
   }
 
-  &__svg-technology-vawe {
-    position: absolute;
-    z-index: -3;
-    width: 2627px;
+  &__svg-vawe--technology-first {
     height: 288px;
-    top: 0;
-    left: calc(50% - 1428px);
+    top: -2px;
     color: $color-cornsilk;
+  }
+
+  &__img--technology {
+    bottom: 0;
+    top: 10px;
+    left: 0;
+    width: 100%;
+  }
+
+  &__div--technology-shadow {
+    left: 0;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    background: $color-black-302;
+  }
+
+  &__svg-vawe--technology-second {
+    height: 298px;
+    bottom: 0;
+    color: $color-white;
+  }
+
+  &__svg-vawe--news {
+    height: 298px;
+    top: 0;
+    color: $color-cornsilk;
+    background-color: $color-white;
+  }
+
+  &__div--news-wall {
+    left: 0;
+    top: 297px;
+    right: 0;
+    bottom: 0;
+    background-color: $color-cornsilk;
   }
 }

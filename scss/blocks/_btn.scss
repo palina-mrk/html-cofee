@@ -75,6 +75,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
   color: $color-ucla-gold;
   font-family: $ff-gilroy;
   font-weight: 500;
@@ -83,6 +84,11 @@
   padding: 10px 24px;
   border-radius: 30px;
   user-select: none;
+
+  &__icon {
+    width: 16px;
+    height: 11px;
+  }
 
   @include vp-mobile {
     font-size: 12px;
@@ -103,6 +109,11 @@
       background-color: $color-ghost-white;
       color: $color-ucla-gold;
     }
+  }
+
+  &--size-m {
+    font-size: 25px;
+    padding: 11px 29px 10px;
   }
 }
 

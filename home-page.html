@@ -110,7 +110,7 @@
           <img class="background__img background__img--cup" src="../../images/background/bg-heading-cup-desktop.png" width="744" height="496" alt="Чашка кофе">
         </picture>
 
-        <div class="background__cup-shadow"></div>
+        <div class="background__div background__div--cup-shadow"></div>
 
         <div class="container">
           <div class="overview__hero-wrapper">
@@ -699,11 +699,11 @@
     
       <section class="advantages">
         
-        <svg class="background__svg-advantages-vawe" width="2627" height="288" aria-hidden="true">
+        <svg class="background__svg-vawe background__svg-vawe--advantages" width="2627" height="288" aria-hidden="true">
           <use xlink:href="../../images/background/bg-sprite.svg#bg-advantages-vawe"></use>
         </svg>
 
-        <div class="background__advantages-wall"></div>
+        <div class="background__div background__div--advantages-wall"></div>
 
         <div class="container">
           <div class="advantages__wrapper">
@@ -761,48 +761,72 @@
 
       <section class="technology">
 
-        <svg class="background__svg-technology-vawe" width="2627" height="288" aria-hidden="true">
-          <use xlink:href="../../images/background/bg-sprite.svg#bg-technology-vawe"></use>
+        <picture>
+          <source media="(max-width: 767px)" srcset="../../images/background/bg-coffeemachine-mobile.png">
+          <source media="(max-width: 1348px)" srcset="../../images/background/bg-coffeemachine-tablet.png">
+          <img class="background__img background__img--technology" src="../../images/background/bg-coffeemachine.png" width="900" height="773" alt="Зёрна кофе под чашкой">
+        </picture>
+
+        <div class="background__div background__div--technology-shadow"></div>
+
+        <svg class="background__svg-vawe background__svg-vawe--technology-first" width="2627" height="288" aria-hidden="true">
+          <use xlink:href="../../images/background/bg-sprite.svg#bg-technology-first-vawe"></use>
+        </svg>
+
+        <svg class="background__svg-vawe background__svg-vawe--technology-second" width="3298" height="298" aria-hidden="true">
+          <use xlink:href="../../images/background/bg-sprite.svg#bg-technology-second-vawe"></use>
         </svg>
 
         <div class="container">
           <div class="technology__wrapper">
             <h2 class="technology__title">Как мы&nbsp;обжариваем наш кофе:</h2>
-            <div class="technology__text">  
+            <div class="technology__content">  
               <p class="technology__paragraph">Компания Нью Рефайнинг Груп находится в&nbsp;г. Калининграде и&nbsp;имеет свой склад и&nbsp;представительство в&nbsp;Москве. Завод работает на&nbsp;рынке свежеобжаренного кофе и&nbsp;растворимой продукции более 15&nbsp;лет. Завод имеет немецкое оборудование марки Probat по&nbsp;обжарке кофе и&nbsp;итальянские агломераторы для производства растворимой продукции.</p>
-              <p class="technology__paragraph">Кофе поставляется в&nbsp;контейнерах напрямую с&nbsp;плантаций по&nbsp;всему миру. Компания имеет долгосрочные контракты по&nbsp;поставке продукции. Каждая партия проходит строгий контроль на&nbsp;заводе для проверки зерна. Зеленое зерно обжаривается, проходит процесс дегазации и&nbsp;тут&nbsp;же отправляется клиентам. Наши обжарщики прошли обучение в&nbsp;России и&nbsp;за&nbsp;рубежом.</p>
-              <p class="technology__paragraph">У&nbsp;нас свой подход к&nbsp;каждой партии зерна.</p>
+              <p class="technology__paragraph">
+                <span class="technology__subparagraph">Кофе поставляется в&nbsp;контейнерах напрямую с&nbsp;плантаций по&nbsp;всему миру. Компания имеет долгосрочные контракты по&nbsp;поставке продукции. Каждая партия проходит строгий контроль на&nbsp;заводе для проверки зерна. Зеленое зерно обжаривается, проходит процесс дегазации и&nbsp;тут&nbsp;же отправляется клиентам. Наши обжарщики прошли обучение в&nbsp;России и&nbsp;за&nbsp;рубежом.</span>
+                <span class="technology__subparagraph">У&nbsp;нас свой подход к&nbsp;каждой партии зерна.</span>
+              </p>
+              <p class="technology__paragraph">Мы&nbsp;раскрываем вкус каждого сорта кофе.</p>
             </div>
-            <a class="technology__button btn" href="#">Перейти в&nbsp;каталог</a>
+            <a class="technology__button  btn btn--size-xl" href="#">Перейти в&nbsp;каталог</a>
           </div>
         </div>
       </section>
       
       <section class="news">
-        <div class="container">
-          <div class="home-page__news-heading">
-            <h2 class="home-page__block-title">Новости компании</h2>
 
-            <a class="home-page__link btn-linked btn-linked--black" href="#">
+        <svg class="background__svg-vawe background__svg-vawe--news" width="2627" height="288" aria-hidden="true">
+          <use xlink:href="../../images/background/bg-sprite.svg#bg-news-vawe"></use>
+        </svg>
+
+        <div class="background__div background__div--news-wall"></div>
+
+        <div class="container">
+          <div class="news__heading">
+            <h2 class="news__title">Новости компании</h2>
+
+            <a class="news__link btn-linked btn-linked--black btn-linked--size-m" href="#">
               <span class="btn-linked__text">Читать все</span>
             </a>
           </div>
-          <ul class="home-page__news-list">
-            <li class="home-page__news-item home-page__news-item--flat">
-              <div class="home-page__new-card">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="./images/news/card-image-mobile.png">
-                  <source media="(max-width: 1348px)" srcset="./images/news/card-image-tablet.png">
-                  <source media="(max-width: 1903px)" srcset="./images/news/card-image-laptop.png">
-                  <img class="home-page__new-img" src="./images/news/card-image-desktop.png" width="336" height="400" alt="Ссылка на главную страницу">
-                </picture>
-                <div class="home-page__new-inner">
-                  <h3 class="home-page__new-title">Танзанийский кофе. Откуда он&nbsp;взялся и&nbsp;почему мы&nbsp;его так любим?</h3>
-                  <div class="home-page__text">
-                    <p class="home-page__paragraph">Танзания&nbsp;&mdash; красивая африканская страна. Именно здесь расположены легендарные географические объекты&nbsp;&mdash; вулкан Килиманджаро и&nbsp;озеро Виктория.</p>
-                    <p class="home-page__paragraph">Но&nbsp;наш интерес вызван не&nbsp;столько природными красотами, сколько кофе...</p>
+          <ul class="news__list">
+            <li class="news__item">
+              <div class="news-card news-card--flat">
+                <div class="news-card__image-wrapper">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="./images/news/card-image-mobile.png">
+                    <source media="(max-width: 1348px)" srcset="./images/news/card-image-tablet.png">
+                    <source media="(max-width: 1903px)" srcset="./images/news/card-image-laptop.png">
+                    <img class="news-card__image" src="./images/news/card-image-desktop.png" width="336" height="400" alt="Ссылка на главную страницу">
+                  </picture>
+                </div>
+                <div class="news-card__inner">
+                  <h3 class="news-card__title">Танзанийский кофе. Откуда он&nbsp;взялся и&nbsp;почему мы&nbsp;его так любим?</h3>
+                  <div class="news-card__content">
+                    <p class="news-card__paragraph">Танзания&nbsp;&mdash; красивая африканская страна. Именно здесь расположены легендарные географические объекты&nbsp;&mdash; вулкан Килиманджаро и&nbsp;озеро Виктория.</p>
+                    <p class="news-card__paragraph">Но&nbsp;наш интерес вызван не&nbsp;столько природными красотами, сколько кофе...</p>
                   </div>
-                  <a class="home-page__link btn-linked" href="#">
+                  <a class="news-card__link btn-linked" href="#">
                     <span class="btn-linked__text">Подробнее</span>
                     <svg class="btn-linked__icon" width="14" height="12" aria-hidden="true">
                       <use xlink:href="./images/btn/btn-sprite.svg#arrow-for-link"></use>
@@ -811,14 +835,15 @@
                 </div>
               </div>
             </li>
-            <li class="home-page__news-item">
-              <div class="home-page__new-card">
-                <div class="home-page__new-inner">
-                  <h3 class="home-page__new-title">Африканский кофе Кения&nbsp;АА</h3>
-                  <div class="home-page__new-text">
-                    <p class="home-page__new-paragraph">Кения АА&nbsp;&mdash; у&nbsp;этого кофе, из&nbsp;африканской страны, репутация одного из&nbsp;самых вкусных и&nbsp;ярких сортов в&nbsp;мире. Многие обжарщики высоко оценивают местные разновидности высокогорной арабики.</p>
+
+            <li class="news__item">
+              <div class="news-card">
+                <div class="news-card__inner">
+                  <h3 class="news-card__title">Африканский кофе Кения&nbsp;АА</h3>
+                  <div class="news-card__content">
+                    <p class="news-card__paragraph">Кения АА&nbsp;&mdash; у&nbsp;этого кофе, из&nbsp;африканской страны, репутация одного из&nbsp;самых вкусных и&nbsp;ярких сортов в&nbsp;мире. Многие обжарщики высоко оценивают местные разновидности высокогорной арабики.</p>
                   </div>
-                  <a class="home-page__link btn-linked" href="#">
+                  <a class="news-card__link btn-linked" href="#">
                     <span class="btn-linked__text">Подробнее</span>
                     <svg class="btn-linked__icon" width="14" height="12" aria-hidden="true">
                       <use xlink:href="./images/btn/btn-sprite.svg#arrow-for-link"></use>
@@ -827,14 +852,15 @@
                 </div>
               </div>
             </li>
-            <li class="home-page__news-item">
-              <div class="home-page__new-card">
-                <div class="home-page__new-inner">
-                  <h3 class="home-page__new-title">Африканский кофе Кения&nbsp;АА</h3>
-                  <div class="home-page__new-text">
-                    <p class="home-page__new-paragraph">Кения АА&nbsp;&mdash; у&nbsp;этого кофе, из&nbsp;африканской страны, репутация одного из&nbsp;самых вкусных и&nbsp;ярких сортов в&nbsp;мире. Многие обжарщики высоко оценивают местные разновидности высокогорной арабики.</p>
+            
+            <li class="news__item">
+              <div class="news-card">
+                <div class="news-card__inner">
+                  <h3 class="news-card__title">Африканский кофе Кения&nbsp;АА</h3>
+                  <div class="news-card__content">
+                    <p class="news-card__paragraph">Кения АА&nbsp;&mdash; у&nbsp;этого кофе, из&nbsp;африканской страны, репутация одного из&nbsp;самых вкусных и&nbsp;ярких сортов в&nbsp;мире. Многие обжарщики высоко оценивают местные разновидности высокогорной арабики.</p>
                   </div>
-                  <a class="home-page__link btn-linked" href="#">
+                  <a class="news-card__link btn-linked" href="#">
                     <span class="btn-linked__text">Подробнее</span>
                     <svg class="btn-linked__icon" width="14" height="12" aria-hidden="true">
                       <use xlink:href="./images/btn/btn-sprite.svg#arrow-for-link"></use>
@@ -843,21 +869,24 @@
                 </div>
               </div>
             </li>
-            <li class="home-page__news-item home-page__news-item--flat">
-              <div class="home-page__new-card">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="./images/news/card-image-mobile.png">
-                  <source media="(max-width: 1348px)" srcset="./images/news/card-image-tablet.png">
-                  <source media="(max-width: 1903px)" srcset="./images/news/card-image-laptop.png">
-                  <img class="home-page__new-img" src="./images/news/card-image-desktop.png" width="336" height="400" alt="Ссылка на главную страницу">
-                </picture>
-                <div class="home-page__new-inner">
-                  <h3 class="home-page__new-title">Танзанийский кофе. Откуда он&nbsp;взялся и&nbsp;почему мы&nbsp;его так любим?</h3>
-                  <div class="home-page__text">
-                    <p class="home-page__paragraph">Танзания&nbsp;&mdash; красивая африканская страна. Именно здесь расположены легендарные географические объекты&nbsp;&mdash; вулкан Килиманджаро и&nbsp;озеро Виктория.</p>
-                    <p class="home-page__paragraph">Но&nbsp;наш интерес вызван не&nbsp;столько природными красотами, сколько кофе...</p>
+            
+            <li class="news__item">
+              <div class="news-card news-card--flat">
+                <div class="news-card__image-wrapper">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="./images/news/card-image-mobile.png">
+                    <source media="(max-width: 1348px)" srcset="./images/news/card-image-tablet.png">
+                    <source media="(max-width: 1903px)" srcset="./images/news/card-image-laptop.png">
+                    <img class="news-card__image" src="./images/news/card-image-desktop.png" width="336" height="400" alt="Ссылка на главную страницу">
+                  </picture>
+                </div>
+                <div class="news-card__inner">
+                  <h3 class="news-card__title">Танзанийский кофе. Откуда он&nbsp;взялся и&nbsp;почему мы&nbsp;его так любим?</h3>
+                  <div class="news-card__content">
+                    <p class="news-card__paragraph">Танзания&nbsp;&mdash; красивая африканская страна. Именно здесь расположены легендарные географические объекты&nbsp;&mdash; вулкан Килиманджаро и&nbsp;озеро Виктория.</p>
+                    <p class="news-card__paragraph">Но&nbsp;наш интерес вызван не&nbsp;столько природными красотами, сколько кофе...</p>
                   </div>
-                  <a class="home-page__link btn-linked" href="#">
+                  <a class="news-card__link btn-linked" href="#">
                     <span class="btn-linked__text">Подробнее</span>
                     <svg class="btn-linked__icon" width="14" height="12" aria-hidden="true">
                       <use xlink:href="./images/btn/btn-sprite.svg#arrow-for-link"></use>
