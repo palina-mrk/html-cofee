@@ -57,6 +57,20 @@
     &:hover {
       background-color: $color-mustard-yellow;
     }
+
+    .btn-icon__svg {
+      width: 16px;
+      height: 14px;
+    }
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-ucla-gold;
+
+    &:hover {
+      color: $color-white;
+    }
   }
 
 

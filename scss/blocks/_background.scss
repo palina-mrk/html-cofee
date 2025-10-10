@@ -164,6 +164,8 @@
 
   &__div {
     position: absolute;
+    left: 0;
+    right: 0;
     z-index: -2;
   }
 
@@ -203,8 +205,6 @@
   }
 
   &__div--advantages-wall {
-    left: 0;
-    right: 0;
     top: 240px;
     bottom: 0px;
     background-color: $color-cornsilk;
@@ -245,10 +245,27 @@
   }
 
   &__div--news-wall {
-    left: 0;
     top: 297px;
-    right: 0;
     bottom: 0;
     background-color: $color-cornsilk;
+  }
+
+  &__div--instagram-top-wall {
+    top: -1px;
+    height: 700px;
+    background-color: $color-cornsilk;
+  }
+
+  &__svg-vawe--instagram {
+    height: 872px;
+    top: 268px;
+    color: $color-ucla-gold;
+    background-color: transparent;
+  }
+
+  &__div--instagram-bottom-wall {
+    top: 685px;
+    bottom: 0;
+    background-color: $color-ucla-gold;
   }
 }
