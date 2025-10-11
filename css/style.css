@@ -1168,6 +1168,11 @@ a {
   top: -1px;
   color: #FFF7E1;
 }
+@media (max-width: 1903px) {
+  .background__svg-vawe--technology-first {
+    height: 203px;
+  }
+}
 .background__img--technology {
   bottom: 0;
   top: 10px;
@@ -1184,6 +1189,11 @@ a {
   height: 298px;
   bottom: -1px;
   color: #ffffff;
+}
+@media (max-width: 1903px) {
+  .background__svg-vawe--technology-second {
+    height: 211px;
+  }
 }
 .background__svg-vawe--news {
   height: 298px;
@@ -2938,7 +2948,7 @@ a {
 }
 @media (max-width: 1903px) {
   .advantages {
-    padding: 55px 0 48px;
+    padding: 55px 0 46px;
   }
 }
 .advantages__wrapper {
@@ -3114,17 +3124,7 @@ a {
 }
 @media (max-width: 1903px) {
   .technology {
-    padding: 113px 0 0;
-  }
-}
-@media (max-width: 1348px) {
-  .technology {
-    padding: 143px 0 0;
-  }
-}
-@media (max-width: 767px) {
-  .technology {
-    padding: 70px 0 0;
+    padding: 160px 0 111px;
   }
 }
 .technology__wrapper {
@@ -3133,19 +3133,10 @@ a {
   flex-direction: column;
   gap: 100px;
 }
-.technology__content {
-  display: flex;
-  flex-direction: column;
-  max-width: 670px;
-  align-items: start;
-}
-.technology__title {
-  margin: 0 0 78px;
-  padding: 0;
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: 900;
-  font-size: 50px;
-  line-height: 62px;
+@media (max-width: 1903px) {
+  .technology__wrapper {
+    gap: 70px;
+  }
 }
 .technology__title {
   margin: 0;
@@ -3155,11 +3146,24 @@ a {
   font-size: 50px;
   line-height: 62px;
 }
+@media (max-width: 1903px) {
+  .technology__title {
+    font-size: 35px;
+    line-height: 44px;
+    max-width: 520px;
+  }
+}
 .technology__content {
   display: flex;
   flex-direction: column;
   gap: 27px;
   max-width: 1245px;
+}
+@media (max-width: 1903px) {
+  .technology__content {
+    max-width: 880px;
+    gap: 16px;
+  }
 }
 .technology__paragraph {
   margin: 0;
@@ -3170,8 +3174,18 @@ a {
   flex-direction: column;
   align-items: start;
 }
+@media (max-width: 1903px) {
+  .technology__paragraph {
+    font-size: 18px;
+  }
+}
 .technology__button {
   width: 400px;
+}
+@media (max-width: 1903px) {
+  .technology__button {
+    width: 283px;
+  }
 }
 
 .news-card {

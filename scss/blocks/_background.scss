@@ -213,6 +213,10 @@
     height: 288px;
     top: -1px;
     color: $color-cornsilk;
+
+    @include vp-laptop {
+      height: 203px;
+    }
   }
 
   &__img--technology {
@@ -233,6 +237,10 @@
     height: 298px;
     bottom: -1px;
     color: $color-white;
+
+    @include vp-laptop {
+      height: 211px;
+    }
   }
 
   &__svg-vawe--news {
