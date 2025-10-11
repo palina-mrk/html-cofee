@@ -269,6 +269,10 @@
     top: -1px;
     height: 700px;
     background-color: $color-cornsilk;
+
+    @include vp-laptop {
+      height: 500px;
+    }
   }
 
   &__svg-vawe--instagram {
@@ -276,12 +280,21 @@
     top: 268px;
     color: $color-ucla-gold;
     background-color: transparent;
+
+    @include vp-laptop {
+      height: 617px;
+      top: 177px;
+    }
   }
 
   &__div--instagram-bottom-wall {
     top: 685px;
     bottom: -1px;
     background-color: $color-ucla-gold;
+
+    @include vp-laptop {
+      top: 470px;
+    }
   }
 
   &__div--footer-wall {
