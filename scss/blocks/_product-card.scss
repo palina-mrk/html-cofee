@@ -14,10 +14,11 @@
   position: relative;
 
   @include vp-laptop {
-    padding: 15px 25px 37px;
+    padding: 13px 24px 37px;
     box-shadow: 0px 0px 20px 0px $color-chinese-silver-25;
+    border: 0.7px solid $color-platinum;
     min-height: 461px;
-    width: 280px;
+    width: 282px;
     border-radius: 14px;
   }
 
@@ -34,9 +35,18 @@
     width: 70px;
     height: 70px;
     top: 2px;
-    left: 38px;
-    transform: translateY(-50%);
+    left: 3px;
+    transform: translate(50%, -50%);
     display: none;
+
+    @include vp-laptop {
+      width: 50px;
+      height: 50px;
+      left: -1px;
+      top: 0;
+      font-size: 25px;
+      line-height: 30px;
+    }
   }
 
   &__top {
@@ -46,6 +56,11 @@
     padding: 0 0 0 4px;
     margin: 0 0 20px;
     width: 100%;
+
+    @include vp-laptop {
+      padding: 0;
+      margin: 0 0 14px;
+    }
   }
 
   &__category-list {
@@ -57,6 +72,11 @@
     align-items: start;
     justify-content: end;
     gap: 10px;
+
+    @include vp-laptop {
+      margin: 1px 0 0;
+      gap: 6px;
+    }
   }
 
   &__category-item {
@@ -64,6 +84,11 @@
     font-size: 18px;
     line-height: 22px;
     color: $color-ucla-gold;
+
+    @include vp-laptop {
+      font-size: 12px;
+      line-height: 15px;
+    }
   }
 
   &__category-item:nth-child(n + 3) {
@@ -73,6 +98,11 @@
   &__dropdown {
     margin: 1px 0 auto auto;
     width: 132px;
+
+    @include vp-laptop {
+      margin: 0 0 auto auto;
+      width: 93px;
+    }
   }
 
   &__middle {
@@ -80,12 +110,21 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+
+    @include vp-laptop {
+      margin: 0 0 28px;
+    }
   }
 
   &__image-wrapper {
     width: 172px;
     height: 311px;
     display: flex;
+
+    @include vp-laptop {
+      width: 120px;
+      height: 218px;
+    }
   }
 
   &__image {
@@ -94,17 +133,27 @@
   }
 
   &__details {
-    width: 133px;
+    width: 134px;
     display: flex;
     align-items: start;
     flex-direction: column;
     justify-content: end;
+
+    @include vp-laptop {
+      width: 94px;
+      margin: 0 0 -2px;
+    }
   }
 
   &__stars {
     margin: 0 0 12px;
     padding: 0 2px;
     width: 100%;
+
+    @include vp-laptop {
+      margin: 0 0 8px;
+      padding: 0;
+    }
   }
 
   &__rating {
@@ -113,12 +162,22 @@
     display: flex;
     gap: 7px;
     align-items: baseline;
+
+    @include vp-laptop {
+      margin: 0 0 17px;
+      gap: 4px;
+    }
   }
 
   &__rating-value {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+
+    @include vp-laptop {
+      font-size: 14px;
+      line-height: 17px;
+    }
   }
 
   &__comments-count {
@@ -126,10 +185,19 @@
     font-size: 14px;
     line-height: 16px;
     color: $color-davys-gray;
+
+    @include vp-laptop {
+      font-size: 10px;
+      line-height: 12px;
+    }
   }
 
   &__corns {
     margin: 0 0 30px;
+
+    @include vp-laptop {
+      margin: 0 0 26px;
+    }
   }
 
   &__hue {
@@ -140,6 +208,13 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    @include vp-laptop {
+      margin: 0 0 14px;
+      padding: 0;
+      align-items: start;
+      gap: 5px;
+    }
   }
 
   &__hue:last-of-type {
@@ -151,6 +226,11 @@
     font-size: 18px;
     line-height: 21px;
     align-self: start;
+
+    @include vp-laptop {
+      font-size: 12px;
+      line-height: 14px;
+    }
   }
 
   &__title {
@@ -159,6 +239,12 @@
     line-height: 31px;
     margin: 0 0 10px;
     padding: 0;
+
+    @include vp-laptop {
+      font-size: 18px;
+      line-height: 22px;
+      margin: 0 0 8px;
+    }
   }
 
   &__description {
@@ -170,6 +256,13 @@
     overflow: hidden;
     padding: 0;
     margin: 0;
+
+    @include vp-laptop {
+      font-size: 12px;
+      line-height: 14px;
+      max-width: 180px;
+      max-height: 29px;
+    }
   }
 
   &__bottom {
@@ -180,12 +273,22 @@
     justify-content: space-between;
     align-items: flex-end;
     position: relative;
+
+    @include vp-laptop {
+      padding: 20px 0 0;
+    }
   }
 
   &__price {
     font-weight: 900;
     font-size: 35px;
     line-height: 44px;
+
+    @include vp-laptop {
+      font-size: 24px;
+      line-height: 30px;
+      padding: 0 0 0 4px;
+    }
   }
 
   &__price--crossed {
@@ -197,6 +300,12 @@
     top: 0;
     left: 0;
 
+    @include vp-laptop {
+      top: 3px;
+      font-size: 18px;
+      line-height: 21px;
+    }
+
     &::after {
       content: "";
       background-color: $color-silver-sand-c6;
@@ -205,12 +314,20 @@
       position: absolute;
       top: 50%;
       left: 0;
-      transform: translateY(-50%);
+      transform: translateY(-100%);
+
+      @include vp-laptop {
+        height: 1px;
+      }
     }
   }
 
   &__button {
     width: 178px;
+
+    @include vp-laptop {
+      width: 125px;
+    }
   }
 }
 
@@ -221,6 +338,10 @@
 
   .product-card__category-list {
     padding: 34px 0 0;
+
+    @include vp-laptop {
+      padding: 23px 0 0;
+    }
   }
 
   .product-card__category-item:nth-child(n + 2) {

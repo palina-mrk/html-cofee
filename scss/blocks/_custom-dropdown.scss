@@ -19,6 +19,12 @@
     align-items: start;
     justify-content: space-between;
 
+    @include vp-laptop {
+      padding: 4px 18px 4px 19px;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
     &:hover {
       color: $color-ucla-gold;
     }
@@ -29,6 +35,12 @@
       border: 1px solid $color-ucla-gold;
       background-color: $color-cornsilk;
       border-radius: 5px;
+
+      @include vp-laptop {
+        border-radius: 4px;
+        border: 0.7px solid $color-ucla-gold;
+        padding: 3px 16px 4px 19px;
+      }
     }
   }
 
@@ -36,6 +48,11 @@
     color: $color-black;
     width: 16px;
     height: 7px;
+
+    @include vp-laptop {
+      width: 11px;
+      height: 5px;
+    }
   }
 
   &__list {
@@ -51,6 +68,13 @@
     list-style-type: none;
     flex-direction: column;
     display: none;
+
+    @include vp-laptop {
+      bottom: -4px;
+      border-radius: 4px;
+      border: 0.7px solid $color-ucla-gold;
+      padding: 4px 0 2px;
+    }
   }
 }
 

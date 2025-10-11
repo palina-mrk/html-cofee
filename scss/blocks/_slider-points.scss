@@ -5,11 +5,20 @@
   margin: 0;
   padding: 0;
 
+  @include vp-laptop {
+    gap: 2px;
+  }
+
   &__item {
     background-color: $color-antiflash-white-f0;
     width: 10px;
     height: 10px;
     border-radius: 50%;
+
+    @include vp-laptop {
+      width: 7px;
+      height: 7px;
+    }
   } 
 
   &__item--selected {

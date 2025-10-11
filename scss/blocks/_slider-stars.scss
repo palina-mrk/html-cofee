@@ -5,6 +5,10 @@
   margin: 0;
   padding: 0;
 
+  @include vp-laptop {
+    gap: 1px;
+  }
+
   &__item {
     color: $color-antiflash-white-f0;
     display: flex;
@@ -13,6 +17,11 @@
   &__svg {
     width: 25px;
     height: 25px;
+
+    @include vp-laptop {
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &__item--selected {

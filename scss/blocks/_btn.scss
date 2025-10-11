@@ -58,13 +58,23 @@
     width: 70px;
     height: 70px;
 
+    @include vp-laptop {
+      width: 49px;
+      height: 49px;
+    }
+
     &:hover {
       background-color: $color-mustard-yellow;
     }
 
     .btn-icon__svg {
-      width: 16px;
+      width: 28px;
       height: 14px;
+
+      @include vp-laptop {
+        width: 24px;
+        height: 12px;
+      }
     }
   }
 
@@ -75,8 +85,6 @@
     &:hover {
       color: $color-white;
     }
-  }
-
 
   .btn-icon__svg {
     width: 34px;
@@ -86,6 +94,8 @@
       width: 29px;
       height: 17px;
     }
+  }
+
   }
 }
 
@@ -122,7 +132,14 @@
     line-height: 24px;
     color: $color-black;
     text-decoration: underline;
-    padding: 10px 30px 11px;
+    padding: 11px 30px 10px;
+
+    @include vp-laptop {
+      font-size: 14px;
+      line-height: 16px;
+      padding: 7px 18px 6px;
+      border-radius: 18px;
+    }
 
     &:hover {
       background-color: $color-ghost-white;
@@ -182,6 +199,13 @@
     padding: 13px;
     font-size: 18px;
     line-height: 22px;
+
+    @include vp-laptop {
+      padding: 9px 9px 10px;
+      font-size: 12px;
+      line-height: 15px;
+      border-radius: 4px;
+    }
   }
 
   &:hover {
