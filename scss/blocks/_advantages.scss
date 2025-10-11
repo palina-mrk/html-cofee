@@ -9,21 +9,17 @@
   overflow: hidden;
 
   @include vp-laptop {
-    padding: 113px 0 0;
-  }
-
-  @include vp-tablet {
-    padding: 143px 0 0;
-  }
-
-  @include vp-mobile {
-    padding: 70px 0 0;
+    padding: 40px 0 48px;
   }
 
   &__wrapper {
     width: 100%;
     display: flex;
     gap: 86px;
+
+    @include vp-laptop {
+      gap: 64px;
+    }
   }
 
   &__images {
@@ -61,6 +57,12 @@
     font-weight: 900;
     font-size: 50px;
     line-height: 62px;
+
+    @include vp-laptop {
+      font-size: 35px;
+      line-height: 44px;
+      margin: 0 0 62px;
+    }
   }
 
   &__list {

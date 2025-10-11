@@ -203,12 +203,20 @@
 
   &__products-prev {
     position: relative;
-    top: -15px;
+    top: -25px;
+
+    @include vp-laptop {
+      top: -15px;
+    }
   }
 
   &__products-next {
     position: relative;
-    top: -13px;
+    top: -15px;
+
+    @include vp-laptop {
+      top: -13px;
+    }
   }
 
   &__products-list {

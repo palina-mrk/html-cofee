@@ -192,12 +192,21 @@
     height: 288px;
     top: -42px;
     color: $color-cornsilk;
+
+    @include vp-laptop {
+      top: -40px;
+      height: 203px;
+    }
   }
 
   &__div--advantages-wall {
     top: 240px;
     bottom: 0px;
     background-color: $color-cornsilk;
+
+    @include vp-laptop {
+      top: 150px;
+    }
   }
 
   &__svg-vawe--technology-first {
