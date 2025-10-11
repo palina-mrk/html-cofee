@@ -24,7 +24,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0 0 189px;
+    padding: 0 0 185px;
   }
 
   &__subscribe-title {
@@ -63,6 +63,7 @@
   }
 
   &__nav {
-    margin: 20px 0 0;
+    position: relative;
+    top: 13px;
   }
 }

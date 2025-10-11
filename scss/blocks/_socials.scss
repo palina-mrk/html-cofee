@@ -14,8 +14,8 @@
   &__link {
     display: flex;
     color: $color-white;
-    width: 102px;
-    height: 102px;
+    width: 92px;
+    height: 92px;
     background-color: $color-ucla-gold;
     border-radius: 50%;
     align-items: center;
@@ -29,6 +29,7 @@
 
     &:hover {
       color: $color-raising-black;
+      border: 4px solid $color-raising-black;
     }
   }
 
@@ -52,8 +53,8 @@
     }
 
     .socials__icon {
-      width: calc(100% - 8px);
-      height: calc(100% - 8px);
+      width: 100%;
+      height: 100%;
     }
   }
 }

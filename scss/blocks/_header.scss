@@ -240,6 +240,30 @@
       color: $color-ucla-gold;
     }
   }
+
+
+  .header__menu-close {
+    display: none;
+    position: absolute;
+    top: 28px;
+    right: 24px;
+
+    @include vp-mobile {
+      top: 13px;
+      right: 12px;
+    }
+  }
+
+  .header__menu-contacts {
+    display: none;
+    align-self: center;
+    flex-direction: column;
+    gap: 182px;
+
+    @include vp-mobile {
+      gap: 90px
+    }
+  }
 }
 
 .header--search {
@@ -273,6 +297,7 @@
     @include vp-tablet {
       display: none;
     }
+
   }
 
   .header__search {
@@ -283,6 +308,7 @@
 .header--menu {
   height: 100%;
   padding: 30px 0 0;
+  background-color: $color-white;
 
   @include vp-mobile {
     padding: 16px 0 0;
@@ -340,20 +366,15 @@
     }
   }
 
-  .header__icon {
-    display: flex;
-    position: absolute;
-    top: 28px;
-    right: 24px;
-
-    @include vp-mobile {
-      top: 13px;
-      right: 12px;
-    }
+  .header__users-link:hover {
+    color: $color-ucla-gold;
   }
 
-  .header__contacts {
+  .header__menu-close {
     display: flex;
-    align-self: center;
+  }
+
+  .header__menu-contacts {
+    display: flex;
   }
 }

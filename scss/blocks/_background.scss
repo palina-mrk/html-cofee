@@ -7,18 +7,16 @@
   }
 
   &__svg-puddle--right {
-    width: 1550px; 
-    height: 1950px; 
-    left: calc(50% + 260px);
-    top: -370px;
-    rotate: 8deg;
+    width: 1453px; 
+    height: 1750px; 
+    left: calc(50% + 236px);
+    top: -275px;
 
     @include vp-laptop {
-      width: 1168px; 
-      height: 1250px; 
-      left: calc(50% + 155px);
-      top: -202px;
-      rotate: 9deg;
+      width: 1024px; 
+      height: 1234px; 
+      left: calc(50% + 167px);
+      top: -190px;
     }
 
     @include vp-tablet {
@@ -26,7 +24,6 @@
       height: 912px;
       top: 103px;
       left: calc(50% + 20px);
-      rotate: 8deg;
     }
 
     @include vp-mobile {
@@ -38,33 +35,25 @@
   }
 
   &__svg-puddle--left {
-    width: 1191px; 
-    height: 1349px; 
-    left: calc(50% - 1698px);
-    top: 1025px;
-    rotate: -174deg;
+    width: 1230px; 
+    height: 1380px; 
+    left: calc(50% - 1728px);
+    top: 1019px;
 
     @include vp-laptop {
-      width: 844px; 
-      height: 955px; 
-      left: calc(50% - 1192px);
-      top: 697px;
-      rotate: -183deg;
+      display: none;
     }
+  }
 
-    @include vp-tablet {
-      width: 900px;
-      height: 1007px;
-      left: calc(50% - 1071px);
-      top: 1540px;
-      rotate: 0deg;
-    }
+  &__svg-puddle--left-for-laptop {
+    display: none;
 
-    @include vp-mobile {
-      width: 440px;
-      height: 499px;
-      left: calc(50% - 527px);
-      top: 987px;
+    @include vp-laptop {
+      display: unset;
+      width: 820px; 
+      height: 935px; 
+      left: calc(50% - 1196px);
+      top: 701px;
     }
   }
 
@@ -213,7 +202,7 @@
 
   &__svg-vawe--technology-first {
     height: 288px;
-    top: -2px;
+    top: -1px;
     color: $color-cornsilk;
   }
 
@@ -233,7 +222,7 @@
 
   &__svg-vawe--technology-second {
     height: 298px;
-    bottom: 0;
+    bottom: -1px;
     color: $color-white;
   }
 

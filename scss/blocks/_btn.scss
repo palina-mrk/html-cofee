@@ -45,6 +45,10 @@
       width: 22px;
       height: 22px;
     }
+
+    &:hover {
+      color: $color-ucla-gold;
+    }
   }
 
   &--arrow {
@@ -98,6 +102,7 @@
   padding: 10px 24px;
   border-radius: 30px;
   user-select: none;
+  cursor: pointer;
 
   &__icon {
     width: 16px;
@@ -144,15 +149,33 @@
   border-radius: 5px;
   border: none;
   margin: 0;
+  cursor: pointer;
+
+  @include vp-laptop {
+    font-size: 21px;
+    line-height: 25px;
+  }
 
   &--size-xl {
     padding: 24px 24px 20px;
+
+    @include vp-laptop {
+      padding: 17px 17px 16px;
+      border-radius: 3.5px;
+    }
   }
 
   &--size-m {
     font-size: 25px;
     line-height: 30px;
     padding: 18px 17px 12px;
+
+    @include vp-laptop {
+      font-size: 18px;
+      line-height: 22px;
+      padding: 10px 10px 9px;
+      border-radius: 3px;
+    }
   }
 
   &--size-s {

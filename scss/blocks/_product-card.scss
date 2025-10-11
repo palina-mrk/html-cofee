@@ -13,6 +13,14 @@
   font-family: $ff-gilroy sans-serif;
   position: relative;
 
+  @include vp-laptop {
+    padding: 15px 25px 37px;
+    box-shadow: 0px 0px 20px 0px $color-chinese-silver-25;
+    min-height: 461px;
+    width: 280px;
+    border-radius: 14px;
+  }
+
   &__sales-icon {
     color: $color-black;
     background-color: $color-ucla-gold;

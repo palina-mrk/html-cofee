@@ -29,7 +29,7 @@
             <nav class="main-nav">
               <ul class="main-nav__list">
                 <li class="main-nav__item">
-                  <a class="main-nav__link" href="#our-catalogs">Каталог товаров</a>
+                  <a class="main-nav__link" href="#catalogs-overview">Каталог товаров</a>
                 </li>
                 <li class="main-nav__item">
                   <a class="main-nav__link" href="#">Блог</a>
@@ -74,21 +74,48 @@
               </a>
             </li>
           </ul>
+          <svg class="header__menu-close btn-icon btn-icon--close" width="40" height="40" aria-hidden="true">
+            <use xlink:href="./images/header/header-sprite.svg#icon-close" ></use>
+          </svg>
+
+          <div class="header__menu-contacts">
+            <a class="header__email" href="mailto:Import@kldrefine.com">Import@kldrefine.com</a>
+            <ul class="socials">
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <svg class="socials__icon" width="53" height="53" aria-hidden="true">
+                    <use xlink:href="./images/header/header-sprite.svg#icon-phone" ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--filled" href="#">
+                  <svg class="socials__icon" width="102" height="102" aria-hidden="true">
+                    <use xlink:href="./images/header/header-sprite.svg#icon-instagram" ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+      
     </header>
 
     <main>
       <section class="overview">
 
-        <svg class="background__svg-puddle background__svg-puddle--right" width="1366" height="1690" aria-hidden="true">
-          <use xlink:href="../../images/background/bg-sprite.svg#bg-puddle"></use>
+        <svg class="background__svg-puddle background__svg-puddle--right" width="1453" height="1750" aria-hidden="true">
+          <use xlink:href="../../images/background/bg-sprite.svg#bg-puddle-right"></use>
         </svg>
 
-        <svg class="background__svg-puddle background__svg-puddle--left" width="1192" height="1349" aria-hidden="true">
-          <use xlink:href="../../images/background/bg-sprite.svg#bg-puddle"></use>
+        <svg class="background__svg-puddle background__svg-puddle--left" width="1230" height="1380" aria-hidden="true"> 
+          <use xlink:href="../../images/background/bg-sprite.svg#bg-puddle-left"></use>  
         </svg>
-
+        <svg class="background__svg-puddle background__svg-puddle--left-for-laptop" width="819" height="934" aria-hidden="true"> 
+          <use xlink:href="../../images/background/bg-sprite.svg#bg-puddle-left-for-laptop"></use>  
+        </svg>
+        
         <picture>
           <source media="(max-width: 767px)" srcset="../../images/background/bg-heading-corns-mobile.png">
           <source media="(max-width: 1348px)" srcset="../../images/background/bg-heading-corns-tablet.png">
@@ -164,7 +191,7 @@
                     <div class="catalog-card__image-wrapper">
                       <picture>
                         <source media="(max-width: 1903px)" srcset="./images/catalog-card/catalog-vending-laptop.png">
-                        <img class="home-page__catalog-image" src="./images/catalog-card/catalog-vending-desktop.png" width="276" height="253" alt="Карточка каталога кофе">
+                        <img class="catalog-card__image" src="./images/catalog-card/catalog-vending-desktop.png" width="276" height="253" alt="Карточка каталога вендинга">
                       </picture>
                     </div>
                     <h3 class="catalog-card__title">Продукция для вендинга</h3>
@@ -1012,7 +1039,7 @@
                 <span class="custom-subscribe__success-text">Спасибо за&nbsp;подписку!</span>
               </button>
             </div>
-            <p class="custom-subscribe__agree">Нажимая на&nbsp;кнопку &laquo;Подписаться&raquo;, вы&nbsp;принимаете правила <span class="custom-subscribe__agree-link">пользовательского соглашения</span></p>
+            <p class="custom-subscribe__agree">Нажимая на&nbsp;кнопку &laquo;Подписаться&raquo;, вы&nbsp;принимаете правила <a class="custom-subscribe__agree-link" href="#">пользовательского соглашения</a></p>
           </form>
         </div>
         <div class="footer__nav-wrapper">
