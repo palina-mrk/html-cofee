@@ -301,6 +301,10 @@
     top: -1px;
     height: 125px;
     background-color: $color-ucla-gold;
+
+    @include vp-laptop {
+      height: 71px;
+    }
   }
 
   &__svg-vawe--footer {
@@ -308,6 +312,11 @@
     height: 288px;
     top: 118px;
     color: $color-ucla-gold;
+
+    @include vp-laptop {
+      height: 204px;
+      top: 69px;
+    }
   }
 
   &__img--footer-corns {
@@ -317,24 +326,10 @@
     left: calc(50% + 253px);
 
     @include vp-laptop {
-      width: 477px;
-      height: 477px;
-      left: calc(50% - 904px);
-      top: 1096px;
-    }
-
-    @include vp-tablet {
-      width: 509px;
-      height: 509px;
-      left: calc(50% - 625px);
-      top: 1672px;
-    }
-
-    @include vp-mobile {
-      width: 249px;
-      height: 249px;
-      left: calc(50% - 306px);
-      top: 1056px;
+      width: 569px;
+      height: 467px;
+      left: calc(50% + 155px);
+      top: 0;
     }
   }
 
@@ -346,10 +341,10 @@
     z-index: -2;
 
     @include vp-laptop {
-      width: 525px;
-      height: 350px;
-      left: calc(50% - 34px);
-      top: 9px;      
+      width: 483px;
+      height: 322px;
+      left: calc(50% + 220px);
+      top: 32px;      
     }
 
     @include vp-tablet {
