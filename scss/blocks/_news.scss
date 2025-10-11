@@ -9,15 +9,7 @@
   overflow: hidden;
 
   @include vp-laptop {
-    padding: 113px 0 0;
-  }
-
-  @include vp-tablet {
-    padding: 143px 0 0;
-  }
-
-  @include vp-mobile {
-    padding: 70px 0 0;
+    padding: 25px 0 22px;
   }
 
   &__heading {
@@ -26,6 +18,10 @@
     justify-content: space-between;
     align-items: baseline;
     margin: 0 0 50px;
+
+    @include vp-laptop {
+      margin: 0 0 45px;
+    }
   }
 
   &__title {
@@ -35,12 +31,21 @@
     font-weight: 900;
     font-size: 50px;
     line-height: 62px;
+
+    @include vp-laptop {
+      font-size: 35px;
+      line-height: 44px;
+    }
   }
 
   &__link {
     position: relative;
     right: -30px;
     bottom: -2px;
+
+    @include vp-laptop {
+      right: -17px;
+    }
   }
 
   &__list {

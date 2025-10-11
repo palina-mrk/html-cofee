@@ -114,16 +114,27 @@
   user-select: none;
   cursor: pointer;
 
-  &__icon {
-    width: 16px;
-    height: 11px;
+  @include vp-laptop {
+    font-size: 14px;
+    padding: 5px 18px;
+    border-radius: 21px;
   }
 
   @include vp-mobile {
-    font-size: 12px;
-    padding: 4px 10px;
+    font-size: 14px;
+    padding: 4px 6px;
   }
   
+  &__icon {
+    width: 16px;
+    height: 11px;
+
+    @include vp-laptop {
+      width: 10px;
+      height: 7px;
+    }
+  }
+
   &:hover {
     background-color: $color-bright-gray;
   }
@@ -150,6 +161,11 @@
   &--size-m {
     font-size: 25px;
     padding: 11px 29px 10px;
+
+    @include vp-laptop {
+      font-size: 18px;
+      padding: 7px 17px 6px;
+    }
   }
 }
 

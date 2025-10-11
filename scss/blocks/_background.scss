@@ -245,15 +245,24 @@
 
   &__svg-vawe--news {
     height: 298px;
-    top: 0;
+    top: 148px;
     color: $color-cornsilk;
     background-color: $color-white;
+
+    @include vp-laptop {
+      height: 211px;
+      top: 103px;
+    }
   }
 
   &__div--news-wall {
-    top: 297px;
+    top: 440px;
     bottom: 0;
     background-color: $color-cornsilk;
+
+    @include vp-laptop {
+      top: 310px;
+    }
   }
 
   &__div--instagram-top-wall {
