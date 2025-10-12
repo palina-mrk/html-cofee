@@ -189,12 +189,22 @@
     line-height: 25px;
   }
 
+  @include vp-tablet {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
   &--size-xl {
     padding: 24px 24px 20px;
 
     @include vp-laptop {
       padding: 17px 17px 16px;
       border-radius: 3.5px;
+    }
+
+    @include vp-tablet {
+      padding: 21px 20px 19px;
+      border-radius: 5px;
     }
   }
 

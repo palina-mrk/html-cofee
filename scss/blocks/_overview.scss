@@ -27,9 +27,14 @@
     align-items: start;
     justify-content: start;
     flex-direction: column;
+    position: relative;
 
     @include vp-laptop {
       padding: 50px 0 153px;
+    }
+
+    @include vp-tablet {
+      padding: 130px 0 20px;
     }
   }
 
@@ -39,6 +44,12 @@
 
     @include vp-laptop {
       margin: 0 0 27px;
+    }
+
+    @include vp-tablet {
+      position: absolute;
+      left: 0;
+      bottom: 208px;
     }
   }
 
@@ -56,6 +67,13 @@
       line-height: 70px;
       max-width: 662px;
     }
+
+    @include vp-tablet {
+      margin: 0 0 80px;
+      font-size: 50px;
+      line-height: 62px;
+      max-width: 470px;
+    }
   }
 
   &__hero-content {
@@ -70,6 +88,12 @@
       max-width: 450px;
       gap: 20px;
     }
+
+    @include vp-tablet {
+      margin: 0 0 372px;
+      max-width: 310px;
+      gap: 30px;
+    }
   }
 
   &__hero-paragraph {
@@ -82,8 +106,13 @@
       font-size: 18px;
     }
 
+    @include vp-tablet {
+      font-size: 20px;
+    }
+
     &--accented-word {
       font-weight: 600;
+      display: inline-block;
     }
   }
 
@@ -93,6 +122,10 @@
     @include vp-laptop {
       width: 283px;
       margin: 0 0 0 2px;
+    }
+
+    @include vp-tablet {
+      width: 100%;
     }
   }
 
@@ -106,6 +139,14 @@
 
     @include vp-laptop {
       padding: 50px 0 13px;
+    }
+
+    @include vp-tablet {
+      padding: 52px 0 20px;
+      position: relative;
+      min-height: 780px;
+      box-sizing: border-box;
+      justify-content: space-between;
     }
   }
 
@@ -122,6 +163,11 @@
       line-height: 44px;
       margin: 0 0 60px;
     }
+
+    @include vp-tablet {
+      font-size: 40px;
+      line-height: 50px;
+    }
   }
 
   &__catalogs-list {
@@ -131,6 +177,21 @@
     padding: 0;
     list-style-type: none;
     justify-content: space-between;
+
+    @include vp-tablet {
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      overflow: hidden;
+      align-items: center;
+      top: 381px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
   }
 
   &__catalogs-item {
@@ -138,6 +199,22 @@
     margin: 0;
     max-width: calc(25% - 15px);
     display: flex;
+
+    @include vp-tablet {
+      max-width: unset;
+      width: fit-content;
+    }
+  }
+
+  &__catalogs-slider {
+    display: none;
+
+    @include vp-tablet {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+    }
   }
 
   &__products-wrapper {

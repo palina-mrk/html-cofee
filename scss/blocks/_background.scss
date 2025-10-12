@@ -20,10 +20,11 @@
     }
 
     @include vp-tablet {
-      width: 737px;
+      width: 837px;
       height: 912px;
-      top: 103px;
-      left: calc(50% + 20px);
+      top: 70px;
+      left: calc(50% - 20px);
+      rotate: -1deg;
     }
 
     @include vp-mobile {
@@ -43,6 +44,15 @@
     @include vp-laptop {
       display: none;
     }
+
+    @include vp-tablet {
+      display: unset;
+      rotate: -187deg;
+      left: calc(50% - 1060px);
+      top: 1520px;
+      height: 1019px;
+      width: 900px;
+    }
   }
 
   &__svg-puddle--left-for-laptop {
@@ -54,6 +64,10 @@
       height: 935px; 
       left: calc(50% - 1190px);
       top: 707px;
+    }
+
+    @include vp-tablet {
+      display: none;
     }
   }
 

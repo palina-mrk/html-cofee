@@ -9,6 +9,10 @@
     gap: 20px;
   }
 
+  @include vp-tablet {
+    gap: 30px;
+  }
+
   &__point {
     background-color: $color-white;
     width: 20px;
@@ -19,9 +23,18 @@
       width: 14px;
       height: 14px;
     }
+
+    @include vp-tablet {
+      width: 25px;
+      height: 25px;
+    }
   } 
 
   &__point--brown {
     background-color: $color-bistre;
+
+    @include vp-tablet {
+      background-color: $color-ucla-gold;
+    }
   }
 }

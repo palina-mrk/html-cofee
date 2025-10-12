@@ -19,6 +19,15 @@
     gap: 35px;
   }
 
+  @include vp-tablet {
+    padding: 10px 60px 124px;
+    box-shadow: 0px 0px 37.5px 0px $color-philippine-gray-20;
+    border-radius: 12px;
+    width: 340px;
+    min-height: 412px;
+    gap: 27px;
+  }
+
   &__image-wrapper {
     height: 250px;
     width: 100%;
@@ -28,6 +37,10 @@
 
     @include vp-laptop {
       height: 160px;
+    }
+
+    @include vp-tablet {
+      height: 200px;
     }
   }
 
@@ -59,6 +72,12 @@
       max-width: 200px;
       min-height: 45px;
     }
+
+    @include vp-tablet {
+      font-size: 22px;
+      line-height: 27px;
+      max-width: 265px;
+    }
   }
 
   &__button {
@@ -76,6 +95,13 @@
     gap: 35px;
   }
 
+  @include vp-tablet {
+    padding: 5px 40px 41px;
+    width: 460px;
+    min-height: 442px;
+    gap: 30px;
+  }
+
   .catalog-card__image-wrapper {
     position: absolute;
     top: -32px;
@@ -83,6 +109,10 @@
 
     @include vp-laptop {
       top: -20px;
+    }
+
+    @include vp-tablet {
+      top: -8px;
     }
   }
 
@@ -93,6 +123,12 @@
     @include vp-laptop {
       font-size: 21px;
       line-height: 25px;
+    }
+
+    @include vp-tablet {
+      font-size: 22px;
+      line-height: 27px;
+      max-width: 265px;
     }
   }
 
