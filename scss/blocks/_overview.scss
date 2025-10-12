@@ -34,7 +34,7 @@
     }
 
     @include vp-tablet {
-      padding: 130px 0 20px;
+      padding: 130px 0 50px;
     }
   }
 
@@ -130,7 +130,7 @@
   }
 
   &__catalogs-wrapper {
-    padding: 70px 0 24px;
+    padding: 20px 0 49px;
     width: 100%;
     display: flex;
     align-items: start;
@@ -142,9 +142,9 @@
     }
 
     @include vp-tablet {
-      padding: 52px 0 20px;
+      padding: 25px 0 67px;
       position: relative;
-      min-height: 780px;
+      height: 700px;
       box-sizing: border-box;
       justify-content: space-between;
     }
@@ -167,6 +167,7 @@
     @include vp-tablet {
       font-size: 40px;
       line-height: 50px;
+      margin: 0;
     }
   }
 
@@ -184,11 +185,10 @@
       height: 100%;
       overflow: hidden;
       align-items: center;
-      top: 381px;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 1;
-      justify-content: center;
       align-items: center;
       gap: 20px;
     }
@@ -201,8 +201,7 @@
     display: flex;
 
     @include vp-tablet {
-      max-width: unset;
-      width: fit-content;
+      max-width: fit-content;
     }
   }
 
@@ -227,6 +226,10 @@
     @include vp-laptop {
       padding: 20px 0 0;
     }
+
+    @include vp-tablet {
+      padding: 37px 2px 0 0;
+    }
   }
 
   &__products-title {
@@ -241,6 +244,12 @@
       font-size: 35px;
       line-height: 44px;
       margin: 0 0 35px;
+    }
+
+    @include vp-tablet {
+      font-size: 40px;
+      line-height: 50px;
+      margin: 0 0 50px;
     }
   }
 
@@ -259,6 +268,20 @@
       font-size: 18px;
       max-width: 780px;
       margin: 0 0 54px;
+    }
+
+    @include vp-tablet {
+      font-size: 20px;
+      max-width: 5000px;
+      margin: 0 0 50px;
+    }
+  }
+
+  &__paragraph-string{
+    @include vp-tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
     }
   }
 
