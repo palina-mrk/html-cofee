@@ -52,8 +52,8 @@
       display: unset;
       width: 820px; 
       height: 935px; 
-      left: calc(50% - 1196px);
-      top: 701px;
+      left: calc(50% - 1190px);
+      top: 707px;
     }
   }
 
@@ -187,6 +187,11 @@
     min-width: 3720px;
     left: 50%;
     transform: translate(-50%, -100%);
+
+    @include vp-laptop {
+      width: 1904px;
+      min-width: unset;
+    }
   }
 
   &__svg-vawe--advantages {
@@ -194,6 +199,7 @@
     height: 400px;
     top: 245px;
     @include vp-laptop {
+      top: 250px;
     }
   }
 
@@ -203,7 +209,7 @@
     background-color: $color-cornsilk;
 
     @include vp-laptop {
-      top: 160px;
+      top: 150px;
     }
   }
 
@@ -213,7 +219,7 @@
     color: $color-cornsilk;
 
     @include vp-laptop {
-      height: 203px;
+      top: 307px;
     }
   }
 
@@ -223,6 +229,11 @@
     bottom: 1px;
     left: 0;
     width: 100%;
+
+    @include vp-laptop {
+      bottom: 4px;
+      max-height: calc(100% - 5px);
+    }
   }
 
   &__div--technology-shadow {
@@ -238,7 +249,7 @@
     color: $color-white;
 
     @include vp-laptop {
-      height: 212px;
+      bottom: -458px;
     }
   }
 
@@ -249,8 +260,7 @@
     background-color: $color-white;
 
     @include vp-laptop {
-      height: 211px;
-      top: 103px;
+      top: 420px;
     }
   }
 
@@ -260,7 +270,8 @@
     background-color: $color-cornsilk;
 
     @include vp-laptop {
-      top: 310px;
+      top: 320px;
+      z-index: -4;
     }
   }
 
@@ -281,18 +292,18 @@
     background-color: transparent;
 
     @include vp-laptop {
-      height: 617px;
-      top: 177px;
+      top: 690px;
+      width: 2100px;
     }
   }
 
   &__div--instagram-bottom-wall {
     top: 930px;
-    bottom: -1px;
+    bottom: -2px;
     background-color: $color-ucla-gold;
 
     @include vp-laptop {
-      top: 470px;
+      top: 520px;
     }
   }
 
@@ -302,7 +313,7 @@
     background-color: $color-ucla-gold;
 
     @include vp-laptop {
-      height: 71px;
+      height: 75px;
     }
   }
 
@@ -313,8 +324,7 @@
     color: $color-ucla-gold;
 
     @include vp-laptop {
-      height: 204px;
-      top: 69px;
+      top: 380px;
     }
   }
 
