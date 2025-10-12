@@ -6,7 +6,7 @@
   color: $color-black;
   font-family: $ff-gilroy sans-serif;
   font-weight: 500;
-  overflow: hidden;
+  overflow-x: hidden;
 
   @include vp-laptop {
     padding: 113px 0 0;
