@@ -20,12 +20,13 @@
   }
 
   @include vp-tablet {
-    padding: 10px 60px 124px;
+    padding: 0 60px 124px;
     box-shadow: 0px 0px 37.5px 0px $color-philippine-gray-20;
     border-radius: 12px;
     width: 340px;
-    min-height: 412px;
-    gap: 27px;
+    height: 412px;
+    gap: 23px;
+    justify-content: end;
   }
 
   &__image-wrapper {
@@ -41,6 +42,7 @@
 
     @include vp-tablet {
       height: 200px;
+      align-items: end;
     }
   }
 
@@ -52,10 +54,6 @@
     max-height: 100%;
     width: 100%;
     overflow: hidden;
-
-    @include vp-laptop {
-      max-height: 100%;
-    }
   }
 
   &__title {
@@ -98,8 +96,8 @@
   @include vp-tablet {
     padding: 5px 40px 41px;
     width: 460px;
-    min-height: 442px;
-    gap: 30px;
+    height: 442px;
+    gap: 10px;
   }
 
   .catalog-card__image-wrapper {
@@ -112,7 +110,20 @@
     }
 
     @include vp-tablet {
-      top: -8px;
+      position: unset;
+    }
+  }
+
+  .catalog-card__image {
+    @include vp-tablet {
+      position: absolute;
+      bottom: 192px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 270px;
+      object-fit: contain;
+      object-position: bottom center;
+      z-index: 1;
     }
   }
 
@@ -128,7 +139,7 @@
     @include vp-tablet {
       font-size: 22px;
       line-height: 27px;
-      max-width: 265px;
+      max-width: unset;
     }
   }
 
