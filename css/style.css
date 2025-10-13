@@ -1279,6 +1279,11 @@ a {
     min-width: unset;
   }
 }
+@media (max-width: 1348px) {
+  .background__svg-vawe {
+    width: 100%;
+  }
+}
 .background__svg-vawe--advantages {
   color: #FFF7E1;
   height: 400px;
@@ -1289,6 +1294,11 @@ a {
     top: 250px;
   }
 }
+@media (max-width: 1348px) {
+  .background__svg-vawe--advantages {
+    top: 363px;
+  }
+}
 .background__div--advantages-wall {
   top: 240px;
   bottom: -1px;
@@ -1297,6 +1307,11 @@ a {
 @media (max-width: 1903px) {
   .background__div--advantages-wall {
     top: 150px;
+  }
+}
+@media (max-width: 1348px) {
+  .background__div--advantages-wall {
+    top: 200px;
   }
 }
 .background__svg-vawe--technology-first {

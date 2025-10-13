@@ -206,14 +206,23 @@
       width: 1904px;
       min-width: unset;
     }
+
+    @include vp-tablet {
+      width: 100%;
+    }
   }
 
   &__svg-vawe--advantages {
     color: $color-cornsilk;
     height: 400px;
     top: 245px;
+
     @include vp-laptop {
       top: 250px;
+    }
+
+    @include vp-tablet {
+      top: 363px;  
     }
   }
 
@@ -224,6 +233,10 @@
 
     @include vp-laptop {
       top: 150px;
+    }
+
+    @include vp-tablet {
+      top: 200px;
     }
   }
 
