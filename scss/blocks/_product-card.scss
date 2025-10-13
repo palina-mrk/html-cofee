@@ -61,7 +61,7 @@
       width: 60px;
       height: 60px;
       left: 5px;
-      top: 0;
+      top: 1px;
       font-size: 29.5px;
       line-height: 36px;
     }
@@ -82,7 +82,7 @@
 
     @include vp-tablet {
       padding: 0;
-      margin: 0 0 17px;
+      margin: 0 0 22px;
     }
   }
 
@@ -102,8 +102,8 @@
     }
 
     @include vp-tablet {
-      gap: 4px;
       margin: 0;
+      gap: 5px;
     }
   }
 
@@ -153,7 +153,7 @@
     }
 
     @include vp-tablet {
-      margin: 0 12px 30px 0;
+      margin: 0 0 30px;
     }
   }
 
@@ -191,7 +191,7 @@
     }
 
     @include vp-tablet {
-      margin: 0 0 32px;
+      margin: 0 15px 32px 0;
     }
   }
 
@@ -207,6 +207,10 @@
 
     @include vp-tablet {
       margin: 0 0 6px;
+    }
+
+    @include vp-tablet {
+      margin: 0 0 8px;
     }
   }
 
@@ -299,6 +303,12 @@
       line-height: 22px;
       margin: 0 0 8px;
     }
+
+    @include vp-tablet {
+      font-size: 22px;
+      line-height: 27px;
+      margin: 0 0 10px;
+    }
   }
 
   &__description {
@@ -317,6 +327,13 @@
       max-width: 180px;
       max-height: 29px;
     }
+
+    @include vp-tablet {
+      font-size: 16px;
+      line-height: 19px;
+      max-width: 240px;
+      max-height: 38px;
+    }
   }
 
   &__bottom {
@@ -331,6 +348,10 @@
     @include vp-laptop {
       padding: 20px 0 0;
     }
+
+    @include vp-tablet {
+      padding: 19px 5px 0 0;
+    }
   }
 
   &__price {
@@ -342,6 +363,12 @@
       font-size: 24px;
       line-height: 30px;
       padding: 0 0 0 4px;
+    }
+
+    @include vp-tablet {
+      font-size: 26px;
+      line-height: 32px;
+      padding: 0 0 2px 4px;
     }
   }
 
@@ -358,6 +385,12 @@
       top: 3px;
       font-size: 18px;
       line-height: 21px;
+    }
+
+    @include vp-tablet {
+      top: 1px;
+      font-size: 22px;
+      line-height: 26px;
     }
 
     &::after {
@@ -382,6 +415,10 @@
     @include vp-laptop {
       width: 125px;
     }
+
+    @include vp-tablet {
+      width: 149px;
+    }
   }
 }
 
@@ -395,6 +432,11 @@
 
     @include vp-laptop {
       padding: 23px 0 0;
+    }
+
+    @include vp-tablet {
+      padding: 29px 0 0;
+      margin: 0 0 -5px;
     }
   }
 
