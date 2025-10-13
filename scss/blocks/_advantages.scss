@@ -9,7 +9,11 @@
   overflow: hidden;
 
   @include vp-laptop {
-    padding: 55px 0 55px;
+    padding: 55px 0;
+  }
+
+  @include vp-tablet {
+    padding: 190px 0 61px;
   }
 
   &__wrapper {
@@ -30,6 +34,10 @@
 
     @include vp-laptop {
       width: 534px;
+    }
+
+    @include vp-tablet {
+      display: none;
     }
   }
 
@@ -82,6 +90,13 @@
       margin: 0 0 56px;
       max-width: 410px;
     }
+
+    @include vp-tablet {
+      font-size: 40px;
+      line-height: 50px;
+      margin: 0 0 60px;
+      max-width: 460px;
+    }
   }
 
   &__list {
@@ -96,6 +111,10 @@
     @include vp-laptop {
       gap: 39px;
     }
+
+    @include vp-tablet {
+      gap: 60px;
+    }
   }
 
   &__item {
@@ -107,6 +126,10 @@
 
     @include vp-laptop {
       gap: 30px;
+    }
+
+    @include vp-tablet {
+      gap: 40px;
     }
   }
 
@@ -124,6 +147,11 @@
       width: 60px;
       height: 60px;
     }
+
+    @include vp-tablet {
+      width: 81px;
+      height: 81px;
+    }
   }
 
   &__item-svg {
@@ -133,6 +161,11 @@
     @include vp-laptop {
       width: 26px;
       height: 23px;
+    }
+
+    @include vp-tablet {
+      width: 35px;
+      height: 30px;
     }
   }
 
@@ -147,6 +180,11 @@
       max-width: 400px;
       gap: 15px;
     }
+
+    @include vp-tablet {
+      max-width: 430px;
+      gap: 20px;
+    }
   }
 
   &__item-title {
@@ -160,6 +198,11 @@
       font-size: 21px;
       line-height: 25px;
     }
+
+    @include vp-tablet {
+      font-size: 25px;
+      line-height: 30px;
+    }
   }
 
   &__item-description {
@@ -170,6 +213,10 @@
 
     @include vp-laptop {
       font-size: 18px;
+    }
+
+    @include vp-tablet {
+      font-size: 20px;
     }
   }
 }

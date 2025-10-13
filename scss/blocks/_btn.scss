@@ -19,7 +19,7 @@
     cursor: pointer;
   }
 
-  &::hover {
+  &:hover {
     color: $color-ucla-gold;
   }
 
@@ -208,8 +208,10 @@
     }
 
     @include vp-tablet {
-      padding: 21px 20px 19px;
+      padding: 22px 20px 18px;
       border-radius: 5px;
+      font-size: 25px;
+      line-height: 30px;
     }
   }
 

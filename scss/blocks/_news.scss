@@ -12,6 +12,10 @@
     padding: 46px 0 22px;
   }
 
+  @include vp-tablet {
+    padding: 82px 0 20px;
+  }
+
   &__heading {
     width: 100%;
     display: flex;
@@ -21,6 +25,10 @@
 
     @include vp-laptop {
       margin: 0 0 45px;
+    }
+
+    @include vp-tablet {
+      margin: 0 0 52px;
     }
   }
 
@@ -36,6 +44,11 @@
       font-size: 35px;
       line-height: 44px;
     }
+
+    @include vp-tablet {
+      font-size: 40px;
+      line-height: 50px;
+    }
   }
 
   &__link {
@@ -45,6 +58,17 @@
 
     @include vp-laptop {
       right: -17px;
+    }
+  }
+
+  &__arrows {
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    margin: 0 0 77px;
+
+    @include vp-tablet {
+      display: flex;
     }
   }
 

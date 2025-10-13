@@ -265,6 +265,11 @@
       height: 220px;
       top: -10px;
     }
+
+    @include vp-tablet {
+      height: 236px;
+      top: 0;
+    }
   }
 
   &__img--technology {
@@ -298,6 +303,11 @@
       height: 190px;
       bottom: -5px;
     }
+
+    @include vp-tablet {
+      height: 138px;
+      bottom: -1px;
+    }
   }
 
   &__svg-vawe--news {
@@ -310,16 +320,24 @@
       top: 155px;
       height: 210px;
     }
+
+    @include vp-tablet {
+      display: none;
+    }
   }
 
   &__div--news-wall {
     top: 445px;
-    bottom: 0;
+    bottom: -1;
     background-color: $color-cornsilk;
 
     @include vp-laptop {
       top: 350px;
       z-index: -4;
+    }
+
+    @include vp-tablet {
+      top: 340px;
     }
   }
 
