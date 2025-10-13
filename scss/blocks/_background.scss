@@ -258,7 +258,7 @@
 
   &__svg-vawe--technology-first {
     height: 408px;
-    top: 407px;
+    top: -5px;
     color: $color-cornsilk;
 
     @include vp-laptop {
@@ -269,8 +269,9 @@
 
   &__img--technology {
     bottom: 0;
-    top: 1px;
+    top: 5px;
     bottom: 1px;
+    max-height: calc(100% - 6px);
     left: 0;
     width: 100%;
 
@@ -290,7 +291,7 @@
 
   &__svg-vawe--technology-second {
     height: 362px;
-    bottom: -365px;
+    bottom: 0px;
     color: $color-white;
 
     @include vp-laptop {
@@ -301,7 +302,7 @@
 
   &__svg-vawe--news {
     height: 410px;
-    top: 447px;
+    top: 40px;
     color: $color-cornsilk;
     background-color: $color-white;
 
@@ -324,7 +325,7 @@
 
   &__div--instagram-top-wall {
     top: -1px;
-    height: 700px;
+    height: 1000px;
     background-color: $color-cornsilk;
 
     @include vp-laptop {
@@ -334,7 +335,7 @@
 
   &__svg-vawe--instagram {
     height: 664px;
-    top: 932px;
+    top: 280px;
     color: $color-ucla-gold;
     background-color: transparent;
 
@@ -356,7 +357,7 @@
 
   &__div--footer-wall {
     top: -1px;
-    height: 85px;
+    height: 90px;
     background-color: $color-ucla-gold;
 
     @include vp-laptop {
@@ -367,7 +368,7 @@
   &__svg-vawe--footer {
     z-index: -6;
     height: 408px;
-    top: 490px;
+    top: 85px;
     color: $color-ucla-gold;
 
     @include vp-laptop {
