@@ -195,12 +195,13 @@
   }
 
   &__svg-vawe {
+    display: flex;
     position: absolute;
     z-index: -4;
     width: 100%;
     min-width: 3720px;
     left: 50%;
-    transform: translate(-50%, -100%);
+    transform: translateX(-50%);
 
     @include vp-laptop {
       width: 1904px;
@@ -208,21 +209,36 @@
     }
 
     @include vp-tablet {
-      width: 100%;
+      display: none;
+    }
+  }
+
+  &__svg-vawe-for-tablet {
+    display: none;
+
+    @include vp-tablet {
+      display: flex;
+      position: absolute;
+      z-index: -4;
+      width: 1348px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
   &__svg-vawe--advantages {
     color: $color-cornsilk;
     height: 400px;
-    top: 245px;
+    top: -155px;
 
     @include vp-laptop {
-      top: 250px;
+      height: 300px;
+      top: -150px;
     }
 
     @include vp-tablet {
-      top: 363px;  
+      height: 216px;
+      top: 0;  
     }
   }
 
@@ -232,11 +248,11 @@
     background-color: $color-cornsilk;
 
     @include vp-laptop {
-      top: 150px;
+      top: 145px;
     }
 
     @include vp-tablet {
-      top: 200px;
+      top: 210px;
     }
   }
 
@@ -246,7 +262,8 @@
     color: $color-cornsilk;
 
     @include vp-laptop {
-      top: 307px;
+      height: 220px;
+      top: -10px;
     }
   }
 
@@ -258,14 +275,15 @@
     width: 100%;
 
     @include vp-laptop {
-      bottom: 4px;
-      max-height: calc(100% - 5px);
+      bottom: 1px;
+      top: 5px;
+      max-height: calc(100% - 6px);
     }
   }
 
   &__div--technology-shadow {
     z-index: -4;
-    top: 1px;
+    top: 5px;
     bottom: 1px;
     background: $color-black-302;
   }
@@ -276,7 +294,8 @@
     color: $color-white;
 
     @include vp-laptop {
-      bottom: -458px;
+      height: 190px;
+      bottom: -5px;
     }
   }
 
@@ -287,7 +306,8 @@
     background-color: $color-white;
 
     @include vp-laptop {
-      top: 420px;
+      top: 155px;
+      height: 210px;
     }
   }
 
@@ -297,7 +317,7 @@
     background-color: $color-cornsilk;
 
     @include vp-laptop {
-      top: 320px;
+      top: 350px;
       z-index: -4;
     }
   }
@@ -319,7 +339,7 @@
     background-color: transparent;
 
     @include vp-laptop {
-      top: 690px;
+      top: 30px;
       width: 2100px;
     }
   }
@@ -330,7 +350,7 @@
     background-color: $color-ucla-gold;
 
     @include vp-laptop {
-      top: 520px;
+      top: 545px;
     }
   }
 
@@ -340,7 +360,7 @@
     background-color: $color-ucla-gold;
 
     @include vp-laptop {
-      height: 75px;
+      height: 78px;
     }
   }
 
@@ -351,7 +371,8 @@
     color: $color-ucla-gold;
 
     @include vp-laptop {
-      top: 380px;
+      height: 210px;
+      top: 75px;
     }
   }
 

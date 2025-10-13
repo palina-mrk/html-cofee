@@ -78,10 +78,10 @@
     bottom: 3px; 
 
     @include vp-laptop {
-      height: 600px;
-      width: 450px;
-      bottom: 0;
-      left: 40px;
+      height: 569px;
+      width: 317px;
+      bottom: 29px;
+      left: 1px;
     }
   }
 
@@ -93,10 +93,10 @@
     bottom: -45px;
 
     @include vp-laptop {
-      width: 300px;
-      height: 520px;
-      left: 140px;
-      bottom: -32px;
+      width: 255px;
+      height: 479px;
+      left: 161px;
+      bottom: -10px;
     }
   }
 
