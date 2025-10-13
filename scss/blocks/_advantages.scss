@@ -9,7 +9,7 @@
   overflow: hidden;
 
   @include vp-laptop {
-    padding: 55px 0;
+    padding: 59px 0;
   }
 
   @include vp-tablet {
@@ -87,7 +87,7 @@
     @include vp-laptop {
       font-size: 35px;
       line-height: 44px;
-      margin: 0 0 56px;
+      margin: 0 0 54px;
       max-width: 410px;
     }
 
@@ -109,7 +109,7 @@
     gap: 59px;
 
     @include vp-laptop {
-      gap: 39px;
+      gap: 38px;
     }
 
     @include vp-tablet {

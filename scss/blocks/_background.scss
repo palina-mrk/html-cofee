@@ -276,15 +276,9 @@
     bottom: 0;
     top: 5px;
     bottom: 1px;
-    max-height: calc(100% - 6px);
+    height: calc(100% - 6px);
     left: 0;
     width: 100%;
-
-    @include vp-laptop {
-      bottom: 1px;
-      top: 5px;
-      max-height: calc(100% - 6px);
-    }
   }
 
   &__div--technology-shadow {
@@ -327,17 +321,19 @@
   }
 
   &__div--news-wall {
-    top: 445px;
+    top: 450px;
     bottom: -1;
+    height: calc(100% - 451px);
     background-color: $color-cornsilk;
 
     @include vp-laptop {
-      top: 350px;
-      z-index: -4;
+      top: 360px;
+      height: calc(100% - 361px);
     }
 
     @include vp-tablet {
       top: 340px;
+      height: calc(100% - 341px);
     }
   }
 
@@ -361,6 +357,12 @@
       top: 30px;
       width: 2100px;
     }
+
+    @include vp-tablet {
+      top: 205px;
+      width: 1348px;
+      height: 248px;
+    }
   }
 
   &__div--instagram-bottom-wall {
@@ -371,6 +373,11 @@
     @include vp-laptop {
       top: 545px;
     }
+
+    @include vp-tablet {
+      top: 450px;
+      bottom: 30px;
+    }
   }
 
   &__div--footer-wall {
@@ -380,6 +387,10 @@
 
     @include vp-laptop {
       height: 78px;
+    }
+
+    @include vp-tablet {
+      display: none;
     }
   }
 
@@ -392,6 +403,12 @@
     @include vp-laptop {
       height: 210px;
       top: 75px;
+    }
+
+    @include vp-tablet {
+      height: 172px;
+      bottom: -130px;
+      top: unset;
     }
   }
 

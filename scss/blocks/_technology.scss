@@ -10,7 +10,7 @@
   box-sizing: border-box;
 
   @include vp-laptop {
-    padding: 150px 0 93px;
+    padding: 142px 0 93px;
   }
 
   @include vp-tablet {
@@ -24,6 +24,10 @@
     gap: 100px;
 
     @include vp-laptop {
+      gap: 68px;
+    }
+
+    @include vp-tablet {
       gap: 75px;
     }
   }
@@ -58,12 +62,13 @@
 
     @include vp-laptop {
       max-width: 880px;
-      gap: 16px;
+      gap: 20px;
+      margin: 0 0 0px;
     }
 
     @include vp-tablet {
       max-width: unset;
-      gap: 28px;
+      gap: 26px;
       margin: 0 0 13px;
     }
   }

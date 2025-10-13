@@ -9,11 +9,11 @@
   overflow: hidden;
 
   @include vp-laptop {
-    padding: 46px 0 22px;
+    padding: 44px 0 22px;
   }
 
   @include vp-tablet {
-    padding: 82px 0 20px;
+    padding: 85px 0 105px;
   }
 
   &__heading {
@@ -24,7 +24,7 @@
     margin: 0 0 50px;
 
     @include vp-laptop {
-      margin: 0 0 45px;
+      margin: 0 0 43px;
     }
 
     @include vp-tablet {
@@ -59,6 +59,13 @@
     @include vp-laptop {
       right: -17px;
     }
+
+    @include vp-tablet {
+      position: absolute;
+      bottom: 0;
+      left: calc(50% + 190px);
+      width: 200px;
+    }
   }
 
   &__arrows {
@@ -81,11 +88,29 @@
     gap: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include vp-tablet {
+      flex-direction: column;
+      min-height: 769px;
+      justify-content: start;
+      position: relative;
+      z-index: 1;
+    }
   }
 
   &__item {
     padding: 0;
     margin: 0;
     display: flex;
+    
+    @include vp-tablet {
+      top: -100px;
+      display: none;
+
+      &:nth-child(1){
+        display: flex;
+      }
+      
+    }
   }
 }

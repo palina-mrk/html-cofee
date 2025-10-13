@@ -12,6 +12,10 @@
     padding: 27px 0 32px;
   }
 
+  @include vp-tablet {
+    padding: 27px 0 200px;
+  }
+
   &__title-wrapper {
     display: flex;
     align-items: center;
@@ -21,6 +25,13 @@
     @include vp-laptop {
       gap: 30px;
       margin: 0 0 52px;
+    }
+
+    @include vp-tablet {
+      gap: 40px;
+      margin: 0 0 91px;
+      flex-direction: column;
+      align-items: start;
     }
   }
 
@@ -35,6 +46,11 @@
       font-size: 35px;
       line-height: 44px;
     }
+
+    @include vp-tablet {
+      font-size: 40px;
+      line-height: 50px;
+    }
   }
 
   &__link {
@@ -44,6 +60,11 @@
     @include vp-laptop {
       width: 60px;
       height: 60px;
+    }
+
+    @include vp-tablet {
+      width: 81px;
+      height: 81px;
     }
   }
 
@@ -58,6 +79,10 @@
     @include vp-laptop {
       height: 554px;
     }
+
+    @include vp-tablet {
+      height: 389px;
+    }
   }
 
   &__images {
@@ -67,6 +92,14 @@
 
     @include vp-laptop {
       width: 500px;
+    }
+
+    @include vp-tablet {
+      height: 813px;
+      width: 458px;
+      z-index: -1;
+      left: 385px;
+      top: -10px;
     }
   }
 
@@ -83,6 +116,13 @@
       bottom: 29px;
       left: 1px;
     }
+
+    @include vp-tablet {
+      height: 813px;
+      width: 458px;
+      top: 0;
+      left: 0;
+    }
   }
 
   &__front-image {
@@ -97,6 +137,10 @@
       height: 479px;
       left: 161px;
       bottom: -10px;
+    }
+
+    @include vp-tablet {
+      display: none;
     }
   }
 
@@ -118,6 +162,14 @@
       left: 500px;
       gap: 15px 20px;
     }
+
+    @include vp-tablet {
+      gap: 20px;
+      left: 0;
+      min-width: 700px;
+      max-width: calc(50% + 50vw);
+      flex-wrap: nowrap;
+    }
   }
 
   &__gallery-item {
@@ -131,6 +183,15 @@
       width: 280px;
       height: 270px;
     }
+
+    @include vp-tablet {
+      min-width: 340px;
+      height: 389px;
+
+      &:nth-child(n+4) {
+        display: none;
+      }
+    }
   }
 
   &__gallery-image {
@@ -141,5 +202,13 @@
   &__button {
     position: relative;
     transform: translate(100%, -10px);
+
+    @include vp-tablet {
+      position: absolute;
+      transform: unset;
+      bottom: -115px;
+      left: 0;
+      rotate: -180deg;
+    }
   }
 }
