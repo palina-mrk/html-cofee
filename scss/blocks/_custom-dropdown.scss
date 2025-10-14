@@ -31,6 +31,12 @@
       line-height: 19px;
     }
 
+    @include vp-mobile {
+      padding: 6px 9px 4px 20px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
     &:hover {
       color: $color-ucla-gold;
     }
@@ -51,6 +57,10 @@
       @include vp-tablet {
         border: 1px solid $color-ucla-gold;
         padding: 6px 20px 3px;
+      }
+
+      @include vp-mobile {
+        padding: 6px 9px 4px 20px;
       }
     }
   }
@@ -102,5 +112,37 @@
 .custom-dropdown--clicked {
   .custom-dropdown__list {
     display: flex;
+  }
+}
+
+.product-card--main-mobile {
+  .custom-dropdown__field--main {
+    @include vp-mobile {
+      padding: 4px 10px 3px 17px;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  .custom-dropdown__field--main {
+    @include vp-mobile {
+      padding: 4px 10px 3px 17px;
+      border-radius: 3px;
+    }
+  }
+
+  .custom-dropdown__icon {
+    @include vp-mobile {
+      width: 8px;
+      height: 4px;
+    }
+  }
+
+  .custom-dropdown__list {
+    @include vp-mobile {
+      bottom: -4px;
+      border-radius: 3px;
+      padding: 4px 0 3px;
+    }
   }
 }

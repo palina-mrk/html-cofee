@@ -13,6 +13,10 @@
     gap: 30px;
   }
 
+  @include vp-mobile {
+    gap: 16px;
+  }
+
   &__point {
     background-color: $color-white;
     width: 20px;
@@ -28,6 +32,11 @@
       width: 25px;
       height: 25px;
       background-color: $color-bright-gray;
+    }
+
+    @include vp-mobile {
+      width: 13px;
+      height: 13px;
     }
   } 
 

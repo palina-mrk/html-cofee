@@ -231,6 +231,11 @@
     line-height: 30px;
   }
 
+  @include vp-mobile {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
   &--size-xl {
     padding: 24px 24px 20px;
 
@@ -242,8 +247,10 @@
     @include vp-tablet {
       padding: 22px 20px 18px;
       border-radius: 5px;
-      font-size: 25px;
-      line-height: 30px;
+    }
+
+    @include vp-mobile {
+      padding: 15px 14px 13px;
     }
   }
 
@@ -265,6 +272,12 @@
       padding: 21px 21px 19px;
       border-radius: 5px;
     }
+
+    @include vp-mobile {
+      font-size: 18px;
+      line-height: 22px;
+      padding: 15px 14px 13px;
+    }
   }
 
   &--size-s {
@@ -284,6 +297,13 @@
       font-size: 16px;
       line-height: 19px;
       border-radius: 5px;
+    }
+
+    @include vp-mobile {
+      font-size: 12px;
+      line-height: 15px;
+      padding: 7px 7px 8px;
+      border-radius: 3px;
     }
   }
 

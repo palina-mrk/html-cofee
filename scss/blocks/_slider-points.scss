@@ -9,6 +9,10 @@
     gap: 2px;
   }
 
+  @include vp-mobile {
+    gap: 4px;  
+  }
+
   &__item {
     background-color: $color-antiflash-white-f0;
     width: 10px;
@@ -19,9 +23,29 @@
       width: 7px;
       height: 7px;
     }
+
+    @include vp-mobile {
+      width: 8px;
+      height: 8px;
+    }
   } 
 
   &__item--selected {
     background-color: $color-ucla-gold;
+  }
+}
+
+.product-card--main-mobile {
+  .slider-points {
+    @include vp-mobile {
+      gap: 2px;
+    }
+  }
+
+  .slider-points__item {
+    @include vp-mobile {
+      width: 6px;
+      height: 6px;
+    }
   }
 }

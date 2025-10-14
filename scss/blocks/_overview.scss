@@ -36,6 +36,10 @@
     @include vp-tablet {
       padding: 135px 0 50px;
     }
+
+    @include vp-mobile {
+      padding: 62px 0 50px;
+    }
   }
 
   &__slider {
@@ -50,6 +54,10 @@
       position: absolute;
       left: 0;
       bottom: 238px;
+    }
+
+    @include vp-mobile {
+      bottom: 143px;
     }
   }
 
@@ -74,6 +82,13 @@
       line-height: 62px;
       max-width: 470px;
     }
+
+    @include vp-mobile {
+      font-size: 30px;
+      line-height: 37px;
+      margin: 0 0 30px;
+      max-width: 280px;
+    }
   }
 
   &__hero-content {
@@ -94,6 +109,12 @@
       max-width: 310px;
       gap: 25px;
     }
+
+    @include vp-mobile {
+      margin: 0 0 218px;
+      max-width: 260px;
+      gap: 17px;
+    }
   }
 
   &__hero-paragraph {
@@ -108,6 +129,10 @@
 
     @include vp-tablet {
       font-size: 20px;
+    }
+
+    @include vp-mobile {
+      font-size: 14px;
     }
 
     &--accented-word {
@@ -144,6 +169,10 @@
     @include vp-tablet {
       padding: 25px 0 70px;
     }
+
+    @include vp-mobile {
+      padding: 22px 0 40px;
+    }
   }
 
   &__catalogs-title {
@@ -164,6 +193,12 @@
       font-size: 40px;
       line-height: 50px;
       margin: 0 0 20px;
+    }
+
+    @include vp-mobile {
+      font-size: 20px;
+      line-height: 25px;
+      margin: 0;
     }
   }
 
@@ -188,6 +223,11 @@
       margin: 0;
       padding: 50px 0;
       height: 512px;
+    }
+
+    @include vp-mobile {
+      padding: 30px 0 14px;
+      height: 373px;
     }
   }
 
@@ -225,7 +265,11 @@
     }
 
     @include vp-tablet {
-      padding: 37px 2px 0 0;
+      padding: 22px 2px 0 0;
+    }
+
+    @include vp-mobile {
+      padding: 22px 0 0;
     }
   }
 
@@ -247,6 +291,12 @@
       font-size: 40px;
       line-height: 50px;
       margin: 0 0 50px;
+    }
+
+    @include vp-mobile {
+      font-size: 20px;
+      line-height: 25px;
+      margin: 0 0 30px;
     }
   }
 
@@ -272,6 +322,13 @@
       max-width: 600px;
       margin: 0 0 77px;
     }
+
+    @include vp-mobile {
+      font-size: 14px;
+      max-width: 270px;
+      margin: 0 0 40px;
+      display: unset;
+    }
   }
 
   &__paragraph-string{
@@ -279,6 +336,10 @@
       display: flex;
       flex-direction: column;
       align-items: end;
+    }
+
+    @include vp-mobile {
+      display: unset;
     }
   }
 
@@ -291,8 +352,6 @@
       margin: 0 0 30px auto;
     }
 
-    @include vp-tablet {
-    }
   }
 
   &__products-prev,
@@ -339,11 +398,15 @@
     @include vp-tablet {
       margin: 0;
       gap: 20px;
-      margin: 0;
       position: relative;
       left: 120px;
       width: calc(50% + 230px);
       z-index: 1;
+    }
+
+    @include vp-mobile {
+      width: calc(50% + 186px);
+      left: 0;
     }
   }
 

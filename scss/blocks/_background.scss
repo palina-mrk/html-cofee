@@ -30,8 +30,9 @@
     @include vp-mobile {
       width: 453px;
       height: 561px;
-      top: 50px;
-      left: calc(50% + 40px);
+      top: 30px;
+      left: calc(50% + 37px);
+      rotate: -1deg;
     }
   }
 
@@ -52,6 +53,13 @@
       top: 1520px;
       height: 1019px;
       width: 900px;
+    }
+
+    @include vp-mobile {
+      width: 450px;
+      height: 510px;
+      top: 975px;
+      left: calc(50% - 527px);
     }
   }
 
@@ -100,7 +108,7 @@
       width: 439px;
       height: 378px;
       top: 228px;
-      left: calc(50% - 75px)
+      left: calc(50% - 107px)
     }
   }
 

@@ -24,9 +24,18 @@
     box-shadow: 0px 0px 37.5px 0px $color-philippine-gray-20;
     border-radius: 12px;
     width: 340px;
-    height: 412px;
+    min-height: 412px;
     gap: 23px;
     justify-content: end;
+  }
+
+  @include vp-mobile {
+    padding: 0 15px 60px;
+    box-shadow: 0px 0px 30px 0px $color-philippine-gray-20;
+    border-radius: 10px;
+    width: 194px;
+    min-height: 269px;
+    gap: 27px;
   }
 
   &__image-wrapper {
@@ -43,6 +52,10 @@
     @include vp-tablet {
       height: 200px;
       align-items: end;
+    }
+
+    @include vp-mobile {
+      height: 150px;
     }
   }
 
@@ -76,6 +89,12 @@
       line-height: 27px;
       max-width: 265px;
     }
+
+    @include vp-mobile {
+      font-size: 14px;
+      line-height: 17px;
+      max-width: unset;
+    }
   }
 
   &__button {
@@ -100,6 +119,13 @@
     gap: 10px;
   }
 
+  @include vp-mobile {
+    padding: 5px 20px 30px;
+    width: 272px;
+    height: 330px;
+    gap: 5px;
+  }
+
   .catalog-card__image-wrapper {
     position: absolute;
     top: -32px;
@@ -111,6 +137,11 @@
 
     @include vp-tablet {
       position: unset;
+    }
+
+    @include vp-mobile {
+      top: 0;
+      width: 200px;
     }
   }
 
@@ -124,6 +155,11 @@
       object-fit: contain;
       object-position: bottom center;
       z-index: 1;
+    }
+
+    @include vp-mobile {
+      height: 220px;
+      bottom: 145px;
     }
   }
 
@@ -140,6 +176,11 @@
       font-size: 22px;
       line-height: 27px;
       max-width: unset;
+    }
+
+    @include vp-mobile {
+      font-size: 18px;
+      line-height: 23px;
     }
   }
 
