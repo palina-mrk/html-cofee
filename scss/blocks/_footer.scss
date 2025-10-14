@@ -12,6 +12,11 @@
     padding: 185px 0 0;
   }
 
+  @include vp-tablet {
+    padding: 453px 0 0;
+    color: $color-raising-black;
+  }
+
   &__subscribe {
     width: 100%;
     display: flex;
@@ -20,6 +25,10 @@
 
     @include vp-laptop {
       padding: 0 0 135px;
+    }
+
+    @include vp-tablet {
+      padding: 0 0 100px;
     }
   }
 
@@ -38,6 +47,13 @@
       line-height: 44px;
       max-width: 555px;
     }
+
+    @include vp-tablet {
+      margin: 0 0 50px;
+      font-size: 30px;
+      line-height: 37px;
+      max-width: 475px;
+    }
   }
 
   &__subscribe-paragraph {
@@ -52,6 +68,12 @@
       font-size: 18px;
       max-width: 535px;
     }
+
+    @include vp-tablet {
+      margin: 0 0 45px;
+      font-size: 20px;
+      max-width: 605px;
+    }
   }
 
   &__subscribe-form {
@@ -60,6 +82,10 @@
     @include vp-laptop {
       width: 778px;
     }
+
+    @include vp-tablet {
+      width: 100%;
+    }
   }
 
   &__nav-wrapper {
@@ -67,6 +93,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include vp-tablet {
+      flex-direction: column-reverse;
+      margin: auto 0 0 0;
+      gap: 50px;
+      padding: 0 0 80px;
+    }
   }
 
   &__logo-link {
@@ -78,6 +111,11 @@
       width: 180px;
       height: 80px;
     }
+
+    @include vp-tablet {
+      width: 225px;
+      height: 102px;
+    }
   }
 
   &__nav {
@@ -87,6 +125,10 @@
     @include vp-laptop {
       top: 0;
       right: 10px;
+    }
+
+    @include vp-tablet {
+      position: unset;
     }
   }
 }

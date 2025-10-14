@@ -8,6 +8,10 @@
     gap: 16px;
   }
 
+  @include vp-tablet {
+    gap: 20px;
+  }
+
   &__input {
     display: flex;
     background-color: $color-antiflash-white-f3;
@@ -16,6 +20,13 @@
 
     @include vp-laptop {
       border-radius: 28px;
+    }
+
+    @include vp-tablet {
+      border-radius: unset;
+      flex-direction: column;
+      background-color: unset;
+      gap: 20px;
     }
   }
 
@@ -35,6 +46,15 @@
     @include vp-laptop {
       font-size: 18px;
       padding: 19px 17px 16px 40px;
+    }
+
+    @include vp-tablet {
+      padding: 20px 80px 21px;
+      height: 70px;
+      flex-grow: unset;
+      font-size: 22px;
+      border-radius: 5px;
+      background-color: $color-antiflash-white-f3;
     }
   
     &::placeholder {
@@ -69,6 +89,14 @@
       padding: 19px 18px 16px 18px;
     }
 
+    @include vp-tablet {
+      width: unset;
+      border-radius: 5px;
+      font-size: 25px;
+      line-height: 30px;
+      padding: 20px 20px 21px;
+    }
+
     &:hover {
       background-color: $color-mustard-yellow;
     }
@@ -90,6 +118,11 @@
     @include vp-laptop {
       font-size: 12px;
     }
+
+    @include vp-tablet {
+      font-size: 20px;
+      max-width: 490px;
+    }
   }
 
   &__agree-link {
@@ -105,6 +138,13 @@
 
 .custom-subscribe--success {
 
+  .custom-subscribe__field {
+    display: none;
+
+    @include vp-tablet {
+      display: flex;
+    }
+  }
   .custom-subscribe__field,
   .custom-subscribe__button-text {
     display: none;

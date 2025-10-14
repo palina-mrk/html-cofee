@@ -13,7 +13,7 @@
   }
 
   @include vp-tablet {
-    padding: 85px 0 105px;
+    padding: 85px 0 108px;
   }
 
   &__heading {
@@ -48,6 +48,7 @@
     @include vp-tablet {
       font-size: 40px;
       line-height: 50px;
+      color: $color-raising-black;
     }
   }
 
@@ -62,9 +63,9 @@
 
     @include vp-tablet {
       position: absolute;
-      bottom: 0;
-      left: calc(50% + 190px);
-      width: 200px;
+      bottom: 16px;
+      left: calc(50% + 199px);
+      width: 180px;
     }
   }
 

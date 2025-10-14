@@ -178,8 +178,8 @@
     @include vp-tablet {
       font-size: 25px;
       line-height: 30px;
-      padding: 21px 25px 19px;
-      border-radius: 30px;
+      border-radius: 30px;      
+      padding: 7px 10px 6px;
     }
 
     &:hover {
@@ -200,7 +200,7 @@
     @include vp-tablet {
       font-size: 25px;
       line-height: 30px;
-      padding: 21px 25px 19px;
+      padding: 7px 10px 6px;
       border-radius: 30px;
     }
   }
