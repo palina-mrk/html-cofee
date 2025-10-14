@@ -300,14 +300,23 @@
     }
 
     @include vp-mobile {
-      font-size: 12px;
-      line-height: 15px;
-      padding: 7px 7px 8px;
-      border-radius: 3px;
+      padding: 12px 11px 9px;
+      border-radius: 4px;
     }
   }
 
   &:hover {
     background-color: $color-mustard-yellow;
+  }
+}
+
+.product-card--main-mobile {
+  .btn--size-s{
+    @include vp-mobile {
+      font-size: 12px;
+      line-height: 14px;
+      padding: 8px 7px 8px;
+      border-radius: 3px;
+    }
   }
 }
