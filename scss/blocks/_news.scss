@@ -16,6 +16,10 @@
     padding: 85px 0 108px;
   }
 
+  @include vp-mobile {
+    padding: 70px 0 4px;
+  }
+
   &__heading {
     width: 100%;
     display: flex;
@@ -29,6 +33,10 @@
 
     @include vp-tablet {
       margin: 0 0 52px;
+    }
+
+    @include vp-mobile {
+      margin: 0 0 25px;
     }
   }
 
@@ -49,6 +57,11 @@
       font-size: 40px;
       line-height: 50px;
       color: $color-raising-black;
+    }
+
+    @include vp-mobile {
+      font-size: 20px;
+      line-height: 25px;
     }
   }
 
@@ -78,6 +91,10 @@
     @include vp-tablet {
       display: flex;
     }
+
+    @include vp-mobile {
+      margin: 0 0 28px;
+    }
   }
 
   &__list {
@@ -96,6 +113,10 @@
       justify-content: start;
       position: relative;
       z-index: 1;
+    }
+
+    @include vp-mobile {
+      min-height: 403px;
     }
   }
 

@@ -17,6 +17,10 @@
     padding: 175px 0 0;
   }
 
+  @include vp-mobile {
+    padding: 80px 0 0;
+  }
+
   &__wrapper {
     width: 100%;
     display: flex;
@@ -29,6 +33,10 @@
 
     @include vp-tablet {
       gap: 75px;
+    }
+
+    @include vp-mobile {
+      gap: 29px;
     }
   }
 
@@ -52,6 +60,11 @@
       line-height: 50px;
       max-width: unset;
     }
+
+    @include vp-mobile {
+      font-size: 20px;
+      line-height: 25px;
+    }
   }
 
   &__content {
@@ -71,23 +84,35 @@
       gap: 26px;
       margin: 0 0 13px;
     }
+
+    @include vp-mobile {
+      gap: 18px;
+      margin: 0 0 44px;
+    }
   }
 
   &__paragraph {
     margin: 0;
     padding: 0;
     font-size: 25px;
-    line-height: 1.3;
+    line-height: 32px;
     display: flex;
     flex-direction: column;
     align-items: start;
 
     @include vp-laptop {
       font-size: 18px;
+      line-height: 23px;
     }
 
     @include vp-tablet {
       font-size: 20px;
+      line-height: 26px;
+    }
+
+    @include vp-mobile {
+      font-size: 14px;
+      line-height: 18px;
     }
   }
 
