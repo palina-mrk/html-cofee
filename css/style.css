@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Global */
 /* ------------------------------------ */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -466,12 +467,18 @@ body {
   flex-direction: column;
   font-family: "Gilroy", "Arial", sans-serif;
   min-height: 100vh;
+  align-items: center;
+}
+
+.body--for-catalog {
+  background-color: #F5F5F5;
 }
 
 main {
   flex-grow: 1;
   height: 100%;
   width: 100%;
+  max-width: 3720px;
   display: flex;
   flex-direction: column;
 }
@@ -1314,6 +1321,9 @@ a {
   }
 }
 
+.background {
+  /*Для каталога*/
+}
 .background__svg-puddle {
   color: #F9B300;
   position: absolute;
@@ -1848,6 +1858,8 @@ a {
   top: -1px;
   height: 90px;
   background-color: #F9B300;
+  width: 3720px;
+  left: calc(50% - 1860px);
 }
 @media (max-width: 1903px) {
   .background__div--footer-wall {
@@ -1942,6 +1954,21 @@ a {
     left: calc(50% - 140px);
     top: -7px;
   }
+}
+.background__div--catalog-hero-top-wall {
+  top: 0;
+  height: 600px;
+  background-color: #F9B300;
+}
+.background__svg-vawe--catalog-hero {
+  height: 568px;
+  top: 597px;
+  color: #F9B300;
+}
+.background__div--catalog-hero-bottom-wall {
+  top: 600px;
+  height: 657px;
+  background-color: #ffffff;
 }
 
 .btn-icon {
@@ -2865,6 +2892,11 @@ a {
 }
 .header--menu .header__menu-contacts {
   display: flex;
+}
+
+.header--background {
+  box-shadow: 0px 5px 20px 0px rgba(157, 157, 157, 0.25);
+  background-color: #ffffff;
 }
 
 .slider-large {

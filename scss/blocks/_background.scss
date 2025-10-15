@@ -501,6 +501,8 @@
     top: -1px;
     height: 90px;
     background-color: $color-ucla-gold;
+    width: 3720px;
+    left: calc(50% - 1860px);
 
     @include vp-laptop {
       height: 78px;
@@ -589,4 +591,23 @@
     }
   }
 
+  /*Для каталога*/
+
+  &__div--catalog-hero-top-wall {
+    top: 0;
+    height: 600px;
+    background-color: $color-ucla-gold;
+  }
+
+  &__svg-vawe--catalog-hero {
+    height: 568px;
+    top: 597px;
+    color: $color-ucla-gold;
+  }
+
+  &__div--catalog-hero-bottom-wall {
+    top: 600px;
+    height: 657px;
+    background-color: $color-white;
+  }
 }
