@@ -5653,7 +5653,7 @@ a {
     gap: 20px;
     left: 0;
     min-width: 700px;
-    max-width: calc(50% + 50vw);
+    width: calc(50% + 50vw);
     flex-wrap: nowrap;
   }
 }
@@ -5680,14 +5680,14 @@ a {
 }
 @media (max-width: 1348px) {
   .instagram__gallery-item {
-    min-width: 340px;
+    width: 340px;
     height: 389px;
     border-radius: 10px;
   }
 }
 @media (max-width: 767px) {
   .instagram__gallery-item {
-    min-width: 160px;
+    width: 160px;
     height: 183px;
   }
 }
