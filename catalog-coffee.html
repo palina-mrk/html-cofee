@@ -140,7 +140,20 @@
                 <a class="catalog-hero__breadcrumbs-link"  href="#">Свежеобжаренный кофе</a>
               </li>
             </ul>
-            <h2 class="catalog-hero__title" id="catalogs-overview">Свежеобжаренный кофе</h2>
+            <h2 class="catalog-hero__title">Свежеобжаренный кофе</h2>
+            <div class="catalog-hero__filter-forms">
+              <form class="catalog-hero__form" method="POST" action="#">
+                <fieldset class="catalog-hero__filter">
+                  <legend class="catalog-hero__filter-title">Степень обжарки</legend>
+                  <div class="custom-radio">
+                    <input class="custom-radio__input" type="radio" name="roasting" id="roasting-1">
+                    <label class="custom-radio__label" for="roasting-1">
+
+                    </label>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
             <a class="catalog-hero__button btn-linked btn-linked--black" href="#">Сортировка</a>
           </div>
         </div>
@@ -149,23 +162,12 @@
       <section>
         <div class="container">
           <div class="catalog-products__wrapper">
-            <h2 class="overview__products-title">Товары со&nbsp;скидкой</h2>  
-            <p class="overview__products-paragraph">
-              <span class="overview__paragraph-string">
-                <span class="overview__paragraph-string-tablet">Наша компания предлагает покупать </span>
-                <span class="overview__paragraph-string-tablet">товар со&nbsp;скидкой не&nbsp;только в&nbsp;дни распродаж</span></span>
-              <span class="overview__paragraph-string">
-                <span class="overview__paragraph-string-tablet">или в&nbsp;течение действия ограниченных предложений, </span><span class="overview__paragraph-string-tablet">но&nbsp;и&nbsp;пользоваться скидками постоянно!</span></span>
-            </p>
+            <h2 class="overview__products-title visually-hidden">Список товаров</h2>  
             <div class="overview__products-cards">
-              <button class="overview__products-prev btn-icon btn-icon--arrow" type="button" aria-label="Пролистать к предыдущим карточкам">
-                <svg class="btn-icon__svg" width="27" height="16" aria-hidden="true">
-                  <use xlink:href="./images/btn/btn-sprite.svg#arrow-back"></use>
-                </svg>
-              </button>
+              
               <ul class="overview__products-list">
                 <li class="overview__products-item">
-                  <div class="product-card product-card--sale product-card--main-mobile">
+                  <div class="product-card">
                     <div class="product-card__sales-icon">%</div>
                     <div class="product-card__top">
                       <div class="product-card__categories">
