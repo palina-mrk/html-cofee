@@ -80,11 +80,13 @@
     @include vp-tablet {
       width: 700px;
       padding: 70px 90px 50px;
+      gap: 25px;
     }
 
     @include vp-mobile {
       width: 340px;
-      padding: 50px 40px 20px 50px;
+      padding: 30px 30px 10px 30px;
+      gap: 18px;
     }
   }
 
@@ -106,8 +108,8 @@
     }
 
     @include vp-mobile {
-      font-size: 14px;
-      line-height: 18px;
+      font-size: 16px;
+      line-height: 21px;
     }
   }
 
@@ -115,6 +117,17 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @include vp-tablet {
+      max-height: 104px;
+      overflow: hidden;
+      gap: 20px;
+    }
+
+    @include vp-mobile {
+      gap: 14px;
+      max-height: 90px;
+    }
   }
 
   &__paragraph {
@@ -152,7 +165,11 @@
 
     @include vp-tablet {
       left: -18px;
-      bottom: 30px;
+      bottom: 8px;
+    }
+
+    @include vp-mobile {
+      bottom: 24px;
     }
   }
 }
@@ -171,14 +188,16 @@
     }
 
     @include vp-tablet {
-      padding: 62px 80px 50px;
+      padding: 62px 80px 72px 80px;
       width: 100%;
       min-height: 489px;
       gap: 50px;
     }
 
     @include vp-mobile {
-      padding: 40px 30px 30px 40px;
+      padding: 40px 30px 10px 40px;
+      gap: 40px;
+      min-height: 368px;
     }
   }
 

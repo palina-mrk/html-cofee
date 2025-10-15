@@ -68,6 +68,11 @@
       height: 81px;
     }
 
+    @include vp-mobile {
+      width: 40px;
+      height: 40px;
+    }
+
     &:hover {
       background-color: $color-mustard-yellow;
     }
@@ -81,6 +86,10 @@
         height: 12px;
       }
 
+      @include vp-mobile {
+        width: 16px;
+        height: 8px;
+      }
     }
   }
 
@@ -96,17 +105,30 @@
     width: 34px;
     height: 17px;
 
-    @include vp-mobile {
-      width: 29px;
-      height: 17px;
-    }
+      @include vp-tablet {
+        width: 38px;
+        height: 18px;
+      }
 
-    @include vp-tablet {
-      width: 38px;
-      height: 18px;
+      @include vp-mobile {
+        width: 20px;
+        height: 10px;
+      }
     }
   }
 
+  &--arrow-transparent {
+    .btn-icon__svg {
+      @include vp-tablet {
+        width: 101px;
+        height: 21px;
+      }
+
+      @include vp-mobile {
+        width: 48px;
+        height: 10px;
+      }
+    } 
   }
 }
 
@@ -118,7 +140,7 @@
   color: $color-ucla-gold;
   font-family: $ff-gilroy;
   font-weight: 500;
-  line-height: 1.3;
+  line-height: 26px;
   font-size: 20px;
   padding: 10px 24px;
   border-radius: 30px;
@@ -127,19 +149,23 @@
 
   @include vp-laptop {
     font-size: 14px;
+    line-height: 18px;
     padding: 5px 18px;
     border-radius: 21px;
   }
 
   @include vp-tablet {
     font-size: 25px;
+    line-height: 32px;
     border-radius: 36px;
     gap: 14px;
   }
 
   @include vp-mobile {
-    font-size: 14px;
-    padding: 4px 6px;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 5px 18px 3px;
+    gap: 13px;
   }
   
   &__icon {
@@ -154,6 +180,11 @@
     @include vp-tablet {
       width: 32px;
       height: 20px;
+    }
+
+    @include vp-mobile {
+      width: 14px;
+      height: 10px;
     }
   }
 
@@ -182,6 +213,13 @@
       padding: 7px 10px 6px;
     }
 
+    @include vp-mobile {
+      font-size: 12px;
+      line-height: 16px;    
+      padding: 5px 13px 3px;
+      border-radius: 16px;
+    }
+
     &:hover {
       background-color: $color-ghost-white;
       color: $color-ucla-gold;
@@ -202,6 +240,13 @@
       line-height: 30px;
       padding: 7px 10px 6px;
       border-radius: 30px;
+    }
+
+    @include vp-mobile {
+      font-size: 12px;
+      line-height: 16px;    
+      padding: 5px 13px 3px;
+      border-radius: 16px;
     }
   }
 }

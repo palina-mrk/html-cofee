@@ -30,6 +30,14 @@
     &:hover {
       color: $color-raising-black;
       border: 4px solid $color-raising-black;
+
+      @include vp-tablet {
+        border: 3px solid $color-raising-black;
+      }
+
+      @include vp-mobile {
+        border: 2px solid $color-raising-black;
+      }
     }
   }
 

@@ -870,13 +870,13 @@
           </div>
 
           <div class="news__arrows">
-            <button class="news__arrow-btn btn-icon" type="button" aria-label="Посмотреть предыдущую новость">
+            <button class="news__arrow-btn btn-icon btn-icon--arrow-transparent" type="button" aria-label="Посмотреть предыдущую новость">
               <svg class="btn-icon__svg" width="101" height="16" aria-hidden="true">
                 <use xlink:href="../../images/news/news-sprite.svg#icon-news-prev"></use>
               </svg>
             </button>
 
-            <button class="news__arrow-btn btn-icon" type="button" aria-label="Посмотреть следующую новость">
+            <button class="news__arrow-btn btn-icon btn-icon--arrow-transparent" type="button" aria-label="Посмотреть следующую новость">
               <svg class="btn-icon__svg" width="101" height="16" aria-hidden="true">
                 <use xlink:href="../../images/news/news-sprite.svg#icon-news-next"></use>
               </svg>
@@ -1004,6 +1004,7 @@
           <div class="instagram__content">
             <div class="instagram__images">
               <picture>
+                <source media="(max-width: 767px)" srcset="./images/instagram/iphone-large-mobile.png">
                 <source media="(max-width: 1348px)" srcset="./images/instagram/iphone-large-tablet.png">
                 <source media="(max-width: 1903px)" srcset="./images/instagram/iphone-large-laptop.png">
                 <img class="instagram__back-image" src="./images/instagram/iphone-large-desktop.png" width="897" height="597" alt="Большой айфон">
@@ -1080,7 +1081,7 @@
       </svg>
 
       <picture>
-        <source media="(max-width: 767px)" srcset="../../images/background/bg-heading-corns-mobile.png">
+        <source media="(max-width: 767px)" srcset="../../images/background/bg-footer-corns-mobile.png">
         <source media="(max-width: 1348px)" srcset="../../images/background/bg-footer-corns-tablet.png">
         <source media="(max-width: 1903px)" srcset="../../images/background/bg-footer-corns-laptop.png">
         <img class="background__img background__img--footer-corns" src="../../images/background/bg-footer-corns-desktop.png" width="769" height="659" alt="Зёрна кофе под чашкой">

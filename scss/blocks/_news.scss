@@ -17,7 +17,7 @@
   }
 
   @include vp-mobile {
-    padding: 70px 0 4px;
+    padding: 70px 0 50px;
   }
 
   &__heading {
@@ -80,6 +80,12 @@
       left: calc(50% + 199px);
       width: 180px;
     }
+
+    @include vp-mobile {
+      bottom: 0;
+      left: calc(50% + 97px);
+      width: 87px;
+    }
   }
 
   &__arrows {
@@ -93,7 +99,7 @@
     }
 
     @include vp-mobile {
-      margin: 0 0 28px;
+      margin: 0 0 25px;
     }
   }
 
@@ -132,7 +138,6 @@
       &:nth-child(1){
         display: flex;
       }
-      
     }
   }
 }
