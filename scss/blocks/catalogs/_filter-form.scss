@@ -1,7 +1,7 @@
 .filter-form {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 70px;
 
   &__inner {
     display: flex;
@@ -56,12 +56,12 @@
     box-shadow: 0px 0px 30px 0px $color-spanish-gray-c95-25;
     position: relative;
     width: calc(100% - 420px);
-    padding: 82px 118px 47px 95px;
+    padding: 82px 135px 47px 95px;
     max-height: 526px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 22px;
+    gap: 23px 0;
 
     &::before {
       content: "";
@@ -83,6 +83,15 @@
     align-items: start;
     gap: 20px;
     padding: 0;
+    margin: 0;
+  }
+
+  &__words-group:first-of-type {
+    margin: 0 77px 0 0;
+  }
+
+  &__words-group:last-of-type {
+    margin: 0 0 0 78px;
   }
 
   &__words-groupname {
@@ -92,6 +101,18 @@
     line-height: 30px;
     margin: 0 0 30px;
     max-width: 200px;
+  }
+
+  &__cards-group {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    border: none;
+    justify-content: space-between;
+    width: 100%;
   }
 
   &__submit {
