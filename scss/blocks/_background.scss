@@ -611,7 +611,7 @@
     background-color: $color-white;
   }
 
-  &__img--catalog-corns {
+  &__img--catalog-hero-corns {
     width: 820px;
     height: 710px;
     top: 53px;
@@ -621,11 +621,114 @@
 
   }
 
-  &__img--catalog-cup {
+  &__img--catalog-hero-cup {
     width: 682px;
     height: 455px;
     top: 120px;
     left: calc(50% + 138px);
     z-index: 2;
   }
+
+  &__div--catalog-footer-wall {
+    top: 30px;
+    bottom: -1px;
+    background-color: $color-white;
+    width: 3720px;
+    left: calc(50% - 1860px);
+
+    @include vp-laptop {
+      height: 78px;
+    }
+
+    @include vp-tablet {
+      display: none;
+    }
+  }
+
+  &__svg-vawe--catalog-back-footer {
+    z-index: -6;
+    height: 408px;
+    top: 52px;
+    color: $color-ucla-gold;
+
+    @include vp-laptop {
+      height: 210px;
+      top: 75px;
+    }
+
+    @include vp-tablet {
+      height: 190px;
+      top: -64px;
+    }
+
+    @include vp-mobile {
+      height: 108px;
+      top: -52px;
+    }
+  }
+
+  &__svg-vawe--catalog-front-footer {
+    height: 407px;
+    top: 30px;
+    color: $color-cultured;
+  }
+
+
+  &__img--catalog-footer-corns {
+    width: 730px;
+    height: 500px;
+    top: 20px;
+    left: calc(50% + 257px);
+    z-index: -4;
+
+    @include vp-laptop {
+      width: 569px;
+      height: 467px;
+      left: calc(50% + 155px);
+    }
+
+    @include vp-tablet {
+      width: 517px;
+      height: 346px;
+      left: calc(50% - 288px);
+      top: 30px;
+    }
+
+    @include vp-mobile {
+      width: 339px;
+      height: 231px;
+      left: calc(50% - 172px);
+      top: -6px;
+    }
+  }
+
+  &__img--catalog-footer-cup {
+    width: 682px;
+    height: 455px;
+    left: calc(50% + 313px);
+    top: 1px;
+    z-index: -2;
+
+    @include vp-laptop {
+      width: 483px;
+      height: 322px;
+      left: calc(50% + 220px);
+      top: 32px;      
+    }
+
+    @include vp-tablet {
+      width: 406px;
+      height: 305px;
+      left: calc(50% - 247px);
+      top: 28px;
+    }
+
+    @include vp-mobile {
+      width: 307px;
+      height: 204px;
+      left: calc(50% - 140px);
+      top: -7px;
+    }
+  }
+
 }
