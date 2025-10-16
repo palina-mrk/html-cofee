@@ -3555,6 +3555,47 @@ a {
   }
 }
 
+.slider-corns--label {
+  gap: 10px;
+}
+@media (max-width: 1903px) {
+  .slider-corns--label {
+    gap: 7px;
+  }
+}
+@media (max-width: 1348px) {
+  .slider-corns--label {
+    gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .slider-corns--label {
+    gap: 10px;
+  }
+}
+.slider-corns--label .slider-corns__svg {
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 1903px) {
+  .slider-corns--label .slider-corns__svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+@media (max-width: 1348px) {
+  .slider-corns--label .slider-corns__svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .slider-corns--label .slider-corns__svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 .slider-points {
   display: flex;
   gap: 3px;

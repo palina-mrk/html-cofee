@@ -103,7 +103,7 @@
     </header>
 
     <main>
-      <section class="hero" style="min-height: 1465px;">
+      <section class="hero" style="min-height: 1465px; color: black;">
 
         <picture>
           <source media="(max-width: 767px)" srcset="../../images/background/bg-heading-corns-mobile.png">
@@ -147,48 +147,181 @@
               <div class="filter-form__block filter-form__block--left-stripe">
                 <fieldset class="filter-form__group">
                 <legend class="filter-form__groupname">Степень обжарки</legend>
-                  <div class="filter-form__inner">
-                    <div class="custom-radio">
-                      <input class="custom-radio__field visually-hidden" id="payment-cash" type="radio" name="payment" value="cash">
-                      <label for="payment-cash" class="custom-radio__label">
-                    <span class="custom-radio__top">
-                      <span class="custom-radio__name">Наличными</span>
-                    </span>
-                        <span class="custom-radio__text">Оплата наличными доступна только при самовывозе </span>
-                      </label>
-                    </div>
-                    <div class="custom-radio">
-                      <input class="custom-radio__field visually-hidden" id="payment-transfer" type="radio" name="payment" value="transfer">
-                      <label class="custom-radio__label" for="payment-transfer">
-                    <span class="custom-radio__top">
-                      <span class="custom-radio__name">Перевод на карту</span>
-                    </span>
-                        <span class="custom-radio__text">По номеру карты зеленого или желтого банка</span>
-                      </label>
-                    </div>
-                    <div class="custom-radio">
-                      <input class="custom-radio__field visually-hidden" id="payment-later" type="radio" name="payment" value="later">
-                      <label class="custom-radio__label" for="payment-later">
-                    <span class="custom-radio__top">
-                      <span class="custom-radio__name">Наложенным платежом</span>
-                    </span>
-                        <span class="custom-radio__text">Доступно только при заказе почтой</span>
-                      </label>
-                    </div>
-                    <div class="custom-radio">
-                      <input class="custom-radio__field visually-hidden" id="payment-card" type="radio" name="payment" value="card" checked>
-                      <label class="custom-radio__label" for="payment-card">
-                    <span class="custom-radio__top">
-                      <span class="custom-radio__name">Картой на сайте</span>
-                    </span>
-                        <span class="custom-radio__text">Оплатить через форму на сайте</span>
-                      </label>
-                    </div>
+                <!-- у группы чексбоксов д.б. одинаковый name и v-model -->
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-roasting-05" type="checkbox" name="coffee-roasting" value="5">
+                    <label for="coffee-roasting-05" class="custom-checkbox__label">
+                      <ul class="slider-corns slider-corns--label">
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="24" height="24" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="24" height="24" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="24" height="24" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="24" height="24" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="24" height="24" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+                      </ul>
+                    </label>
+                  </div>
+
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-roasting-04" type="checkbox" name="coffee-roasting" value="4">
+                    <label for="coffee-roasting-04" class="custom-checkbox__label">
+                      <ul class="slider-corns slider-corns--label">
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="24" height="24" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+
+
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="24" height="24" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+
+
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="24" height="24" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+
+
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="24" height="24" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+                      </ul>
+                    </label>
+                  </div>
+
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-roasting-03" type="checkbox" name="coffee-roasting" value="3">
+                    <label for="coffee-roasting-03" class="custom-checkbox__label">
+                      <ul class="slider-corns slider-corns--label">
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="24" height="24" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+
+
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="24" height="24" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+
+
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="24" height="24" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+                      </ul>
+                    </label>
+                  </div>
+
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-roasting-02" type="checkbox" name="coffee-roasting" value="2">
+                    <label for="coffee-roasting-02" class="custom-checkbox__label">
+                      <ul class="slider-corns slider-corns--label">
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="24" height="24" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+
+
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="24" height="24" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+
+                      </ul>
+                    </label>
+                  </div>
+
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-roasting-01" type="checkbox" name="coffee-roasting" value="1">
+                    <label for="coffee-roasting-01" class="custom-checkbox__label">
+                      <ul class="slider-corns slider-corns--label">
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="24" height="24" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+                      </ul>
+                    </label>
                   </div>
                 </fieldset>
               </div>
 
               <div class="filter-form__block filter-form__block--top-stripe">
+                <fieldset class="filter-form__group">
+                <legend class="filter-form__groupname">География</legend>
+                <!-- у группы чексбоксов д.б. одинаковый name и v-model -->
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-geography-africa" type="checkbox" name="coffee-geography" value="africa">
+                    <label for="coffee-geography-africa" class="custom-checkbox__label">Африка</label>
+                  </div>
+                  
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-geography-yemen" type="checkbox" name="coffee-geography" value="yemen">
+                    <label for="coffee-geography-yemen" class="custom-checkbox__label">Йемен</label>
+                  </div>
+                  
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-geography-uganda" type="checkbox" name="coffee-geography" value="uganda">
+                    <label for="coffee-geography-uganda" class="custom-checkbox__label">Уганда</label>
+                  </div>
+
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-geography-ethiopia" type="checkbox" name="coffee-geography" value="ethiopia">
+                    <label for="coffee-geography-ethiopia" class="custom-checkbox__label">Эфиопия</label>
+                  </div>
+                  
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-geography-asia" type="checkbox" name="coffee-geography" value="asia">
+                    <label for="coffee-geography-asia" class="custom-checkbox__label">Азия</label>
+                  </div>
+
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-geography-center-america" type="checkbox" name="coffee-geography" value="center-america">
+                    <label for="coffee-geography-center-america" class="custom-checkbox__label">Центр. Америка</label>
+                  </div>
+                  
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-geography-latin-america" type="checkbox" name="coffee-geography" value="latin-america">
+                    <label for="coffee-geography-latin-america" class="custom-checkbox__label">Лат. Америка</label>
+                  </div>
+
+                </fieldset>
               </div>
 
               <div class="filter-form__block filter-form__block--cards">
