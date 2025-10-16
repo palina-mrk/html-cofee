@@ -3,6 +3,7 @@ id: 1,
 title: "Colombia Supremo",
 description: "Свежеобжаренный кофе - описание товара, вкус, аромат",
 price: 250,
+priceCrossed: 350,
 category: [
 "Скидки",
 "Популярное",
@@ -15,5 +16,6 @@ acidity: 3,
 bitterness: 5,
 richness: 7
 },
-
+rating: 4.0,
+comments: 32,
 }
