@@ -1,0 +1,20 @@
+.filter-form {
+  display: flex;
+  flex-direction: column;
+
+  &__inner {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__block {
+    background-color: $color-white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 0px $color-spanish-gray-c95-25;
+
+  }  
+
+  &__submit {
+    width: 100%;
+  }
+}
