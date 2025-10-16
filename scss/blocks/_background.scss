@@ -612,10 +612,20 @@
   }
 
   &__img--catalog-corns {
+    width: 820px;
+    height: 710px;
+    top: 53px;
+    left: calc(50% + 38px);
+    rotate: 17deg;
+    z-index: 1;
 
   }
 
   &__img--catalog-cup {
-    
+    width: 682px;
+    height: 455px;
+    top: 120px;
+    left: calc(50% + 138px);
+    z-index: 2;
   }
 }

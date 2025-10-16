@@ -102,7 +102,7 @@
       
     </header>
 
-    <main>
+    <main style="min-height: 100vh;">
       <section class="hero">
 
         <picture>
@@ -128,23 +128,23 @@
         <div class="background__div background__div--catalog-hero-bottom-wall"></div>
 
         <div class="container">
-          <div class="catalog-hero__wrapper">
-            <ul class="catalog-hero__breadcrumbs-list">
-              <li class="catalog-hero__breadcrumbs-item">
-                <a class="catalog-hero__breadcrumbs-link"  href="#">Главная</a>
+          <div class="hero__wrapper">
+            <ul class="hero__breadcrumbs-list">
+              <li class="hero__breadcrumbs-item">
+                <a class="hero__breadcrumbs-link"  href="#">Главная</a>
               </li>
-              <li class="catalog-hero__breadcrumbs-item">
-                <a class="catalog-hero__breadcrumbs-link"  href="#">Каталог товаров</a>
+              <li class="hero__breadcrumbs-item">
+                <a class="hero__breadcrumbs-link"  href="#">Каталог товаров</a>
               </li>
-              <li class="catalog-hero__breadcrumbs-item">
-                <a class="catalog-hero__breadcrumbs-link"  href="#">Свежеобжаренный кофе</a>
+              <li class="hero__breadcrumbs-item">
+                <a class="hero__breadcrumbs-link"  href="#">Свежеобжаренный кофе</a>
               </li>
             </ul>
-            <h2 class="catalog-hero__title">Свежеобжаренный кофе</h2>
-            <div class="catalog-hero__filter-forms">
-              <form class="catalog-hero__form" method="POST" action="#">
-                <fieldset class="catalog-hero__filter">
-                  <legend class="catalog-hero__filter-title">Степень обжарки</legend>
+            <h2 class="hero__title">Свежеобжаренный кофе</h2>
+            <div class="hero__filters">
+              <form class="hero__filter-form" method="POST" action="#">
+                <fieldset class="hero__filter-group">
+                  <legend class="hero__filter-groupname">Степень обжарки</legend>
                   <div class="custom-radio">
                     <input class="custom-radio__input" type="radio" name="roasting" id="roasting-1">
                     <label class="custom-radio__label" for="roasting-1">
@@ -152,13 +152,510 @@
                     </label>
                   </div>
                 </fieldset>
+
+                <a class="hero__button btn-linked btn-linked--black" href="#">Сортировка</a>
               </form>
             </div>
-            <a class="catalog-hero__button btn-linked btn-linked--black" href="#">Сортировка</a>
           </div>
         </div>
       </section>
-      
+
+      <section class="products">
+        <div class="container">
+          <div class="products__wrapper">
+            <h2 class="products__title visually-hidden">Отсортированные карточки товаров кофе</h2>  
+
+            <ul class="products__cards">
+              <li class="products__item">
+                <div class="product-card product-card--bordered">
+                  <div class="product-card__sales-icon">%</div>
+                  <div class="product-card__top">
+                    <div class="product-card__categories">
+                      <ul class="product-card__category-list">
+                        <li class="product-card__category-item">Скидки</li>
+                        <li class="product-card__category-item">Популярное</li>
+                        <li class="product-card__category-item">Новый урожай</li>
+                        <li class="product-card__category-item">Микролот</li>
+                        <li class="product-card__category-item">Сорт недели</li>
+                        <li class="product-card__category-item">Новинка</li>
+                      </ul>
+                    </div>
+                    <div class="custom-dropdown  product-card__dropdown">
+                      <button class="custom-dropdown__field custom-dropdown__field--main" type="button">
+                        <span class="custom-dropdown__chosen-text">250 г.</span>
+                        <svg class="custom-dropdown__icon" width="12" height="5" aria-hidden="true">
+                          <use xlink:href="./images/product-card/product-sprite.svg#icon-down-arrow"></use>
+                        </svg>
+                      </button>
+                      <ul class="custom-dropdown__list">
+                        <li class="custom-dropdown__item">
+                          <button class="custom-dropdown__field" type="button">250 г.</button>
+                        </li>
+                        <li class="custom-dropdown__item">
+                          <button class="custom-dropdown__field" type="button">1000 г.</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product-card__middle">
+                    <div class="product-card__image-wrapper">
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="./images/product-card/product-image-mobile.png">
+                        <source media="(max-width: 1348px)" srcset="../images/product-card/product-image-tablet.png">
+                        <source media="(max-width: 1903px)" srcset="./images/product-card/product-image-laptop.png">
+                        <img class="product-card__image" src="./images/product-card/product-image-desktop.png" width="311" height="172" alt="Карточка товара кофе">
+                      </picture>
+                    </div>
+                    <div class="product-card__details">
+                      <ul class="product-card__stars slider-stars">
+                        <li class="slider-stars__item slider-stars__item--selected">
+                          <svg class="slider-stars__svg" width="25" height="25" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-star"></use>
+                          </svg>
+                        </li>
+
+                        <li class="slider-stars__item slider-stars__item--selected">
+                          <svg class="slider-stars__svg" width="25" height="25" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-star"></use>
+                          </svg>
+                        </li>
+
+                        <li class="slider-stars__item slider-stars__item--selected">
+                          <svg class="slider-stars__svg" width="25" height="25" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-star"></use>
+                          </svg>
+                        </li>
+
+                        <li class="slider-stars__item slider-stars__item--selected">
+                          <svg class="slider-stars__svg" width="25" height="25" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-star"></use>
+                          </svg>
+                        </li>
+
+                        <li class="slider-stars__item">
+                          <svg class="slider-stars__svg" width="25" height="25" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-star"></use>
+                          </svg>
+                        </li>
+                      </ul>
+                      <div class="product-card__rating">
+                        <span class="product-card__rating-value">4.0</span>
+                        <span class="product-card__comments-count">(32 отзыва)</span>
+                      </div>
+                      <ul class="product-card__corns slider-corns">
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="19" height="19" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="19" height="19" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="19" height="19" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="19" height="19" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="19" height="19" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+                      </ul>
+                      <div class="product-card__hue">
+                        <span class="product-card__hue-name">Кислинка</span>
+                        <ul class="slider-points">
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item"></li>
+                          <li class="slider-points__item"></li>
+                          <li class="slider-points__item"></li>
+                        </ul>
+                      </div>
+
+                      <div class="product-card__hue">
+                        <span class="product-card__hue-name">Горчинка</span>
+                        <ul class="slider-points">
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item"></li>
+                          <li class="slider-points__item"></li>
+                          <li class="slider-points__item"></li>
+                        </ul>
+                      </div>
+
+                      <div class="product-card__hue">
+                        <span class="product-card__hue-name">Насыщенность</span>
+                        <ul class="slider-points">
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item"></li>
+                          <li class="slider-points__item"></li>
+                          <li class="slider-points__item"></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="product-card__title">Colombia Supremo</h3>
+                  <p class="product-card__description">Свежеобжаренный кофе&nbsp;&mdash; описание товара, вкус, аромат</p>
+                  <div class="product-card__bottom">
+                    <span class="product-card__price product-card__price--crossed">350 ₽</span>
+                    <span class="product-card__price">250 ₽</span>
+                    <button class="product-card__button btn btn--size-s">В&nbsp;корзину</button>
+                  </div>
+                </div>
+              </li>
+
+              <li class="products__item">
+                <div class="product-card product-card--bordered">
+                  <div class="product-card__sales-icon">%</div>
+                    <div class="product-card__top">
+                      <div class="product-card__categories">
+                        <ul class="product-card__category-list">
+                          <li class="product-card__category-item">Скидки</li>
+                          <li class="product-card__category-item">Популярное</li>
+                          <li class="product-card__category-item">Новый урожай</li>
+                          <li class="product-card__category-item">Микролот</li>
+                          <li class="product-card__category-item">Сорт недели</li>
+                          <li class="product-card__category-item">Новинка</li>
+                        </ul>
+                      </div>
+                      <div class="custom-dropdown product-card__dropdown">
+                        <button class="custom-dropdown__field custom-dropdown__field--main" type="button">
+                          <span class="custom-dropdown__chosen-text">250 г.</span>
+                          <svg class="custom-dropdown__icon" width="12" height="5" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-down-arrow"></use>
+                          </svg>
+                        </button>
+                        <ul class="custom-dropdown__list">
+                          <li class="custom-dropdown__item">
+                            <button class="custom-dropdown__field" type="button">250 г.</button>
+                          </li>
+                          <li class="custom-dropdown__item">
+                            <button class="custom-dropdown__field" type="button">1000 г.</button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="product-card__middle">
+                      <div class="product-card__image-wrapper">
+                        <picture>
+                          <source media="(max-width: 767px)" srcset="./images/product-card/product-image-mobile.png">
+                          <source media="(max-width: 1348px)" srcset="../images/product-card/product-image-tablet.png">
+                          <source media="(max-width: 1903px)" srcset="./images/product-card/product-image-laptop.png">
+                          <img class="product-card__image" src="./images/product-card/product-image-desktop.png" width="311" height="172" alt="Карточка товара кофе">
+                        </picture>
+                      </div>
+                      <div class="product-card__details">
+                        <ul class="product-card__stars slider-stars">
+                        <li class="slider-stars__item slider-stars__item--selected">
+                          <svg class="slider-stars__svg" width="25" height="25" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-star"></use>
+                          </svg>
+                        </li>
+
+                        <li class="slider-stars__item slider-stars__item--selected">
+                          <svg class="slider-stars__svg" width="25" height="25" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-star"></use>
+                          </svg>
+                        </li>
+
+                        <li class="slider-stars__item slider-stars__item--selected">
+                          <svg class="slider-stars__svg" width="25" height="25" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-star"></use>
+                          </svg>
+                        </li>
+
+                        <li class="slider-stars__item slider-stars__item--selected">
+                          <svg class="slider-stars__svg" width="25" height="25" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-star"></use>
+                          </svg>
+                        </li>
+
+                        <li class="slider-stars__item">
+                          <svg class="slider-stars__svg" width="25" height="25" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-star"></use>
+                          </svg>
+                        </li>
+                      </ul>
+                        <div class="product-card__rating">
+                          <span class="product-card__rating-value">4.0</span>
+                          <span class="product-card__comments-count">(32 отзыва)</span>
+                        </div>
+                        <ul class="product-card__corns slider-corns">
+                          <li class="slider-corns__item">
+                            <svg class="slider-corns__svg" width="19" height="19" aria-hidden="true">
+                              <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                            </svg>
+                          </li>
+                          <li class="slider-corns__item">
+                            <svg class="slider-corns__svg" width="19" height="19" aria-hidden="true">
+                              <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                            </svg>
+                          </li>
+                          <li class="slider-corns__item">
+                            <svg class="slider-corns__svg" width="19" height="19" aria-hidden="true">
+                              <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                            </svg>
+                          </li>
+                          <li class="slider-corns__item">
+                            <svg class="slider-corns__svg" width="19" height="19" aria-hidden="true">
+                              <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                            </svg>
+                          </li>
+                          <li class="slider-corns__item">
+                            <svg class="slider-corns__svg" width="19" height="19" aria-hidden="true">
+                              <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                        <div class="product-card__hue">
+                          <span class="product-card__hue-name">Кислинка</span>
+                          <ul class="slider-points">
+                            <li class="slider-points__item slider-points__item--selected"></li>
+                            <li class="slider-points__item slider-points__item--selected"></li>
+                            <li class="slider-points__item slider-points__item--selected"></li>
+                            <li class="slider-points__item slider-points__item--selected"></li>
+                            <li class="slider-points__item slider-points__item--selected"></li>
+                            <li class="slider-points__item slider-points__item--selected"></li>
+                            <li class="slider-points__item slider-points__item--selected"></li>
+                            <li class="slider-points__item"></li>
+                            <li class="slider-points__item"></li>
+                            <li class="slider-points__item"></li>
+                          </ul>
+                        </div>
+
+                        <div class="product-card__hue">
+                          <span class="product-card__hue-name">Горчинка</span>
+                          <ul class="slider-points">
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item"></li>
+                          <li class="slider-points__item"></li>
+                          <li class="slider-points__item"></li>
+                        </ul>
+                        </div>
+
+                        <div class="product-card__hue">
+                          <span class="product-card__hue-name">Насыщенность</span>
+                          <ul class="slider-points">
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item"></li>
+                          <li class="slider-points__item"></li>
+                          <li class="slider-points__item"></li>
+                        </ul>
+                        </div>
+                      </div>
+                    </div>
+                  <h3 class="product-card__title">Colombia Supremo</h3>
+                  <p class="product-card__description">Свежеобжаренный кофе&nbsp;&mdash; описание товара, вкус, аромат</p>
+                  <div class="product-card__bottom">
+                    <span class="product-card__price product-card__price--crossed">350 ₽</span>
+                    <span class="product-card__price">250 ₽</span>
+                    <button class="product-card__button btn btn--size-s">В&nbsp;корзину</button>
+                  </div>
+                </div>
+              </li>
+
+              <li class="products__item">
+                <div class="product-card product-card--bordered">
+                <div class="product-card__sales-icon">%</div>
+                  <div class="product-card__top">
+                    <ul class="product-card__category-list">
+                      <li class="product-card__category-item">Скидки</li>
+                      <li class="product-card__category-item">Популярное</li>
+                      <li class="product-card__category-item">Новый урожай</li>
+                      <li class="product-card__category-item">Микролот</li>
+                      <li class="product-card__category-item">Сорт недели</li>
+                      <li class="product-card__category-item">Новинка</li>
+                    </ul>
+                    
+                    <div class="custom-dropdown product-card__dropdown">
+                      <button class="custom-dropdown__field custom-dropdown__field--main" type="button">
+                        <span class="custom-dropdown__chosen-text">250 г.</span>
+                        <svg class="custom-dropdown__icon" width="12" height="5" aria-hidden="true">
+                          <use xlink:href="./images/product-card/product-sprite.svg#icon-down-arrow"></use>
+                        </svg>
+                      </button>
+                      <ul class="custom-dropdown__list">
+                        <li class="custom-dropdown__item">
+                          <button class="custom-dropdown__field" type="button">250 г.</button>
+                        </li>
+                        <li class="custom-dropdown__item">
+                          <button class="custom-dropdown__field" type="button">1000 г.</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product-card__middle">
+                    <div class="product-card__image-wrapper">
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="./images/product-card/product-image-mobile.png">
+                        <source media="(max-width: 1348px)" srcset="../images/product-card/product-image-tablet.png">
+                        <source media="(max-width: 1903px)" srcset="./images/product-card/product-image-laptop.png">
+                        <img class="product-card__image" src="./images/product-card/product-image-desktop.png" width="311" height="172" alt="Карточка товара кофе">
+                      </picture>
+                    </div>
+                    <div class="product-card__details">
+                      <ul class="product-card__stars slider-stars">
+                        <li class="slider-stars__item slider-stars__item--selected">
+                          <svg class="slider-stars__svg" width="25" height="25" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-star"></use>
+                          </svg>
+                        </li>
+
+                        <li class="slider-stars__item slider-stars__item--selected">
+                          <svg class="slider-stars__svg" width="25" height="25" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-star"></use>
+                          </svg>
+                        </li>
+
+                        <li class="slider-stars__item slider-stars__item--selected">
+                          <svg class="slider-stars__svg" width="25" height="25" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-star"></use>
+                          </svg>
+                        </li>
+
+                        <li class="slider-stars__item slider-stars__item--selected">
+                          <svg class="slider-stars__svg" width="25" height="25" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-star"></use>
+                          </svg>
+                        </li>
+
+                        <li class="slider-stars__item">
+                          <svg class="slider-stars__svg" width="25" height="25" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-star"></use>
+                          </svg>
+                        </li>
+                      </ul>
+                      <div class="product-card__rating">
+                        <span class="product-card__rating-value">4.0</span>
+                        <span class="product-card__comments-count">(32 отзыва)</span>
+                      </div>
+                      <ul class="product-card__corns slider-corns">
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="19" height="19" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="19" height="19" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="19" height="19" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="19" height="19" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+                        <li class="slider-corns__item">
+                          <svg class="slider-corns__svg" width="19" height="19" aria-hidden="true">
+                            <use xlink:href="./images/product-card/product-sprite.svg#icon-corn"></use>
+                          </svg>
+                        </li>
+                      </ul>
+                      <div class="product-card__hue">
+                        <span class="product-card__hue-name">Кислинка</span>
+                        <ul class="slider-points">
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item"></li>
+                          <li class="slider-points__item"></li>
+                          <li class="slider-points__item"></li>
+                        </ul>
+                      </div>
+
+                      <div class="product-card__hue">
+                        <span class="product-card__hue-name">Горчинка</span>
+                        <ul class="slider-points">
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item"></li>
+                          <li class="slider-points__item"></li>
+                          <li class="slider-points__item"></li>
+                        </ul>
+                      </div>
+
+                      <div class="product-card__hue">
+                        <span class="product-card__hue-name">Насыщенность</span>
+                        <ul class="slider-points">
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item slider-points__item--selected"></li>
+                          <li class="slider-points__item"></li>
+                          <li class="slider-points__item"></li>
+                          <li class="slider-points__item"></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="product-card__title">Colombia Supremo</h3>
+                  <p class="product-card__description">Свежеобжаренный кофе&nbsp;&mdash; описание товара, вкус, аромат</p>
+                  <div class="product-card__bottom">
+                    <span class="product-card__price product-card__price--crossed">350 ₽</span>
+                    <span class="product-card__price">250 ₽</span>
+                    <button class="product-card__button btn btn--size-s">В&nbsp;корзину</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            
+            <button class="products__button btn btn--light" type="button">Показать ещё</button>
+          </div>
+        </div>
+      </section>
       
     </main>
 
