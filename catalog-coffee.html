@@ -283,9 +283,10 @@
               </div>
 
               <div class="filter-form__block filter-form__block--top-stripe">
+
+                <!-- Geography -->
                 <fieldset class="filter-form__group">
                 <legend class="filter-form__groupname">География</legend>
-                <!-- у группы чексбоксов д.б. одинаковый name и v-model -->
                   <div class="custom-checkbox">
                     <input class="custom-checkbox__field visually-hidden" id="coffee-geography-africa" type="checkbox" name="coffee-geography" value="africa">
                     <label for="coffee-geography-africa" class="custom-checkbox__label">Африка</label>
@@ -320,7 +321,113 @@
                     <input class="custom-checkbox__field visually-hidden" id="coffee-geography-latin-america" type="checkbox" name="coffee-geography" value="latin-america">
                     <label for="coffee-geography-latin-america" class="custom-checkbox__label">Лат. Америка</label>
                   </div>
+                </fieldset>
 
+                <!-- Кислинка acidity -->
+                <fieldset class="filter-form__group">
+                <legend class="filter-form__groupname">Кислинка</legend>
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-acidity-low" type="checkbox" name="coffee-acidity" value="low">
+                    <label for="coffee-acidity-low" class="custom-checkbox__label">Низкая</label>
+                  </div>
+
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-acidity-medium" type="checkbox" name="coffee-acidity" value="medium">
+                    <label for="coffee-acidity-medium" class="custom-checkbox__label">Средняя</label>
+                  </div>
+
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-acidity-high" type="checkbox" name="coffee-acidity" value="high">
+                    <label for="coffee-acidity-high" class="custom-checkbox__label">Высокая</label>
+                  </div>
+                </fieldset>
+
+                <!-- Способ обработки processing -->
+                <fieldset class="filter-form__group">
+                <legend class="filter-form__groupname">Способ обработки</legend>
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-processing-dry" type="checkbox" name="coffee-processing" value="dry">
+                    <label for="coffee-processing-dry" class="custom-checkbox__label">Сухая</label>
+                  </div>
+
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-processing-washed" type="checkbox" name="coffee-processing" value="washed">
+                    <label for="coffee-processing-washed" class="custom-checkbox__label">Мытая</label>
+                  </div>
+
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-processing-others" type="checkbox" name="coffee-processing" value="others">
+                    <label for="coffee-processing-others" class="custom-checkbox__label">Прочие</label>
+                  </div>
+                </fieldset>
+
+                <!-- Особые категории category -->
+                <fieldset class="filter-form__group">
+                <legend class="filter-form__groupname">Особые</legend>
+
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-category-popular" type="checkbox" name="coffee-category" value="popular">
+                    <label for="coffee-category-popular" class="custom-checkbox__label">Популярное</label>
+                  </div>
+
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-category-new-harvest" type="checkbox" name="coffee-category" value="new-harvest">
+                    <label for="coffee-category-new-harvest" class="custom-checkbox__label">Новый урожай</label>
+                  </div>
+
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-category-your-choice" type="checkbox" name="coffee-category" value="your-choice">
+                    <label for="coffee-category-your-choice" class="custom-checkbox__label">Ваш выбор</label>
+                  </div>
+
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-category-microlot" type="checkbox" name="coffee-category" value="microlot">
+                    <label for="coffee-category-microlot" class="custom-checkbox__label">Микролот</label>
+                  </div>
+
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-category-weekly-variety" type="checkbox" name="coffee-category" value="weekly-variety">
+                    <label for="coffee-category-weekly-variety" class="custom-checkbox__label">Сорт недели</label>
+                  </div>
+
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-category-sales" type="checkbox" name="coffee-category" value="sales">
+                    <label for="coffee-category-sales" class="custom-checkbox__label">Скидки</label>
+                  </div>
+
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-category-new-product" type="checkbox" name="coffee-category" value="new-product">
+                    <label for="coffee-category-new-product" class="custom-checkbox__label">Новинка</label>
+                  </div>
+
+                </fieldset>
+
+
+                <!-- Вид кофе kind -->
+                <fieldset class="filter-form__group">
+                <legend class="filter-form__groupname">Особые</legend>
+
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-kind-arabica" type="checkbox" name="coffee-kind" value="arabica">
+                    <label for="coffee-kind-arabica" class="custom-checkbox__label">Арабика</label>
+                  </div>
+
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-kind-robusta" type="checkbox" name="coffee-kind" value="robusta">
+                    <label for="coffee-kind-robusta" class="custom-checkbox__label">Робуста</label>
+                  </div>
+
+
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-kind-arabica-blend" type="checkbox" name="coffee-kind" value="arabica-blend">
+                    <label for="coffee-kind-arabica-blend" class="custom-checkbox__label">Смесь арабик</label>
+                  </div>
+
+
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" id="coffee-kind-arabica-robusta-blend" type="checkbox" name="coffee-kind" value="arabica-robusta-blend">
+                    <label for="coffee-kind-arabica-robusta-blend" class="custom-checkbox__label">Смесь арабика/робуста</label>
+                  </div>
                 </fieldset>
               </div>
 
