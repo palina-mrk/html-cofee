@@ -353,6 +353,22 @@
   &:hover {
     background-color: $color-mustard-yellow;
   }
+
+  &--white-xl {
+    color: $color-black;
+    background-color: $color-white;
+    border: 1px solid $color-platinum;
+    padding: 23px;
+    height: 70px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: $color-cornsilk;
+    }
+  }
 }
 
 .product-card--main-mobile {

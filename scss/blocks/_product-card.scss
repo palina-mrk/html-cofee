@@ -701,3 +701,8 @@
     }
   }
 }
+
+.product-card--bordered {  
+  border: 1px solid $color-platinum;
+  box-shadow: none;
+}
