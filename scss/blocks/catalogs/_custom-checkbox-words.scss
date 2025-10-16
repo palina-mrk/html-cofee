@@ -1,0 +1,29 @@
+.custom-checkbox-words {
+  
+  &__label {
+    position: relative;
+    padding: 0 0 0 45px;
+    display: block;
+    color: $color-black;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: $ff-gilroy sans-serif;
+  
+    &::before {
+      content: "";
+      background-color: $color-platinum;
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  } 
+
+  &__field:checked ~ .custom-checkbox-corns__label::before {
+    background-color: $color-ucla-gold;
+  }
+}

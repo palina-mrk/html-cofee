@@ -198,6 +198,8 @@
     text-decoration: underline;
     padding: 11px 30px 10px;
     justify-content: center;
+    border: none;
+    background-color: transparent;
 
     @include vp-laptop {
       font-size: 14px;

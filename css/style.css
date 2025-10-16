@@ -1961,21 +1961,20 @@ a {
   }
 }
 .background__div--catalog-hero-top-wall {
-  /*replace for BOTTOM*/
   top: 0;
-  height: 600px;
+  bottom: 655px;
   background-color: #F9B300;
 }
 .background__svg-vawe--catalog-hero {
-  /*replace for BOTTOM*/
   height: 568px;
-  top: 597px;
+  /*top: 597px;*/
+  bottom: 88px;
   color: #F9B300;
 }
 .background__div--catalog-hero-bottom-wall {
-  /*replace for BOTTOM*/
-  top: 600px;
-  height: 657px;
+  /*top: 600px;*/
+  height: 588px;
+  bottom: 170px;
   background-color: #ffffff;
 }
 .background__img--catalog-hero-corns {
@@ -2301,6 +2300,8 @@ a {
   text-decoration: underline;
   padding: 11px 30px 10px;
   justify-content: center;
+  border: none;
+  background-color: transparent;
 }
 @media (max-width: 1903px) {
   .btn-linked--black {
@@ -6344,7 +6345,7 @@ a {
 .hero {
   position: relative;
   width: 100%;
-  padding: 200px 0;
+  padding: 200px 0 0;
   margin: 0;
   color: #ffffff;
   font-family: "Gilroy", "Arial", sans-serif sans-serif;
@@ -6427,7 +6428,7 @@ a {
   font-weight: 900;
   font-size: 70px;
   line-height: 87px;
-  margin: 0 0 16px;
+  margin: 0 0 7px;
 }
 @media (max-width: 1903px) {
   .hero__title {
@@ -6537,12 +6538,137 @@ a {
   width: 100%;
 }
 
+.custom-checkbox-corns__label {
+  position: relative;
+  padding: 0 0 0 42px;
+  display: block;
+}
+.custom-checkbox-corns__label::before {
+  content: "";
+  background-color: #E4E4E4;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.custom-checkbox-corns__field:checked ~ .custom-checkbox-corns__label::before {
+  background-color: #F9B300;
+}
+
+.custom-checkbox-words__label {
+  position: relative;
+  padding: 0 0 0 45px;
+  display: block;
+  color: #000000;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif sans-serif;
+}
+.custom-checkbox-words__label::before {
+  content: "";
+  background-color: #E4E4E4;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.custom-checkbox-words__field:checked ~ .custom-checkbox-corns__label::before {
+  background-color: #F9B300;
+}
+
 .filter-form {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 60px;
 }
-.filter-form__block {
+.filter-form__inner {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  color: #000000;
+}
+.filter-form__corns-block {
   background-color: #ffffff;
   border-radius: 20px;
-  box-shadow: 0px 0px 30px 0px;
+  box-shadow: 0px 0px 30px 0px rgba(149, 149, 149, 0.25);
+  position: relative;
+  width: 400px;
+  padding: 43px 50px 70px 95px;
+}
+.filter-form__corns-block::before {
+  content: "";
+  background-color: #F9B300;
+  border-radius: 10px;
+  width: 15px;
+  position: absolute;
+  left: 30px;
+  top: 43px;
+  bottom: 48px;
+}
+.filter-form__corns-group {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 52px;
+  margin: 0;
+  padding: 0;
+}
+.filter-form__corns-groupname {
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0 0 46px;
+}
+.filter-form__words-block {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px 0px rgba(149, 149, 149, 0.25);
+  position: relative;
+  width: calc(100% - 420px);
+  padding: 82px 118px 47px 95px;
+  max-height: 526px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+.filter-form__words-block::before {
+  content: "";
+  background-color: #F9B300;
+  border-radius: 10px;
+  height: 15px;
+  left: 87px;
+  right: 65px;
+  top: 36px;
+  position: absolute;
+}
+.filter-form__words-group {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+  padding: 0;
+}
+.filter-form__words-groupname {
+  font-weight: 700;
+  color: #000000;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0 0 30px;
+  max-width: 200px;
+}
+.filter-form__submit {
+  align-self: start;
 }/*# sourceMappingURL=style.css.map */
