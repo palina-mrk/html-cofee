@@ -1327,7 +1327,7 @@ a {
 }
 
 .background {
-  /*Для каталога*/
+  /*Для страницы каталога*/
 }
 .background__svg-puddle {
   color: #F9B300;
@@ -1967,8 +1967,7 @@ a {
 }
 @media (max-width: 1903px) {
   .background__div--catalog-hero-top-wall {
-    bottom: 0;
-    z-index: -1;
+    bottom: 600px;
   }
 }
 .background__svg-vawe--catalog-hero {
@@ -1976,10 +1975,22 @@ a {
   bottom: 270px;
   color: #F9B300;
 }
+@media (max-width: 1903px) {
+  .background__svg-vawe--catalog-hero {
+    height: 291px;
+    bottom: 310px;
+  }
+}
 .background__div--catalog-hero-bottom-wall {
   height: 588px;
-  bottom: 180px;
+  bottom: 112px;
   background-color: #ffffff;
+}
+@media (max-width: 1903px) {
+  .background__div--catalog-hero-bottom-wall {
+    bottom: 123px;
+    height: 295px;
+  }
 }
 .background__img--catalog-hero-corns {
   width: 820px;
@@ -1991,10 +2002,8 @@ a {
 }
 @media (max-width: 1903px) {
   .background__img--catalog-hero-corns {
-    left: calc(50% + 350px);
-    top: 125px;
-    width: 700px;
-    height: 500px;
+    left: calc(50% + 315px);
+    top: 54px;
   }
 }
 .background__img--catalog-hero-cup {
@@ -6604,8 +6613,9 @@ a {
     width: 134px;
     min-height: 134px;
     box-shadow: 0 0 21px 0 rgba(149, 149, 149, 0.25);
-    padding: 20px;
+    padding: 20px 20px 23px;
     border-radius: 14px;
+    gap: 7px;
   }
 }
 .custom-checkbox-card__label-text {
@@ -6631,7 +6641,7 @@ a {
 }
 @media (max-width: 1903px) {
   .custom-checkbox-card__label-svg {
-    max-width: 67px;
+    max-width: 47px;
     max-height: 67px;
   }
 }
@@ -6651,7 +6661,7 @@ a {
 }
 @media (max-width: 1903px) {
   .filter-form {
-    gap: 50px;
+    gap: 48px;
   }
 }
 .filter-form__inner {
@@ -6662,7 +6672,7 @@ a {
 }
 @media (max-width: 1903px) {
   .filter-form__inner {
-    gap: 20px 15px;
+    gap: 15px 20px;
   }
 }
 .filter-form__corns-block {
@@ -6745,10 +6755,11 @@ a {
 @media (max-width: 1903px) {
   .filter-form__words-block {
     box-shadow: 0 0 21px 0 rgba(149, 149, 149, 0.25);
-    padding: 56px 102px 36px 66px;
-    width: calc(100% - 295px);
+    padding: 56px 73px 25px 67px;
+    width: calc(100% - 300px);
     border-radius: 14px;
     max-height: 373px;
+    gap: 15px 0;
   }
 }
 .filter-form__words-block::before {
@@ -6790,7 +6801,7 @@ a {
 }
 @media (max-width: 1903px) {
   .filter-form__words-group:first-of-type {
-    margin: 0 55px 0 0;
+    margin: 0 27px 0 0;
   }
 }
 .filter-form__words-group:last-of-type {
@@ -6798,7 +6809,7 @@ a {
 }
 @media (max-width: 1903px) {
   .filter-form__words-group:last-of-type {
-    margin: 0 0 0 54px;
+    margin: 0 0 0 25px;
   }
 }
 .filter-form__words-groupname {
@@ -6835,4 +6846,10 @@ a {
 }
 .filter-form__submit {
   align-self: start;
+}
+@media (max-width: 1903px) {
+  .filter-form__submit {
+    position: relative;
+    left: -15px;
+  }
 }/*# sourceMappingURL=style.css.map */

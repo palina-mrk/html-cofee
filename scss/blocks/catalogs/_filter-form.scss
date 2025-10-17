@@ -4,7 +4,7 @@
   gap: 70px;
 
   @include vp-laptop {
-    gap: 50px;
+    gap: 48px;
   }
 
   &__inner {
@@ -14,7 +14,7 @@
     color: $color-black;
 
     @include vp-laptop {
-      gap: 20px 15px;
+      gap: 15px 20px;
     }
   }
 
@@ -97,10 +97,11 @@
 
     @include vp-laptop {
       box-shadow: 0 0 21px 0 $color-spanish-gray-c95-25;
-      padding: 56px 102px 36px 66px;
-      width: calc(100% - 295px);
+      padding: 56px 73px 25px 67px;
+      width: calc(100% - 300px);
       border-radius: 14px;
       max-height: 373px;
+      gap: 15px 0;
     }
 
     &::before {
@@ -142,7 +143,7 @@
     margin: 0 77px 0 0;
 
     @include vp-laptop {
-      margin: 0 55px 0 0;
+      margin: 0 27px 0 0;
     }
   }
 
@@ -150,7 +151,7 @@
     margin: 0 0 0 78px;
 
     @include vp-laptop {
-      margin: 0 0 0 54px;
+      margin: 0 0 0 25px;
     }
   }
 
@@ -188,5 +189,10 @@
 
   &__submit {
     align-self: start;
+
+    @include vp-laptop {
+      position: relative;
+      left: -15px;
+    }
   }
 }
