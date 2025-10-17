@@ -595,7 +595,7 @@
 
   &__div--catalog-hero-top-wall {
     top: 0;
-    bottom: 768px;
+    bottom: 830px;
     background-color: $color-ucla-gold;
 
     @include vp-laptop {
@@ -661,7 +661,10 @@
     left: calc(50% - 1860px);
 
     @include vp-laptop {
-      height: 78px;
+      top: 30px;
+      width: 100%;
+      left: 0;
+      right: 0;
     }
 
     @include vp-tablet {
@@ -676,8 +679,8 @@
     color: $color-ucla-gold;
 
     @include vp-laptop {
-      height: 210px;
-      top: 75px;
+      height: 209px;
+      top: 36px;
     }
 
     @include vp-tablet {
@@ -695,6 +698,11 @@
     height: 407px;
     top: 30px;
     color: $color-cultured;
+
+    @include vp-laptop {
+      height: 208px;
+      top: 22px;
+    }
   }
 
 
@@ -709,6 +717,7 @@
       width: 569px;
       height: 467px;
       left: calc(50% + 155px);
+      top: -30px;
     }
 
     @include vp-tablet {
@@ -737,7 +746,7 @@
       width: 483px;
       height: 322px;
       left: calc(50% + 220px);
-      top: 32px;      
+      top: 0;      
     }
 
     @include vp-tablet {

@@ -367,6 +367,15 @@
     font-weight: 500;
     border-radius: 10px;
 
+    @include vp-laptop {
+      height: 50px;
+      border: 0.71px solid $color-platinum;
+      padding: 16px;
+      font-size: 14px;
+      line-height: 17px;
+      border-radius: 7px;
+    }
+
     &:hover {
       background-color: $color-cornsilk;
     }

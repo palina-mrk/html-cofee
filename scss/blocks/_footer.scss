@@ -170,15 +170,31 @@
 .footer--for-catalog {
   padding: 215px 0 100px;
 
+  @include vp-laptop {
+    padding: 150px 0 70px;
+  }
+
   .footer__subscribe {
     padding: 0 0 175px;
+
+    @include vp-laptop {
+      padding: 0 0 130px;
+    }
   }
 
   .footer__subscribe-title {
     margin: 0 0 50px;
+
+    @include vp-laptop {
+      margin: 0 0 40px;
+    }
   }
 
   .footer__nav {
     top: 23px;
+
+    @include vp-laptop {
+      top: 0;
+    }
   }
 }
