@@ -1995,7 +1995,7 @@ a {
 @media (max-width: 1903px) {
   .background__div--catalog-hero-bottom-wall {
     bottom: 123px;
-    height: 295px;
+    height: 450px;
   }
 }
 .background__img--catalog-hero-corns {
@@ -2015,7 +2015,7 @@ a {
 .background__img--catalog-hero-cup {
   width: 682px;
   height: 455px;
-  top: 85px;
+  top: 120px;
   left: calc(50% + 138px);
   z-index: 2;
 }
@@ -2023,6 +2023,7 @@ a {
   .background__img--catalog-hero-cup {
     width: 483px;
     height: 322px;
+    top: 85px;
     left: calc(50% + 96px);
   }
 }

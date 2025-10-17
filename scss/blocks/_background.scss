@@ -621,7 +621,7 @@
 
     @include vp-laptop {
       bottom: 123px;
-      height: 295px;
+      height: 450px;
     }
   }
 
@@ -642,13 +642,14 @@
   &__img--catalog-hero-cup {
     width: 682px;
     height: 455px;
-    top: 85px;
+    top: 120px;
     left: calc(50% + 138px);
     z-index: 2;
 
     @include vp-laptop {
       width: 483px;
       height: 322px;
+      top: 85px;
       left: calc(50% + 96px);
     }
   }
