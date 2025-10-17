@@ -705,4 +705,9 @@
 .product-card--bordered {  
   border: 1px solid $color-platinum;
   box-shadow: none;
+
+  @include vp-laptop {
+    width: 280px;
+    min-height: 461px;
+  }
 }

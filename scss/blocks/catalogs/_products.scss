@@ -1,10 +1,18 @@
 .products {
   padding: 48px 0 97px;
 
+  @include vp-laptop {
+    padding: 41px 0 93px;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
     gap: 70px;
+
+    @include vp-laptop {
+      gap: 50px;
+    }
   }
   
   &__list {
@@ -15,6 +23,10 @@
     gap: 70px 20px;
     flex-wrap: wrap;
     justify-content: start;
+
+    @include vp-laptop {
+      gap: 50px 20px;
+    }
   }
 
   &__button {
