@@ -4,6 +4,10 @@
     position: relative;
     padding: 0 0 0 42px;
     display: block;
+
+    @include vp-laptop {
+      padding: 0 0 0 37px;
+    }
   
     &::before {
       content: "";
@@ -15,6 +19,11 @@
       left: 0;
       top: 50%;
       transform: translateY(-50%);
+
+      @include vp-laptop {
+        width: 17px;
+        height: 17px;
+      }
     }
   } 
 

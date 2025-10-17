@@ -9,6 +9,12 @@
     font-size: 20px;
     line-height: 24px;
     font-family: $ff-gilroy sans-serif;
+
+    @include vp-laptop {
+      font-size: 14px;
+      line-height: 17px;
+      padding: 0 0 0 32px;
+    }
   
     &::before {
       content: "";
@@ -20,6 +26,11 @@
       left: 0;
       top: 50%;
       transform: translateY(-50%);
+
+      @include vp-laptop {
+        width: 17px;
+        height: 17px;
+      }
     }
   } 
 

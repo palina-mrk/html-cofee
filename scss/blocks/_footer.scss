@@ -168,9 +168,17 @@
 }
 
 .footer--for-catalog {
-  padding: 217px 0 100px;
+  padding: 215px 0 100px;
 
   .footer__subscribe {
-    padding: 0 0 180px;
+    padding: 0 0 175px;
+  }
+
+  .footer__subscribe-title {
+    margin: 0 0 50px;
+  }
+
+  .footer__nav {
+    top: 23px;
   }
 }
