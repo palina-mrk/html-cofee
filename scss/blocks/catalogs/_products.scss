@@ -5,6 +5,10 @@
     padding: 37px 0 71px;
   }
 
+  @include vp-tablet {
+    padding: 30px 0 38px;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -12,6 +16,10 @@
 
     @include vp-laptop {
       gap: 51px;
+    }
+
+    @include vp-tablet {
+      gap: 30px;
     }
   }
   
@@ -26,6 +34,10 @@
 
     @include vp-laptop {
       gap: 49px 20px;
+    }
+
+    @include vp-tablet {
+      gap: 20px;
     }
   }
 

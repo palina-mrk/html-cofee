@@ -88,7 +88,7 @@
     @include vp-tablet {
       margin: 0 0 45px;
       font-size: 20px;
-      line-height: 46px;
+      line-height: 26px;
       max-width: 605px;
     }
 
@@ -174,11 +174,19 @@
     padding: 150px 0 70px;
   }
 
+  @include vp-tablet {
+    padding: 450px 0 80px;
+  }
+
   .footer__subscribe {
     padding: 0 0 175px;
 
     @include vp-laptop {
       padding: 0 0 130px;
+    }
+
+    @include vp-tablet {
+      padding: 0 0 100px;
     }
   }
 
@@ -188,12 +196,20 @@
     @include vp-laptop {
       margin: 0 0 40px;
     }
+
+    @include vp-tablet {
+      margin: 0 0 50px;
+    }
   }
 
   .footer__nav {
     top: 23px;
 
     @include vp-laptop {
+      top: 0;
+    }
+
+    @include vp-tablet {
       top: 0;
     }
   }

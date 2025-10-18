@@ -601,6 +601,11 @@
     @include vp-laptop {
       bottom: 600px;
     }
+
+    @include vp-tablet {
+      height: 620px;
+      bottom: unset;
+    }
   }
 
   &__svg-vawe--catalog-hero {
@@ -615,7 +620,8 @@
 
     @include vp-tablet {
       height: 201px;
-      bottom: 200px;
+      top: 615px;
+      bottom: unset;
     }
   }
 
@@ -627,6 +633,12 @@
     @include vp-laptop {
       bottom: 123px;
       height: 450px;
+    }
+
+    @include vp-tablet {
+      height: unset;
+      top: 630px;
+      bottom: 442px;
     }
   }
 
@@ -703,7 +715,7 @@
     }
 
     @include vp-tablet {
-      display: none;
+      top: 44px;
     }
   }
 
@@ -715,12 +727,12 @@
 
     @include vp-laptop {
       height: 209px;
-      top: 36px;
+      top: 32px;
     }
 
     @include vp-tablet {
-      height: 190px;
-      top: -64px;
+      height: 196px;
+      top: 51px;
     }
 
     @include vp-mobile {
@@ -733,6 +745,7 @@
     height: 407px;
     top: 30px;
     color: $color-cultured;
+    z-index: -5;
 
     @include vp-laptop {
       height: 208px;
@@ -741,10 +754,9 @@
 
     @include vp-tablet {
       height: 190px;
-      top: 8px;
+      top: 43px;
     }
   }
-
 
   &__img--catalog-footer-corns {
     width: 730px;

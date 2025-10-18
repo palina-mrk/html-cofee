@@ -414,7 +414,12 @@
     }
 
     @include vp-tablet {
-      
+      height: 70px;
+      border: 1px solid $color-platinum;
+      padding: 22px;
+      font-size: 22px;
+      line-height: 26px;
+      border-radius: 5px;
     }
 
     &:hover {

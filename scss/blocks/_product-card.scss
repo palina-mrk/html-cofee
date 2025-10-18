@@ -710,4 +710,11 @@
     width: 280px;
     min-height: 461px;
   }
+
+  @include vp-tablet {
+    box-shadow: 0px 0px 17px 0px $color-chinese-silver-25;
+    border: none;
+    min-height: 552px;
+    width: 340px;
+  }
 }

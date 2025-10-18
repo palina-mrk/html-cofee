@@ -1331,6 +1331,14 @@ a {
     min-height: 461px;
   }
 }
+@media (max-width: 1348px) {
+  .product-card--bordered {
+    box-shadow: 0px 0px 17px 0px rgba(201, 201, 201, 0.25);
+    border: none;
+    min-height: 552px;
+    width: 340px;
+  }
+}
 
 .background {
   /*Для страницы каталога*/
@@ -1976,6 +1984,12 @@ a {
     bottom: 600px;
   }
 }
+@media (max-width: 1348px) {
+  .background__div--catalog-hero-top-wall {
+    height: 620px;
+    bottom: unset;
+  }
+}
 .background__svg-vawe--catalog-hero {
   height: 568px;
   bottom: 270px;
@@ -1990,7 +2004,8 @@ a {
 @media (max-width: 1348px) {
   .background__svg-vawe--catalog-hero {
     height: 201px;
-    bottom: 200px;
+    top: 615px;
+    bottom: unset;
   }
 }
 .background__div--catalog-hero-bottom-wall {
@@ -2002,6 +2017,13 @@ a {
   .background__div--catalog-hero-bottom-wall {
     bottom: 123px;
     height: 450px;
+  }
+}
+@media (max-width: 1348px) {
+  .background__div--catalog-hero-bottom-wall {
+    height: unset;
+    top: 630px;
+    bottom: 442px;
   }
 }
 .background__img--catalog-hero-corns {
@@ -2083,7 +2105,7 @@ a {
 }
 @media (max-width: 1348px) {
   .background__div--catalog-footer-wall {
-    display: none;
+    top: 44px;
   }
 }
 .background__svg-vawe--catalog-back-footer {
@@ -2095,13 +2117,13 @@ a {
 @media (max-width: 1903px) {
   .background__svg-vawe--catalog-back-footer {
     height: 209px;
-    top: 36px;
+    top: 32px;
   }
 }
 @media (max-width: 1348px) {
   .background__svg-vawe--catalog-back-footer {
-    height: 190px;
-    top: -64px;
+    height: 196px;
+    top: 51px;
   }
 }
 @media (max-width: 767px) {
@@ -2114,6 +2136,7 @@ a {
   height: 407px;
   top: 30px;
   color: #F5F5F5;
+  z-index: -5;
 }
 @media (max-width: 1903px) {
   .background__svg-vawe--catalog-front-footer {
@@ -2124,7 +2147,7 @@ a {
 @media (max-width: 1348px) {
   .background__svg-vawe--catalog-front-footer {
     height: 190px;
-    top: 8px;
+    top: 43px;
   }
 }
 .background__img--catalog-footer-corns {
@@ -2615,6 +2638,16 @@ a {
     font-size: 14px;
     line-height: 17px;
     border-radius: 7px;
+  }
+}
+@media (max-width: 1348px) {
+  .btn--white-xl {
+    height: 70px;
+    border: 1px solid #E4E4E4;
+    padding: 22px;
+    font-size: 22px;
+    line-height: 26px;
+    border-radius: 5px;
   }
 }
 .btn--white-xl:hover {
@@ -4513,6 +4546,14 @@ a {
     min-height: 461px;
   }
 }
+@media (max-width: 1348px) {
+  .product-card--bordered {
+    box-shadow: 0px 0px 17px 0px rgba(201, 201, 201, 0.25);
+    border: none;
+    min-height: 552px;
+    width: 340px;
+  }
+}
 
 .overview {
   position: relative;
@@ -6393,7 +6434,7 @@ a {
   .footer__subscribe-paragraph {
     margin: 0 0 45px;
     font-size: 20px;
-    line-height: 46px;
+    line-height: 26px;
     max-width: 605px;
   }
 }
@@ -6485,12 +6526,22 @@ a {
     padding: 150px 0 70px;
   }
 }
+@media (max-width: 1348px) {
+  .footer--for-catalog {
+    padding: 450px 0 80px;
+  }
+}
 .footer--for-catalog .footer__subscribe {
   padding: 0 0 175px;
 }
 @media (max-width: 1903px) {
   .footer--for-catalog .footer__subscribe {
     padding: 0 0 130px;
+  }
+}
+@media (max-width: 1348px) {
+  .footer--for-catalog .footer__subscribe {
+    padding: 0 0 100px;
   }
 }
 .footer--for-catalog .footer__subscribe-title {
@@ -6501,10 +6552,20 @@ a {
     margin: 0 0 40px;
   }
 }
+@media (max-width: 1348px) {
+  .footer--for-catalog .footer__subscribe-title {
+    margin: 0 0 50px;
+  }
+}
 .footer--for-catalog .footer__nav {
   top: 23px;
 }
 @media (max-width: 1903px) {
+  .footer--for-catalog .footer__nav {
+    top: 0;
+  }
+}
+@media (max-width: 1348px) {
   .footer--for-catalog .footer__nav {
     top: 0;
   }
@@ -6686,6 +6747,11 @@ a {
     padding: 37px 0 71px;
   }
 }
+@media (max-width: 1348px) {
+  .products {
+    padding: 30px 0 38px;
+  }
+}
 .products__wrapper {
   display: flex;
   flex-direction: column;
@@ -6694,6 +6760,11 @@ a {
 @media (max-width: 1903px) {
   .products__wrapper {
     gap: 51px;
+  }
+}
+@media (max-width: 1348px) {
+  .products__wrapper {
+    gap: 30px;
   }
 }
 .products__list {
@@ -6708,6 +6779,11 @@ a {
 @media (max-width: 1903px) {
   .products__list {
     gap: 49px 20px;
+  }
+}
+@media (max-width: 1348px) {
+  .products__list {
+    gap: 20px;
   }
 }
 .products__button {
