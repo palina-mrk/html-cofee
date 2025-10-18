@@ -253,10 +253,10 @@
     }
 
     @include vp-mobile {
-      font-size: 12px;
-      line-height: 16px;    
-      padding: 5px 13px 3px;
-      border-radius: 16px;
+      font-size: 18px;
+      line-height: 21px;    
+      padding: 7px 20px 7px;
+      border-radius: 20px;
     }
 
     &:hover {
@@ -420,6 +420,13 @@
       font-size: 22px;
       line-height: 26px;
       border-radius: 5px;
+    }
+
+    @include vp-mobile {
+      height: 50px;
+      padding: 14px 14px 15px;
+      font-size: 18px;
+      line-height: 21px;
     }
 
     &:hover {

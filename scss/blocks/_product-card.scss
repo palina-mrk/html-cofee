@@ -717,4 +717,11 @@
     min-height: 552px;
     width: 340px;
   }
+
+  @include vp-mobile {
+    min-height: 554px;
+    border-radius: 17px;
+    border: 1px solid $color-platinum;
+    box-shadow: none;
+  }
 }

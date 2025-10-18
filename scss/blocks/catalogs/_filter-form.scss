@@ -11,6 +11,10 @@
     gap: 51px;
   }
 
+  @include vp-mobile {
+    gap: 35px;
+  }
+
   &__inner {
     display: flex;
     gap: 20px;
@@ -24,6 +28,10 @@
     @include vp-tablet {
       flex-direction: column;
       gap: 20px;
+    }
+
+    @include vp-mobile {
+      gap: 10px;
     }
   }
 
@@ -47,6 +55,13 @@
       padding: 105px 44px 65px;
       width: 700px;
       min-height: 620px;
+    }
+
+    @include vp-mobile {
+      box-shadow: 0px 0px 30px 0px $color-spanish-gray-c95-25;
+      padding: 50px 20px 30px;
+      width: 340px;
+      min-height: 303px;
     }
 
     &::before {
@@ -76,6 +91,14 @@
         width: unset;
         border-radius: 20px;
       }
+
+      @include vp-mobile {
+        height: 10px;
+        left: 15px;
+        right: 15px;
+        top: 20px;
+        border-radius: 10px;
+      }
     }
   }
 
@@ -96,6 +119,10 @@
     @include vp-tablet {
       gap: 40px;
     }
+
+    @include vp-mobile {
+      gap: 20px;
+    }
   }
 
   &__corns-groupname {
@@ -115,6 +142,12 @@
       font-size: 32px;
       line-height: 39px;
       margin: 0 0 50px;
+    }
+
+    @include vp-mobile {
+      font-size: 16px;
+      line-height: 19px;
+      margin: 0 0 24px;
     }
   }
 
@@ -150,6 +183,15 @@
       margin: 0 0 20px;
     }
 
+    @include vp-mobile {
+      box-shadow: 0px 0px 30px 0px $color-spanish-gray-c95-25;
+      padding: 50px 26px 31px 20px;
+      width: 340px;
+      height: 588px;
+      gap: 33px 48px;
+      margin: 0 0 10px;
+    }
+
     &::before {
       content: "";
       background-color: $color-ucla-gold;
@@ -175,6 +217,14 @@
         border-radius: 20px;
         top: 40px;
       }
+
+      @include vp-mobile {
+        height: 10px;
+        left: 15px;
+        right: 15px;
+        top: 20px;
+        border-radius: 10px;
+      }
     }
   }
 
@@ -195,6 +245,11 @@
     @include vp-tablet {
       gap: 31px;
       max-width: 250px;
+    }
+
+    @include vp-mobile {
+      gap: 16px;
+      max-width: 125px;
     }
   }
 
@@ -251,6 +306,13 @@
       margin: 0 0 42px 6px;
       max-width: 180px;
     }
+
+    @include vp-mobile {
+      font-size: 16px;
+      line-height: 19px;
+      margin: 0 0 23px;
+      max-width: 110px;
+    }
   }
 
   &__cards-group {
@@ -274,6 +336,11 @@
       width: 700px;
       justify-content: start;
     }
+
+    @include vp-mobile {
+      gap: 10px;
+      width: 340px;
+    }
   }
 
   &__submit {
@@ -285,7 +352,7 @@
     }
 
     @include vp-tablet {
-      left: 0;
+      position: unset;
     }
   }
 }
